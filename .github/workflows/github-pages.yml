@@ -1,4 +1,4 @@
-name: Build and Deploy Jekyll site to GitHub Pages
+name: Deploy Jekyll site with peaceiris/actions-gh-pages
 
 on:
   push:
@@ -6,20 +6,14 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  contents: write  # required to push to gh-pages
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout source
+      - name: Checkout code
         uses: actions/checkout@v3
 
       - name: Set up Ruby
@@ -28,28 +22,16 @@ jobs:
           ruby-version: '3.1'
           bundler-cache: true
 
-      - name: Configure GitHub Pages
-        id: pages
-        uses: actions/configure-pages@v5
+      - name: Install dependencies
+        run: |
+          gem install bundler
+          bundle install
 
       - name: Build Jekyll site
-        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
-        env:
-          JEKYLL_ENV: production
+        run: bundle exec jekyll build
 
-      - name: Upload site artifact (stable v1)
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: ./_site
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
-    steps:
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
