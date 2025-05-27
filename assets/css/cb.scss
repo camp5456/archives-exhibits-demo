@@ -1,15 +1,21 @@
 ---
 # base CSS for collectionbuilder
-# includes some theming options
+# includes some theming elements
 # pulled in from "theme.yml" and "config-theme-colors.csv"
 ---
 @charset "utf-8";
+
+/*importing colors from _colors.scss*/
+@import "colors";
+
+/* set colors from colors.scss */
+$link-color: $burnt;
 
 /* base variables pulled from theme.yml */
 $base-font-family: {{ site.data.theme.base-font-family | default: '""' }};
 $base-font-size: {{ site.data.theme.base-font-size | default: '""' }};
 $text-color: {{ site.data.theme.text-color | default: '""' }};
-$link-color: {{ site.data.theme.link-color | default: '""' }};
+// $link-color: {{ site.data.theme.link-color | default: '""' }}; // commenting out to use $link-color from _colors.scss
 
 /* theme colors pulled from config-theme-colors */
 {% assign btns = site.data.config-theme-colors | where_exp: "item","item.color != nil" %}
@@ -31,3 +37,22 @@ $theme-colors: map-merge(
 {% endif %}
 
 @import "base", "pages", "custom";
+
+
+// Branding wrapper layout styles
+.branding-wrapper {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.branding-wrapper svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.bg-custom-color {
+  background-color: #f2f2f2;
+}
+.nav-custom-color{
+  background-color: #c75000;
+}
