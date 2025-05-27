@@ -106,13 +106,6 @@ ___
 ___
 
 
-## Collapse
-
- {% include feature/collapse.html button="Learn More" color="success" text="Such an interesting story!" %}
- 
-___
-
-
 ## Icon
 
  {% include feature/icon.html icon="file-play" label="Audio file" %}
