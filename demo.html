@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head prefix="og: http://ogp.me/ns#">
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Demo | CollectionBuilder Demo IIIF</title>
+<link rel="shortcut icon" type="image/x-icon" href="/archives-exhibits-demo/favicon.ico">
+<!--
+
+  _____     ____        __  _           ___       _ __   __       
+ / ___/__  / / /__ ____/ /_(_)__  ___  / _ )__ __(_) /__/ /__ ____
+/ /__/ _ \/ / / -_) __/ __/ / _ \/ _ \/ _  / // / / / _  / -_) __/
+\___/\___/_/_/\__/\__/\__/_/\___/_//_/____/\_,_/_/_/\_,_/\__/_/   
+                                                                
+    built with CollectionBuilder-CSV
+    https://github.com/CollectionBuilder/collectionbuilder-csv
+-->
+<meta name="generator" content="collectionbuilder-csv" />
+<meta http-equiv="Content-Language" content="en-us" >
+
+<link rel="stylesheet" href="/archives-exhibits-demo/assets/lib/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="/archives-exhibits-demo/assets/css/cb.css" type="text/css">
+
+<meta name="robots" content="noindex" />
+<!-- Last build date: 2025-05-27 -->
+  </head>
+  <body class="d-flex flex-column h-100">
+    <div id="skip-to-content"><a href="#maincontent">Skip to main content</a></div>
+    <div class="container-fluid bg-custom-color p-3">
+    <div class="container">
+        <div class="row align-items-center">
+            <div id="title" class="col-12">
+                <h1><a class="text-dark font-weight-normal" href="/archives-exhibits-demo/" >CollectionBuilder Demo IIIF</a></h1>	 
+                <p>IIIF manifests displayed in Universal Viewer</p>
+            </div>
+            
+        </div>
+    </div>
+</div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#page-nav" aria-controls="page-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        
+        
+        <div class="collapse navbar-collapse" id="page-nav">
+            <ul class="navbar-nav me-auto">
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="/archives-exhibits-demo/">Home</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="/archives-exhibits-demo/browse.html">Browse</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="/archives-exhibits-demo/subjects.html">Subjects</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="/archives-exhibits-demo/locations.html">Locations</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="/archives-exhibits-demo/map.html">Map</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="/archives-exhibits-demo/timeline.html">Timeline</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="/archives-exhibits-demo/data.html">Data</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="/archives-exhibits-demo/about.html">About</a>
+                </li></ul>
+            
+            <script>
+    function site_search() {
+        var query = document.getElementById("site-search").value;
+        window.open("/archives-exhibits-demo/search/index.html?q=" + encodeURIComponent(query), "_self" );
+    }
+</script>
+<form class="form-inline my-2 my-lg-0" role="search" id="search" onsubmit="site_search(); return false;">
+    <div class="input-group">
+        <input id="site-search" class="form-control " type="text" placeholder="Search" aria-label="Search box">
+        <button class="btn btn-light" type="submit">
+            <span id="search-icon"><svg viewBox="0 0 1024 974" height="16px" width="20px"><path d="M960 832L710.875 582.875C746.438 524.812 768 457.156 768 384 768 171.96900000000005 596 0 384 0 171.969 0 0 171.96900000000005 0 384c0 212 171.969 384 384 384 73.156 0 140.812-21.562 198.875-57L832 960c17.5 17.5 46.5 17.375 64 0l64-64C977.5 878.5 977.5 849.5 960 832zM384 640c-141.375 0-256-114.625-256-256s114.625-256 256-256 256 114.625 256 256S525.375 640 384 640z"/></svg></span>
+            <span class="visually-hidden">Search</span>
+        </button>
+    </div>
+</form>
+            
+        </div>
+    </div>
+</nav>
+
+    <main id="maincontent" role="main" class="flex-shrink-0">
+      <div class="container my-4">
+  
+<style>
+.jumbotron {
+    padding: 4rem 2rem;
+    margin-bottom: 2rem;
+    background-color: #e9ecef;
+    border-radius: 0.3rem;
+}  
+#j-https-cdil {
+    background-image: url(https://cdil.lib.uidaho.edu/images/palouse_sm.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+@media screen and (max-width: 576px) {
+    .jumbo-title-box {
+        max-height: 500px; 
+    }
+    .jumbo-tagline { font-size:.85em; }
+}
+</style>
+
+<div class="jumbotron feature px-0 border" id="j-https-cdil">
+    <div class="jumbo-title-box">
+        
+        <div class="p-2 text-center text-white bg-dark bg-opacity-75">
+            <h2 class="display-4">Feature Demo</h2>
+            <p class="jumbo-tagline">a page to demo the various layout features</p>
+        </div>
+        
+    </div>
+</div>
+
+<hr />
+
+<h1 id="sub-menu">Sub Menu</h1>
+
+<p class="h6 shadow-sm p-3 about-nav sticky-top bg-white">
+    Contents: <a class="mx-2" href="#accordion">Accordion</a> | <a class="mx-2" href="#alerts">Alerts</a> | <a class="mx-2" href="#audio">Audio</a> | <a class="mx-2" href="#blockquote">Blockquote</a> | <a class="mx-2" href="#button">Button</a> | <a class="mx-2" href="#card">Card</a> | <a class="mx-2" href="#cloud">Cloud</a> | <a class="mx-2" href="#collapse">Collapse</a> | <a class="mx-2" href="#icon">Icon</a> | <a class="mx-2" href="#image">Image</a> | <a class="mx-2" href="#jumbotron">Jumbotron</a> | <a class="mx-2" href="#modal">Modal</a> | <a class="mx-2" href="#pdf">PDF</a> 
+</p>
+
+<hr />
+
+<h2 id="accordion">Accordion</h2>
+
+<div class="accordion mb-3" id="accordionInclude">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            Section Header 1
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionInclude">
+        <div class="accordion-body">
+            
+<h3 id="heading-one">Heading One</h3>
+<p>This is the content for the <strong>first</strong> accordion.<br />
+You can use <strong>Markdown</strong> and it will be rendered as HTML <em>after</em> capture.</p>
+
+        </div>
+      </div>
+    </div>
+    
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Section Header 2
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionInclude">
+        <div class="accordion-body">
+            
+<h3 id="heading-two">Heading Two</h3>
+<p>Second accordion content goes here.<br />
+Still Markdown! Still works.</p>
+
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Section Header 3
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionInclude">
+        <div class="accordion-body">
+            
+<h3 id="heading-three">Heading Three</h3>
+<p>This one has a list:</p>
+
+<ul>
+  <li>Item one</li>
+  <li>Item two</li>
+  <li>Item three</li>
+</ul>
+
+        </div>
+      </div>
+    </div>
+    
+</div>
+
+<hr />
+
+<h2 id="alerts">Alerts</h2>
+
+<div class="alert alert-warning feature-alert text-center" role="alert">
+<p>This is an example of a warning</p>
+
+</div>
+<div class="alert alert-info feature-alert text-center" role="alert">
+<p>This is an example of an information statement</p>
+
+</div>
+
+<hr />
+
+<h2 id="audio">Audio</h2>
+
+<p class="text-center my-3">
+    <audio controls="" class="w-100">
+        <source src="/archives-exhibits-demo/objects/demo_003.mp3" />
+        Your browser does not support the audio element.
+    </audio>
+    <small class="figure-caption"><a href="/archives-exhibits-demo/objects/demo_003.mp3"></a></small>
+</p>
+
+<hr />
+
+<h2 id="blockquote">Blockquote</h2>
+
+<figure class="about-narrowed-content pt-3 pb-5">
+    <blockquote class="blockquote fs-3">
+        <div class="mb-0 ">
+</div>
+    </blockquote>
+    <figcaption class="blockquote-footer text-end fs-4">Marcus Aurelius, <cite title="Source Title">"Latin Placeholder"</cite></figcaption>
+</figure>
+
+<hr />
+
+<h2 id="button">Button</h2>
+<p><a class="btn btn-3 btn-success" href="https://example.com">Example Button</a></p>
+
+<hr />
+
+<h2 id="card">Card</h2>
+
+<div class="container">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+    <div class="col">
+      <div class="card mb-3">
+    <img class="card-img-top" src="/archives-exhibits-demo/objects/demo_001.jpg" alt="Alt text 1" /><h5 class="card-header">Item 1</h5><div class="card-body">
+        <h5 class="card-title">Title 1</h5><div class="card-text"><p>Card 1</p>
+</div>
+    </div>
+</div>
+
+    </div>
+    <div class="col">
+      <div class="card mb-3">
+    <img class="card-img-top" src="/archives-exhibits-demo/objects/demo_004.jpg" alt="Alt text 2" /><h5 class="card-header">Item 2</h5><div class="card-body">
+        <h5 class="card-title">Title 2</h5><div class="card-text"><p>Card 2</p>
+</div>
+    </div>
+</div>
+
+    </div>
+    <div class="col">
+      <div class="card mb-3">
+    <img class="card-img-top" src="/archives-exhibits-demo/objects/demo_001.jpg" alt="Alt text 3" /><h5 class="card-header">Item 3</h5><div class="card-body">
+        <h5 class="card-title">Title 3</h5><div class="card-text"><p>Card 3</p>
+</div>
+    </div>
+</div>
+
+    </div>
+    <div class="col">
+      <div class="card mb-3">
+    <img class="card-img-top" src="/archives-exhibits-demo/objects/demo_004.jpg" alt="Alt text 4" /><h5 class="card-header">Item 4</h5><div class="card-body">
+        <h5 class="card-title">Title 4</h5><div class="card-text"><p>Card 4</p>
+</div>
+    </div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+<hr />
+
+<h2 id="cloud">Cloud</h2>
+
+<div id="cloud-div-subject-creator" class="text-center my-4 bg-light border rounded p-2"></div>
+<script>
+(function(){    
+    /* subject terms + count */
+    var terms = [
+        ["architecture", 4], ["unknown", 4]
+    ];
+
+    
+    /* calculate max size */
+    var counts = terms.map(function(obj){ return obj[1]; });
+    var countMax = counts.reduce(function(a, b) { return Math.max(a, b); });
+    var cloud = document.getElementById("cloud-div-subject-creator");
+    
+
+    function mapSize(x) { return Math.round(x * 9 / countMax + 1); }
+    /* create cloud */
+    function makeGrid(array) {
+        var i, size;
+        var items = "";
+        
+        for (i = 0; i < array.length; i++) {
+            size = mapSize(array[i][1]);
+            items += '<a class="btn btn-outline-primary m-2 tagcloud' + size + '" href="/archives-exhibits-demo/browse.html#' + encodeURIComponent(array[i][0]) + '" >' + array[i][0] + '</a>';
+        }
+        cloud.innerHTML = items;
+    }
+    makeGrid(terms);
+
+})();
+</script>
+
+<hr />
+
+<h2 id="icon">Icon</h2>
+
+<svg class="bi icon-sprite " role="img" aria-label="Audio file"><use xlink:href="/archives-exhibits-demo/assets/lib/icons/bootstrap-icons.svg#file-play" href="/archives-exhibits-demo/assets/lib/icons/bootstrap-icons.svg#file-play"></use></svg>
+
+<hr />
+
+<h2 id="image">Image</h2>
+
+<div class="row">
+    
+    
+    <div class="col-md text-center">
+        <figure class="figure mx-3">
+            <a href="/archives-exhibits-demo/objects/demo_001.jpg">
+                <img class="figure-img img-fluid rounded lazyload" alt="" title="click to see item" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="/archives-exhibits-demo/objects/demo_001.jpg" />
+            </a>
+            <figcaption class="figure-caption text-center"></figcaption>
+        </figure>
+    </div>
+</div>
+
+<hr />
+
+<h2 id="jumbotron">Jumbotron</h2>
+
+<style>
+.jumbotron {
+    padding: 4rem 2rem;
+    margin-bottom: 2rem;
+    background-color: #e9ecef;
+    border-radius: 0.3rem;
+}  
+#j-https-cdil {
+    background-image: url(https://cdil.lib.uidaho.edu/images/palouse_sm.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+@media screen and (max-width: 576px) {
+    .jumbo-title-box {
+        max-height: 500px; 
+    }
+    .jumbo-tagline { font-size:.85em; }
+}
+</style>
+
+<div class="jumbotron feature px-0 border" id="j-https-cdil">
+    <div class="jumbo-title-box">
+        
+        <div class="p-2 text-center text-white bg-dark bg-opacity-75">
+            <h2 class="display-4">CollectionBuilder Demo IIIF</h2>
+            <p class="jumbo-tagline">IIIF manifests displayed in Universal Viewer</p>
+        </div>
+        
+    </div>
+</div>
+
+<hr />
+
+<h2 id="modal">Modal</h2>
+
+<!-- Button trigger modal -->
+<div class="text-center mb-3">
+    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#more-infoModal">More Info</button>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="more-infoModal" tabindex="-1" role="dialog" aria-labelledby="more-infoModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="more-infoModalLabel">Information</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <p>Example text</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr />
+
+<h2 id="pdf">PDF</h2>
+
+<div class="text-center">
+    <figure class="figure border rounded p-1 feature-w-100">
+        <div class="ratio ratio-1x1">
+            <object aria-label="pdf embed of " data="/archives-exhibits-demo/objects/demo_002.pdf">
+                <p>The PDF is not rendering in your browser. Please <a href="/archives-exhibits-demo/objects/demo_002.pdf">download the PDF</a> to view.</p>
+            </object>
+        </div>
+        <figcaption class="figure-caption"><a href="/archives-exhibits-demo/objects/demo_002.pdf"></a></figcaption>
+    </figure>
+</div>
+
+<hr />
+
+<h2 id="timeline">Timeline</h2>
+
+<!-- timelinejs, https://timeline.knightlab.com/ -->
+<link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css" />
+
+<div id="timeline-embed" style="width: 100%; height: 800px" class="mb-4"></div>
+
+<script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+
+<script type="text/javascript">
+    // The TL.Timeline constructor takes at least two arguments:
+    // the id of the Timeline container (no '#'), and
+    // the URL to your JSON data file or Google spreadsheet.
+    // the id must refer to an element "above" this code,
+    // and the element must have CSS styling to give it width and height
+    // optionally, a third argument with configuration options can be passed.
+    // See below for more about options.
+    timeline = new TL.Timeline('timeline-embed', '/archives-exhibits-demo/assets/data/timelinejs.json');
+</script>
+
+<hr />
+
+<h2 id="video">Video</h2>
+
+<div class="text-center my-4">
+    <figure class="mx-auto">
+        <div class="ratio ratio-16x9"><iframe title="video embed " src="https://www.youtube-nocookie.com/embed/dbKNr3wuiuQ?rel=0&amp;modestbranding=1" allowfullscreen=""></iframe>
+            </div>
+        
+        <figcaption class="figure-caption">
+            
+        </figcaption>
+        
+    </figure>
+</div>
+
+
+
+
+
+
+</div>
+    </main>
+    <footer class="bg-dark pt-4 mt-auto container-fluid">
+
+    <div class="row border-bottom border-white pb-4 mb-2">
+
+        <div class="col-md-7 px-4 mt-3">
+
+            <h2 class="h4"><a href="/archives-exhibits-demo/" class="text-white">CollectionBuilder Demo IIIF</a></h2>
+            <p class="text-white"><small>CollectionBuilder-CSV featuring single- and multi-page IIIF objects displayed in Universal Viewer.</small></p>
+            <nav>
+                <ul id="footer-nav" class="nav nav-pills ">
+                    <li class="nav-item">
+                    
+                        <a class="nav-link text-light" href="/archives-exhibits-demo/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    
+                        <a class="nav-link text-light" href="/archives-exhibits-demo/browse.html">Browse</a>
+                    </li>
+                    <li class="nav-item">
+                    
+                        <a class="nav-link text-light" href="/archives-exhibits-demo/subjects.html">Subjects</a>
+                    </li>
+                    <li class="nav-item">
+                    
+                        <a class="nav-link text-light" href="/archives-exhibits-demo/locations.html">Locations</a>
+                    </li>
+                    <li class="nav-item">
+                    
+                        <a class="nav-link text-light" href="/archives-exhibits-demo/map.html">Map</a>
+                    </li>
+                    <li class="nav-item">
+                    
+                        <a class="nav-link text-light" href="/archives-exhibits-demo/timeline.html">Timeline</a>
+                    </li>
+                    <li class="nav-item">
+                    
+                        <a class="nav-link text-light" href="/archives-exhibits-demo/data.html">Data</a>
+                    </li>
+                    <li class="nav-item">
+                    
+                        <a class="nav-link text-light" href="/archives-exhibits-demo/about.html">About</a>
+                    </li></ul>
+            </nav>
+
+        </div>
+
+        <div class="col-md-5 mt-3 text-center">
+
+           
+            <p class="text-white text-md-end" id="footer-credits">
+                <small><em>built with</em>
+                    <a href="https://collectionbuilder.github.io/" target="_blank" rel="noopener" title="CollectionBuilder">
+                        <img src="/archives-exhibits-demo/assets/img/collectionbuilder-logo.png" class="img-fluid" alt="CollectionBuilder" >
+                    </a>
+                </small>
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-12 text-center pt-3 pb-1">
+        <p class="text-white">Last updated 2025</p>
+    </div>
+
+</footer>
+    <!-- Bootstrap bundle JS -->
+<script src="/archives-exhibits-demo/assets/lib/bootstrap.bundle.min.js"></script>
+<!-- load other js -->
+<script src="/archives-exhibits-demo/assets/lib/lazysizes.min.js" async></script>
+
+
+    <script>
+    // When the user scrolls down from the top of the document, show the button
+    window.onscroll = function () {
+        if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+            document.getElementById("scroll-to-top").style.display = "block";
+        } else {
+            document.getElementById("scroll-to-top").style.display = "none";
+        }
+    }
+    // scroll to top function
+    function scrollToTop() {
+        window.scroll({
+            top: 0, 
+            left: 0, 
+            behavior: 'smooth'
+        });
+    }
+</script>
+<button id="scroll-to-top" type="button" class="btn btn-link" onclick="scrollToTop();" title="Back to Top" aria-label="Back to Top">
+    <svg class="bi icon-sprite" role="img" aria-label="Up Arrow">
+        <use xlink:href="/archives-exhibits-demo/assets/lib/cb-icons.svg#icon-back-to-top"/>
+    </svg>
+</button>
+  </body>
+</html>
