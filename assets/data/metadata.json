@@ -1,0 +1,82 @@
+{ "objects": [{ 
+        "title": "original arches",
+        "creator": "unknown",
+        "date": "unknown",
+        "description": "Original cast stone arches by Alexander Calder that adorned Caltech’s Throop Hall before earthquake.",
+        "subject": "architecture",
+        "location": "Throop Hall",
+        
+        
+        "source": "Almost a Lost Art Exhibit",
+        "identifier": "almost-a-lost-art-1",
+        "type": "image",
+        "format": "jpg",
+        "language": "en",
+        "rights": "Public Domain",
+        
+        
+        "object_location": "https://camp5456.github.io/archives-exhibits-demo/objects/almost-a-lost-art-1.jpg",
+        "reference_url": "/archives-exhibits-demo/items/almost-a-lost-art-1.html"
+    },
+    { 
+        "title": "fallem arches",
+        "creator": "unknown",
+        "date": "circa 1974",
+        "description": "A languishing sculpture, circa 1974. The figure represents Imagination and is winged, 'exulting in yet unexplored possibilities,' in the words of the artist. For the moment, the outlook was dim.",
+        "subject": "architecture",
+        "location": "Throop Hall",
+        
+        
+        "source": "Almost a Lost Art Exhibit",
+        "identifier": "almost-a-lost-art-2",
+        "type": "image",
+        "format": "jpg",
+        "language": "en",
+        "rights": "Public Domain",
+        
+        
+        "object_location": "https://camp5456.github.io/archives-exhibits-demo/objects/almost-a-lost-art-2.jpg",
+        "reference_url": "/archives-exhibits-demo/items/almost-a-lost-art-2.html"
+    },
+    { 
+        "title": "restoring arches",
+        "creator": "unknown",
+        "date": "1986",
+        "description": "Remounting the Calder arches, 1986.",
+        "subject": "architecture",
+        "location": "Throop Hall",
+        
+        
+        "source": "Almost a Lost Art Exhibit",
+        "identifier": "almost-a-lost-art-3",
+        "type": "image",
+        "format": "jpg",
+        "language": "en",
+        "rights": "Public Domain",
+        
+        
+        "object_location": "https://camp5456.github.io/archives-exhibits-demo/objects/almost-a-lost-art-3.jpg",
+        "reference_url": "/archives-exhibits-demo/items/almost-a-lost-art-3.html"
+    },
+    { 
+        "title": "new home for arches",
+        "creator": "unknown",
+        "date": "1986",
+        "description": "The Calder arches in their new setting, Beckman Laboratory of Chemical Synthesis.",
+        "subject": "architecture",
+        "location": "Beckman Laboratory of Chemical Synthesis",
+        
+        
+        "source": "Almost a Lost Art Exhibit",
+        "identifier": "almost-a-lost-art-4",
+        "type": "image",
+        "format": "jpg",
+        "language": "en",
+        "rights": "Public Domain",
+        
+        
+        "object_location": "https://camp5456.github.io/archives-exhibits-demo/objects/almost-a-lost-art-4.jpg",
+        "reference_url": "/archives-exhibits-demo/items/almost-a-lost-art-4.html"
+    }
+    
+] }

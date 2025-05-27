@@ -1,0 +1,35 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "/objects/almost-a-lost-art-4/manifest.json",
+  "@type": "sc:Manifest",
+  "label": "new home for arches",
+  "description": "The Calder arches in their new setting, Beckman Laboratory of Chemical Synthesis.",
+  "sequences": [
+    {
+      "@type": "sc:Sequence",
+      "canvases": [
+        {
+          "@id": "/objects/almost-a-lost-art-4/canvas",
+          "@type": "sc:Canvas",
+          "label": "new home for arches",
+          "height": 1000,
+          "width": 1000,
+          "images": [
+            {
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "/objects/almost-a-lost-art-4.jpg",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "height": 1000,
+                "width": 1000
+              },
+              "on": "/objects/almost-a-lost-art-4/canvas"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

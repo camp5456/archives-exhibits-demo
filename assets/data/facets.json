@@ -1,0 +1,23 @@
+{
+    "facets": [ 
+        {
+            "field": "subject",
+            "terms": { 
+                "architecture": 4
+            }
+        },
+        {
+            "field": "creator",
+            "terms": { 
+                "unknown": 4
+            }
+        },
+        {
+            "field": "format",
+            "terms": { 
+                "jpg": 4
+            }
+        }
+        
+    ]
+}

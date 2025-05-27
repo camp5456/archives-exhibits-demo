@@ -1,0 +1,72 @@
+{
+    "title": {
+        "media": {
+          "url": "/archives-exhibits-demo/objects/PC002385.jpg",
+          "caption": null,
+          "credit": "CollectionBuilder Demo IIIF"
+        },
+        "text": {
+          "headline": "CollectionBuilder Demo IIIF Timeline",
+          "text": "CollectionBuilder-CSV featuring single- and multi-page IIIF objects displayed in Universal Viewer."
+        }
+    },
+    "events": [
+      {
+        "media": {
+          "url": "/archives-exhibits-demo/objects/almost-a-lost-art-1.jpg",
+          "caption": "original arches",
+          "link": "/archives-exhibits-demo/items/almost-a-lost-art-1.html"
+        },
+        "start_date": { 
+          
+          "year": "unknown"
+        },
+        "text": {
+          "headline": "original arches",
+          "text": "Original cast stone arches by Alexander Calder that adorned Caltech’s Throop Hall before earthquake."
+        }
+      },{
+        "media": {
+          "url": "/archives-exhibits-demo/objects/almost-a-lost-art-2.jpg",
+          "caption": "fallem arches",
+          "link": "/archives-exhibits-demo/items/almost-a-lost-art-2.html"
+        },
+        "start_date": { 
+          
+          "year": "circa 1974"
+        },
+        "text": {
+          "headline": "fallem arches",
+          "text": "A languishing sculpture, circa 1974. The figure represents Imagination and is winged, 'exulting in yet unexplored possibilities,' in the words of the artist. For the moment, the outlook was dim."
+        }
+      },{
+        "media": {
+          "url": "/archives-exhibits-demo/objects/almost-a-lost-art-3.jpg",
+          "caption": "restoring arches",
+          "link": "/archives-exhibits-demo/items/almost-a-lost-art-3.html"
+        },
+        "start_date": { 
+          
+          "year": "1986"
+        },
+        "text": {
+          "headline": "restoring arches",
+          "text": "Remounting the Calder arches, 1986."
+        }
+      },{
+        "media": {
+          "url": "/archives-exhibits-demo/objects/almost-a-lost-art-4.jpg",
+          "caption": "new home for arches",
+          "link": "/archives-exhibits-demo/items/almost-a-lost-art-4.html"
+        },
+        "start_date": { 
+          
+          "year": "1986"
+        },
+        "text": {
+          "headline": "new home for arches",
+          "text": "The Calder arches in their new setting, Beckman Laboratory of Chemical Synthesis."
+        }
+      }
+    ]
+}

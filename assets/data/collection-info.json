@@ -1,0 +1,20 @@
+{ 
+    "title": "CollectionBuilder Demo IIIF",
+    "url": "https://camp5456.github.io/archives-exhibits-demo/",
+    "image": "/archives-exhibits-demo/objects/PC002385.jpg", 
+    "description": "CollectionBuilder-CSV featuring single- and multi-page IIIF objects displayed in Universal Viewer.",
+    "publisher": { 
+        "name": "", 
+        "url": "", 
+        "logo": "" 
+    },
+    "date_start": "1986",
+    "date_end": "unknown",
+    "objects": {
+        "jpg": "4"
+        
+    },
+    "data": "https://camp5456.github.io/archives-exhibits-demo/assets/data/datapackage.json",
+    "last_build_date": "2025-05-27"
+}
+
