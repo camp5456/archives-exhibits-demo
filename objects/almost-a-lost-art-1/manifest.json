@@ -1,6 +1,6 @@
 {
   "@context": "http://iiif.io/api/presentation/2/context.json",
-  "@id": "/objects/almost-a-lost-art-1/manifest.json",
+  "@id": "/archives-exhibits-demo/objects/almost-a-lost-art-1/manifest.json",
   "@type": "sc:Manifest",
   "label": "original arches",
   "description": "Original cast stone arches by Alexander Calder that adorned Caltech’s Throop Hall before earthquake.",
@@ -9,7 +9,7 @@
       "@type": "sc:Sequence",
       "canvases": [
         {
-          "@id": "/objects/almost-a-lost-art-1/canvas",
+          "@id": "/archives-exhibits-demo/objects/almost-a-lost-art-1/canvas",
           "@type": "sc:Canvas",
           "label": "original arches",
           "height": 1000,
@@ -19,13 +19,13 @@
               "@type": "oa:Annotation",
               "motivation": "sc:painting",
               "resource": {
-                "@id": "/objects/almost-a-lost-art-1.jpg",
+                "@id": "/archives-exhibits-demo/objects/almost-a-lost-art-1/almost-a-lost-art-1.jpg",
                 "@type": "dctypes:Image",
                 "format": "image/jpeg",
                 "height": 1000,
                 "width": 1000
               },
-              "on": "/objects/almost-a-lost-art-1/canvas"
+              "on": "/archives-exhibits-demo/objects/almost-a-lost-art-1/canvas"
             }
           ]
         }

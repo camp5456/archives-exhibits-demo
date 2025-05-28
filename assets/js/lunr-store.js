@@ -3,7 +3,7 @@ var store = [{
 "id": "almost-a-lost-art-1.html"
 
 },{  
-"title": "fallem arches","date": "circa 1974","creator": "unknown","description": "A languishing sculpture, circa 1974. The figure represents Imagination and is winged, 'exulting in yet unexplored possibilities,' in the words of the artist. For the moment, the outlook was dim.","subject": "architecture","location": "Throop Hall", 
+"title": "fallen arches","date": "circa 1974","creator": "unknown","description": "A languishing sculpture, circa 1974. The figure represents Imagination and is winged, 'exulting in yet unexplored possibilities,' in the words of the artist. For the moment, the outlook was dim.","subject": "architecture","location": "Throop Hall", 
 "id": "almost-a-lost-art-2.html"
 
 },{  

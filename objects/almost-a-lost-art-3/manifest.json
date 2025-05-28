@@ -1,6 +1,6 @@
 {
   "@context": "http://iiif.io/api/presentation/2/context.json",
-  "@id": "/objects/almost-a-lost-art-3/manifest.json",
+  "@id": "/archives-exhibits-demo/objects/almost-a-lost-art-3/manifest.json",
   "@type": "sc:Manifest",
   "label": "restoring arches",
   "description": "Remounting the Calder arches, 1986.",
@@ -9,7 +9,7 @@
       "@type": "sc:Sequence",
       "canvases": [
         {
-          "@id": "/objects/almost-a-lost-art-3/canvas",
+          "@id": "/archives-exhibits-demo/objects/almost-a-lost-art-3/canvas",
           "@type": "sc:Canvas",
           "label": "restoring arches",
           "height": 1000,
@@ -19,13 +19,13 @@
               "@type": "oa:Annotation",
               "motivation": "sc:painting",
               "resource": {
-                "@id": "/objects/almost-a-lost-art-3.jpg",
+                "@id": "/archives-exhibits-demo/objects/almost-a-lost-art-3/almost-a-lost-art-3.jpg",
                 "@type": "dctypes:Image",
                 "format": "image/jpeg",
                 "height": 1000,
                 "width": 1000
               },
-              "on": "/objects/almost-a-lost-art-3/canvas"
+              "on": "/archives-exhibits-demo/objects/almost-a-lost-art-3/canvas"
             }
           ]
         }

@@ -8,18 +8,18 @@
         
         
         "source": "Almost a Lost Art Exhibit",
-        "identifier": "almost-a-lost-art-1",
+        
         "type": "image",
         "format": "jpg",
         "language": "en",
         "rights": "Public Domain",
         
         
-        "object_location": "https://camp5456.github.io/archives-exhibits-demo/objects/almost-a-lost-art-1.jpg",
+        "object_location": "https://camp5456.github.io/archives-exhibits-demo/objects/almost-a-lost-art-1/manifest.json",
         "reference_url": "/archives-exhibits-demo/items/almost-a-lost-art-1.html"
     },
     { 
-        "title": "fallem arches",
+        "title": "fallen arches",
         "creator": "unknown",
         "date": "circa 1974",
         "description": "A languishing sculpture, circa 1974. The figure represents Imagination and is winged, 'exulting in yet unexplored possibilities,' in the words of the artist. For the moment, the outlook was dim.",
@@ -35,7 +35,7 @@
         "rights": "Public Domain",
         
         
-        "object_location": "https://camp5456.github.io/archives-exhibits-demo/objects/almost-a-lost-art-2.jpg",
+        "object_location": "https://camp5456.github.io/archives-exhibits-demo/objects/almost-a-lost-art-2/manifest.json",
         "reference_url": "/archives-exhibits-demo/items/almost-a-lost-art-2.html"
     },
     { 
@@ -55,7 +55,7 @@
         "rights": "Public Domain",
         
         
-        "object_location": "https://camp5456.github.io/archives-exhibits-demo/objects/almost-a-lost-art-3.jpg",
+        "object_location": "https://camp5456.github.io/archives-exhibits-demo/objects/almost-a-lost-art-3/manifest.json",
         "reference_url": "/archives-exhibits-demo/items/almost-a-lost-art-3.html"
     },
     { 
@@ -75,7 +75,7 @@
         "rights": "Public Domain",
         
         
-        "object_location": "https://camp5456.github.io/archives-exhibits-demo/objects/almost-a-lost-art-4.jpg",
+        "object_location": "https://camp5456.github.io/archives-exhibits-demo/objects/almost-a-lost-art-4/manifest.json",
         "reference_url": "/archives-exhibits-demo/items/almost-a-lost-art-4.html"
     }
     

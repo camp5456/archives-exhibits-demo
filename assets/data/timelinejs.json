@@ -1,19 +1,19 @@
 {
     "title": {
         "media": {
-          "url": "/archives-exhibits-demo/objects/PC002385.jpg",
+          "url": "/archives-exhibits-demo/objects/almost-a-lost-art/almost-a-lost-art-1.jpg",
           "caption": null,
           "credit": "CollectionBuilder Demo IIIF"
         },
         "text": {
           "headline": "CollectionBuilder Demo IIIF Timeline",
-          "text": "CollectionBuilder-CSV featuring single- and multi-page IIIF objects displayed in Universal Viewer."
+          "text": "The cast stone arches by Alexander Calder that adorned Caltech’s Throop Hall fell victim, as did the building itself, to the 1971 San Fernando earthquake."
         }
     },
     "events": [
       {
         "media": {
-          "url": "/archives-exhibits-demo/objects/almost-a-lost-art-1.jpg",
+          "url": "/archives-exhibits-demo/objects/almost-a-lost-art-1/manifest.json",
           "caption": "original arches",
           "link": "/archives-exhibits-demo/items/almost-a-lost-art-1.html"
         },
@@ -27,8 +27,8 @@
         }
       },{
         "media": {
-          "url": "/archives-exhibits-demo/objects/almost-a-lost-art-2.jpg",
-          "caption": "fallem arches",
+          "url": "/archives-exhibits-demo/objects/almost-a-lost-art-2/manifest.json",
+          "caption": "fallen arches",
           "link": "/archives-exhibits-demo/items/almost-a-lost-art-2.html"
         },
         "start_date": { 
@@ -36,12 +36,12 @@
           "year": "circa 1974"
         },
         "text": {
-          "headline": "fallem arches",
+          "headline": "fallen arches",
           "text": "A languishing sculpture, circa 1974. The figure represents Imagination and is winged, 'exulting in yet unexplored possibilities,' in the words of the artist. For the moment, the outlook was dim."
         }
       },{
         "media": {
-          "url": "/archives-exhibits-demo/objects/almost-a-lost-art-3.jpg",
+          "url": "/archives-exhibits-demo/objects/almost-a-lost-art-3/manifest.json",
           "caption": "restoring arches",
           "link": "/archives-exhibits-demo/items/almost-a-lost-art-3.html"
         },
@@ -55,7 +55,7 @@
         }
       },{
         "media": {
-          "url": "/archives-exhibits-demo/objects/almost-a-lost-art-4.jpg",
+          "url": "/archives-exhibits-demo/objects/almost-a-lost-art-4/manifest.json",
           "caption": "new home for arches",
           "link": "/archives-exhibits-demo/items/almost-a-lost-art-4.html"
         },

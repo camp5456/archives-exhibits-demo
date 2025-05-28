@@ -2,7 +2,7 @@
     "profile": "data-package",
     "name": "collectionbuilder-demo-iiif-data",
     "title": "CollectionBuilder Demo IIIF Data",
-    "description": "Metadata and data derived from CollectionBuilder Demo IIIF. CollectionBuilder-CSV featuring single- and multi-page IIIF objects displayed in Universal Viewer.",
+    "description": "Metadata and data derived from CollectionBuilder Demo IIIF. The cast stone arches by Alexander Calder that adorned Caltech’s Throop Hall fell victim, as did the building itself, to the 1971 San Fernando earthquake.",
     "keywords":  ["dogs","cats","animals"],
     "homepage": "https://camp5456.github.io/archives-exhibits-demo/",
     "contributors": [
@@ -12,7 +12,7 @@
             "role": "author"
         }
     ],
-    "image": "/archives-exhibits-demo/objects/PC002385.jpg",
+    "image": "/archives-exhibits-demo/objects/almost-a-lost-art/almost-a-lost-art-1.jpg",
     "licenses": [
         {
             "name": "CC0-1.0",
