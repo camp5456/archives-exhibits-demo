@@ -1,8 +1,6 @@
 ---
-# generate time-focused json data suitable for TimelineJS.
-# includes all items in metadata that have a "date" field filled.
-# current using relative_url due to jekyll bug, should be absolute_url in production!
-# to just feature parent objects of compound objects, you will want to change the where_exp below to "where_exp: 'item','item.parentid == nil'"
+layout: null
+permalink: /assets/data/timelinejs.json
 ---
 {%- assign items = site.data[site.metadata] | where_exp: 'item','item.objectid' | where_exp: 'item', 'item.date' -%}
 {
