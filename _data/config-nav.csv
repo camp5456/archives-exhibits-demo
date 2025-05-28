@@ -1,5 +1,6 @@
 display_name,stub,dropdown_parent
 Home,/,
+Demo,/demo.html,
 Browse,/browse.html,
 Subjects,/subjects.html,
 Locations,/locations.html,

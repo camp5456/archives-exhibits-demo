@@ -2,3 +2,16 @@
     Put your custom SCSS here! 
     This allows you to override any CollectionBuilder or Bootstrap CSS without modifying the base theme files directly.
 */
+#logo {
+    max-width: 300px;
+    display: block;
+    margin: 1rem auto 1rem 1rem;
+  }
+
+  #logo path.caltech-logotype {
+    fill: #FF6C0C;
+  }
+
+  div.no-outline {
+    border:none !important;
+  }

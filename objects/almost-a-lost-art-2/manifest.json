@@ -1,6 +1,6 @@
 {
   "@context": "http://iiif.io/api/presentation/2/context.json",
-  "@id": "/objects/almost-a-lost-art-2/manifest.json",
+  "@id": "/archives-exhibits-demo/objects/almost-a-lost-art-2/manifest.json",
   "@type": "sc:Manifest",
   "label": "fallem arches",
   "description": "A languishing sculpture, circa 1974. The figure represents Imagination and is winged, 'exulting in yet unexplored possibilities,' in the words of the artist. For the moment, the outlook was dim.",
@@ -9,7 +9,7 @@
       "@type": "sc:Sequence",
       "canvases": [
         {
-          "@id": "/objects/almost-a-lost-art-2/canvas",
+          "@id": "/archives-exhibits-demo/objects/almost-a-lost-art-2/canvas",
           "@type": "sc:Canvas",
           "label": "fallem arches",
           "height": 1000,
@@ -19,13 +19,13 @@
               "@type": "oa:Annotation",
               "motivation": "sc:painting",
               "resource": {
-                "@id": "/objects/almost-a-lost-art-2.jpg",
+                "@id": "/archives-exhibits-demo/objects/almost-a-lost-art-2/almost-a-lost-art-2.jpg",
                 "@type": "dctypes:Image",
                 "format": "image/jpeg",
                 "height": 1000,
                 "width": 1000
               },
-              "on": "/objects/almost-a-lost-art-2/canvas"
+              "on": "/archives-exhibits-demo/objects/almost-a-lost-art-2/canvas"
             }
           ]
         }

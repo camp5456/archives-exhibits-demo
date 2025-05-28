@@ -23,7 +23,7 @@ title: CollectionBuilder Demo IIIF
 tagline: IIIF manifests displayed in Universal Viewer
 # description appears in meta tags and other locations
 # this description might appear in search result lists, keep around 160 characters max
-description: "CollectionBuilder-CSV featuring single- and multi-page IIIF objects displayed in Universal Viewer."
+description: "The cast stone arches by Alexander Calder that adorned Caltech’s Throop Hall fell victim, as did the building itself, to the 1971 San Fernando earthquake."
 # keywords, a short list of subjects describing the collection, separated by semicolon, to appear in rich markup
 keywords: dogs;cats;animals
 # creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
