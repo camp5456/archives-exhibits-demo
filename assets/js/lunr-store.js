@@ -1,9 +1,9 @@
 var store = [{  
-"title": "original arches","date": "unknown","creator": "unknown","description": "Original cast stone arches by Alexander Calder that adorned Caltech’s Throop Hall before earthquake.","subject": "architecture","location": "Throop Hall", 
+"title": "original arches","date": "1960","creator": "unknown","description": "Original cast stone arches by Alexander Calder that adorned Caltech’s Throop Hall before earthquake.","subject": "architecture","location": "Throop Hall", 
 "id": "almost-a-lost-art-1.html"
 
 },{  
-"title": "fallen arches","date": "circa 1974","creator": "unknown","description": "A languishing sculpture, circa 1974. The figure represents Imagination and is winged, 'exulting in yet unexplored possibilities,' in the words of the artist. For the moment, the outlook was dim.","subject": "architecture","location": "Throop Hall", 
+"title": "fallen arches","date": "1974","creator": "unknown","description": "A languishing sculpture, circa 1974. The figure represents Imagination and is winged, 'exulting in yet unexplored possibilities,' in the words of the artist. For the moment, the outlook was dim.","subject": "architecture","location": "Throop Hall", 
 "id": "almost-a-lost-art-2.html"
 
 },{  
