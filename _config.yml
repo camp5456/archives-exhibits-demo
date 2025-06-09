@@ -18,9 +18,9 @@ source-code: https://github.com/camp5456/archives-exhibits-demo.git
 # SITE SETTINGS
 #
 # title of site appears in banner
-title: CollectionBuilder Demo IIIF
+title: Exhibit Name
 # tagline, a short phrase that will appear throughout the site in the top banner
-tagline: IIIF manifests displayed in Universal Viewer
+# tagline: IIIF manifests displayed in Universal Viewer
 # description appears in meta tags and other locations
 # this description might appear in search result lists, keep around 160 characters max
 description: "The cast stone arches by Alexander Calder that adorned Caltech’s Throop Hall fell victim, as did the building itself, to the 1971 San Fernando earthquake."

@@ -8,6 +8,38 @@ body {
     @if $base-font-size != "" { font-size: $base-font-size; }
     @if $text-color != "" { color: $text-color; }
 }
+
+.site-title, .section-title {
+  @if $heading-font-family != "" { font-family: $heading-font-family; }
+}
+
+p.site-title{
+    font-size: 20px;
+    text-align: center;
+}
+
+p.section-title{
+    font-size: 18px;
+    text-align: center;
+    margin: 15px 0px 0px 0px;
+}
+
+.centered-box {
+  display: flex;
+  justify-content: center; /* horizontal centering */
+  align-items: center;     /* vertical centering */
+  height: 103px;           /* set a height so it knows how to center */
+}
+
+.input-group .btn-light {
+  border: 1px solid #d1d3d6;
+}
+
+.exhibit-title {
+    background-color:#E9E9E9;
+    padding: 20px;
+}
+
 a {
     /* remove link underline */ 
     text-decoration: none;

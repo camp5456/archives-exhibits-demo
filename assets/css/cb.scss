@@ -15,6 +15,7 @@ $link-color: $burnt;
 $base-font-family: {{ site.data.theme.base-font-family | default: '""' }};
 $base-font-size: {{ site.data.theme.base-font-size | default: '""' }};
 $text-color: {{ site.data.theme.text-color | default: '""' }};
+$heading-font-family: {{ site.data.theme.heading-font-family }};
 // $link-color: {{ site.data.theme.link-color | default: '""' }}; // commenting out to use $link-color from _colors.scss
 
 /* theme colors pulled from config-theme-colors */
@@ -54,5 +55,5 @@ $theme-colors: map-merge(
   background-color: #f2f2f2;
 }
 .nav-custom-color{
-  background-color: #c75000;
+  background-color: #ffffff;
 }

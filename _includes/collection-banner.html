@@ -1,15 +1,21 @@
 {% if page.layout == "home-infographic" and site.data.theme.featured-image %}
 <style>
 #home-banner {
-    background-image: url('{% include image/featured-image.html %}');
+    background-image: url('{{ site.data.theme.featured-image }}');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: {{ site.data.theme.home-banner-image-position | default: 'center' }};
+    min-height: 600px;
     
 }
 #home-title-box {
     padding-top: {{ site.data.theme.home-title-y-padding | default: '5em' }};
     padding-bottom: {{ site.data.theme.home-title-y-padding | default: '5em' }};
+    display: flex;
+    justify-content: center;     /* centers horizontally */
+    align-items: center;         /* centers vertically */
+    height: 100%;    
+              /* ensures it fills the parent */
 }
 @media screen and (max-width: 576px) {
     #home-title-box {
@@ -17,18 +23,14 @@
     }
 }
 </style>
-<div id="branding" class="container-fluid mb-0 p-0">
-    
-        <!-- <a class="d-none d-md-block" href="{{ site.organization-link }}" target="_blank" rel="noopener">
-            {% include branding.html %}
-        </a> -->
-    
-</div>
+
 <div id="home-banner" class="container-fluid mb-0 p-0">
     <div id="home-title-box" class="position-relative" >
-        <div class="p-2 text-center text-white bg-dark bg-opacity-75">
-            <h1 class="display-4">{{ site.title }}</h1>
-            {% if site.tagline %}<p class="mb-0">{{ site.tagline }}</p>{% endif %}
+        <div class="p-5 text-center text-white bg-dark bg-opacity-75">
+            <h1 class="site-title">{{ site.title }}</h1>
+            <hr style="width:100px;" class="mx-auto">
+            <!-- {% if site.tagline %}<p class="mb-0">{{ site.tagline }}</p>{% endif %} -->
+            <p id="active-menu-label" class="fs-5 fst-italic text-white section-title"></p>
         </div>
         {% unless site.data.theme.featured-image contains '/' %}
         <div class="position-absolute bottom-0 end-0 px-2 bg-dark bg-opacity-75">
@@ -37,8 +39,8 @@
     </div>
 </div>
 {%- else -%}
-<div class="container-fluid bg-custom-color p-3">
-    <div class="container">
+<div class="container-fluid p-3">
+        <div class="container">
         <div class="row align-items-center">
             <div id="title" class="{% if site.organization-logo-banner %}col-md-9{% else %}col-12{% endif %}">
                 <h1><a class="text-dark font-weight-normal" href="{{ site.baseurl }}/" >{{ site.title }}</a></h1>	 
@@ -55,3 +57,5 @@
     </div>
 </div>
 {%- endif -%}
+
+<script src="{{ '/assets/js/active-label.js' | relative_url }}"></script>
