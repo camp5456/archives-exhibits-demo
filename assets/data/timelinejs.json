@@ -1,12 +1,12 @@
 {
     "title": {
         "media": {
-          "url": "/archives-exhibits-demo/objects/almost-a-lost-art/almost-a-lost-art-1.jpg",
+          "url": "/archives-exhibits-demo/archives-exhibits-demo/objects/featured-image.jpg",
           "caption": null,
-          "credit": "CollectionBuilder Demo IIIF"
+          "credit": "Exhibit Name"
         },
         "text": {
-          "headline": "CollectionBuilder Demo IIIF Timeline",
+          "headline": "Exhibit Name Timeline",
           "text": "The cast stone arches by Alexander Calder that adorned Caltech’s Throop Hall fell victim, as did the building itself, to the 1971 San Fernando earthquake."
         }
     },

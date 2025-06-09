@@ -1,8 +1,8 @@
 {
     "profile": "data-package",
-    "name": "collectionbuilder-demo-iiif-data",
-    "title": "CollectionBuilder Demo IIIF Data",
-    "description": "Metadata and data derived from CollectionBuilder Demo IIIF. The cast stone arches by Alexander Calder that adorned Caltech’s Throop Hall fell victim, as did the building itself, to the 1971 San Fernando earthquake.",
+    "name": "exhibit-name-data",
+    "title": "Exhibit Name Data",
+    "description": "Metadata and data derived from Exhibit Name. The cast stone arches by Alexander Calder that adorned Caltech’s Throop Hall fell victim, as did the building itself, to the 1971 San Fernando earthquake.",
     "keywords":  ["dogs","cats","animals"],
     "homepage": "https://camp5456.github.io/archives-exhibits-demo/",
     "contributors": [
@@ -12,7 +12,7 @@
             "role": "author"
         }
     ],
-    "image": "/archives-exhibits-demo/objects/almost-a-lost-art/almost-a-lost-art-1.jpg",
+    "image": "/archives-exhibits-demo/archives-exhibits-demo/objects/featured-image.jpg",
     "licenses": [
         {
             "name": "CC0-1.0",
@@ -25,7 +25,7 @@
         {
             "name": "facets-json",
             "path": "facets.json",
-            "title": "CollectionBuilder Demo IIIF Metadata Facets",
+            "title": "Exhibit Name Metadata Facets",
             "description":"Unique values and counts of metadata facet fields.",
             "format":"json",
             "profile": "data-resource"
@@ -34,7 +34,7 @@
         {
             "name": "subject-csv",
             "path": "subjects.csv",
-            "title": "CollectionBuilder Demo IIIF metadata subject counts in csv",
+            "title": "Exhibit Name metadata subject counts in csv",
             "description": "Unique values and counts of metadata subject fields.",
             "format":"csv",
             "profile":"tabular-data-resource",
@@ -61,7 +61,7 @@
         {
             "name": "subjects-json",
             "path": "subjects.json",
-            "title": "CollectionBuilder Demo IIIF  metadata subject counts in json",
+            "title": "Exhibit Name  metadata subject counts in json",
             "description":"Unique values and counts of metadata subject fields.",
             "format":"json",
             "profile": "data-resource"
@@ -70,7 +70,7 @@
         {
             "name": "locations-csv",
             "path": "subjects.csv",
-            "title": "CollectionBuilder Demo IIIF metadata location counts in csv",
+            "title": "Exhibit Name metadata location counts in csv",
             "description": "Unique values and counts of metadata location fields.",
             "format":"csv",
             "profile":"tabular-data-resource",
@@ -97,7 +97,7 @@
         {
             "name": "locations-json",
             "path": "locations.json",
-            "title": "CollectionBuilder Demo IIIF metadata location counts in json",
+            "title": "Exhibit Name metadata location counts in json",
             "description":"Unique values and counts of metadata location fields.",
             "format":"json",
             "profile": "data-resource"
@@ -106,7 +106,7 @@
         {
             "name": "geodata-json",
             "path": "geodata.json",
-            "title": "CollectionBuilder Demo IIIF geographic metadata",
+            "title": "Exhibit Name geographic metadata",
             "description": "Geojson data containing all objects with lat-longs and associated descriptive metadata.",
             "format":"json",
             "profile": "data-resource"
@@ -115,7 +115,7 @@
         {
             "name": "timeline-json",
             "path": "timelinejs.json",
-            "title": "CollectionBuilder Demo IIIF timeline metadata",
+            "title": "Exhibit Name timeline metadata",
             "description": "Time-based metadata formatted for TimelineJS or other applications.",
             "format":"json",
             "profile": "data-resource"
@@ -123,16 +123,16 @@
         {
             "name": "metadata-csv",
             "path": "metadata.csv",
-            "title": "CollectionBuilder Demo IIIF full metadata in csv",
-            "description": "Complete metadata export for CollectionBuilder Demo IIIF objects.",
+            "title": "Exhibit Name full metadata in csv",
+            "description": "Complete metadata export for Exhibit Name objects.",
             "format":"csv",
             "profile":"data-resource"
         },
         {
             "name": "metadata-json",
             "path": "metadata.json",
-            "title": "CollectionBuilder Demo IIIF full metadata in json",
-            "description": "Complete metadata export for CollectionBuilder Demo IIIF objects.",
+            "title": "Exhibit Name full metadata in json",
+            "description": "Complete metadata export for Exhibit Name objects.",
             "format":"json",
             "profile":"data-resource"
         }
