@@ -6,7 +6,9 @@
   <body class="d-flex flex-column h-100">
     <div id="skip-to-content"><a href="#maincontent">Skip to main content</a></div>
       {% include branding.html %}
+      {% if page.show_banner and site.data.theme.featured-image %}
       {% include collection-banner.html %}
+      {% endif %}
       <!-- {% include collection-nav.html %} -->
     <main id="maincontent" role="main" class="flex-shrink-0">
       {{ content }}

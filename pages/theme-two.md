@@ -1,7 +1,7 @@
 ---
-layout: home-infographic
-title: Overview
-permalink: /
+layout: theme-three
+title: Theme Three
+permalink: /theme-two.html
 show_banner: true
 ---
 
