@@ -16,6 +16,28 @@
     border:none !important;
   }
 
-  #explore-the-exhibit {
-    text-align: center;
-  }
+/* centering section title on homepage - if used */
+#explore-the-exhibit {
+  text-align: center;
+}
+
+
+/* Override Bootstrap primary button */
+.btn-primary {
+  background-color: #c75000; /* your brand color */
+  border-color: #c75000;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #c75000; /* darker shade on hover */
+  border-color: #c75000;
+}
+
+/* Optional: style plain .btns if used without btn-primary */
+.btn {
+  font-family: 'Hind', sans-serif;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
