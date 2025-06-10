@@ -3,7 +3,7 @@
   <head prefix="og: http://ogp.me/ns#">
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>original arches | Exhibit Name</title>
+<title>Theme One | Exhibit Name</title>
 <link rel="shortcut icon" type="image/x-icon" href="/archives-exhibits-demo/favicon.ico">
 <!--
 
@@ -67,7 +67,7 @@
                 </li>
                 
                 <li class="nav-item">
-                    <a class="nav-link"
+                    <a class="nav-link active"
                         href="/archives-exhibits-demo/theme-one.html"
                         data-label="Theme One">
                          Theme One
@@ -121,6 +121,46 @@
     </div> 
 </div>
       
+      <style>
+#home-banner {
+    background-image: url('/archives-exhibits-demo/objects/featured-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 400px;
+    
+}
+#home-title-box {
+    padding-top: 8em;
+    padding-bottom: 8em;
+    display: flex;
+    justify-content: center;     /* centers horizontally */
+    align-items: center;         /* centers vertically */
+    height: 100%;    
+              /* ensures it fills the parent */
+}
+@media screen and (max-width: 576px) {
+    #home-title-box {
+        max-height: 500px;
+    }
+}
+</style>
+
+<div id="home-banner" class="container-fluid mb-0 p-0">
+    <div id="home-title-box" class="position-relative" >
+        <div class="p-5 text-center text-white bg-dark bg-opacity-75">
+            <h1 class="site-title">Exhibit Name</h1>
+            <hr style="width:100px;" class="mx-auto">
+            <!--  -->
+            <p id="active-menu-label" class="fs-5 fst-italic text-white section-title"></p>
+        </div>
+        
+    </div>
+</div>
+
+
+<script src="/archives-exhibits-demo/assets/js/active-label.js"></script>
+      
       <!-- <nav class="navbar navbar-expand-lg navbar-light nav-custom-color">
     <div class="container">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#page-nav" aria-controls="page-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -139,7 +179,7 @@
                 </li>
                 
                 <li class="nav-item">
-                    <a class="nav-link"
+                    <a class="nav-link active"
                         href="/archives-exhibits-demo/theme-one.html"
                         data-label="Theme One">
                          Theme One
@@ -191,249 +231,94 @@
 </nav>
  -->
     <main id="maincontent" role="main" class="flex-shrink-0">
-      <div class="container py-3">
+      <div class="container my-4">
+  <div class="row">
 
-    <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a class="text-dark" href="/archives-exhibits-demo/">Home</a></li>
-    <li class="breadcrumb-item"><a class="text-dark" href="/archives-exhibits-demo/browse.html">Items</a></li>
-    <li class="breadcrumb-item active text-dark" aria-current="page">original arches</li>
-</ol>
-    <div class="my-0 h5 small">IIIF </div>
-    <h2 class="mb-3">original arches 
-        <a href="#metadata" class="ms-5 btn btn-sm btn-outline-dark small">Item Info 
-            <svg class="bi icon-sprite" role="img" aria-label="Jump to Item Info">
-                <use xlink:href="/archives-exhibits-demo/assets/lib/cb-icons.svg#arrow-down"/>
-            </svg>
-        </a>
-    </h2>
+  <div class="col-md-12">
 
-    <div class="row justify-content-center">
-        <div class="col-12 col-md-10">
+   <h1 id="page-menu-label" class="section-title"></h1>
+   <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
 
-        <div class="card mb-4 text-center">
+<p><img src="/archives-exhibits-demo/objects/featured-image.jpg" alt="Description" style="max-width: 100%; height: auto;" /></p>
 
     
-<!-- add IIIF Universal Viewer assets from CDN -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/universalviewer@4.0.0/dist/uv.css"/>
-<script src="https://cdn.jsdelivr.net/npm/universalviewer@4.0.0/dist/umd/UV.js"></script>
-<!-- add div for viewer -->
-<div class="uv" id="uv" style="width: 100%; height: 668px;"></div>
-<script>
-    // initialize Universal Viewer
-    var uvOptions = {
-        manifest: "/archives-exhibits-demo/objects/almost-a-lost-art-1/manifest.json"
-        // add options here!
-    };
-    var iiif_viewer = UV.init("uv", uvOptions);
-</script>
-    
-    <div class="card-body">
+  </div>
+  <!-- <div class="col-md-4">  
 
-        <div class="btn-group" role="group" aria-label="Item options">
-    
-    <a href="/archives-exhibits-demo/timeline.html#y1960" class="btn btn-outline-primary">View on Timeline</a>
-    
-    <a target="_blank" rel="noopener" href="/archives-exhibits-demo/objects/almost-a-lost-art-1/manifest.json" class="btn btn-outline-primary">
-        IIIF Manifest
-    </a>
-</div>
- 
-
-    </div>
-
-</div>
-
-
-        </div>
-
-        <div class="col-12 col-md-10" id="metadata">
-
-            <div id="item-metadata">
-    <dl>
-        
-        <dt class="field">Title:</dt>
-        <dd class="field-value">
-            
-            original arches
-        </dd>
-        
-        <dt class="field">Creator:</dt>
-        <dd class="field-value">
-            
-            unknown
-        </dd>
-        
-        <dt class="field">Date Created:</dt>
-        <dd class="field-value">
-            
-            1960
-        </dd>
-        
-        <dt class="field">Description:</dt>
-        <dd class="field-value">
-            
-            Original cast stone arches by Alexander Calder that adorned Caltech’s Throop Hall before earthquake.
-        </dd>
-        
-        <dt class="field">Subjects:</dt>
-        <dd class="field-value">
-            
-            
-            
-            <a class="me-3" href="/archives-exhibits-demo/browse.html#architecture">architecture</a>
-            
-            
-        </dd>
-        
-        <dt class="field">Location:</dt>
-        <dd class="field-value">
-            
-            Throop Hall
-        </dd>
-        
-        <dt class="field">Original Source:</dt>
-        <dd class="field-value">
-            
-            Almost a Lost Art Exhibit
-        </dd>
-        
-        <dt class="field">Type:</dt>
-        <dd class="field-value">
-            
-            image
-        </dd>
-        
-        <dt class="field">Format:</dt>
-        <dd class="field-value">
-            
-            jpg
-        </dd>
-        
-    </dl>
-</div>
-
-        </div>
-
-        <div class="col-md-5 py-4">
-            <div class="card">
-    <div class="card-header">Source</div>
-    <div class="card-body">
-        <dl>
-            <dt>Preferred Citation:</dt>
-            <dd>"original arches", Exhibit Name, </dd>
-            <dt>Reference Link:</dt>
-            <dd>https://camp5456.github.io/archives-exhibits-demo/items/almost-a-lost-art-1.html</dd>
-        </dl>
-    </div>
-</div>
-        </div>
-        
-        <div class="col-md-5 py-4">
-            <div class="card">
-    <div class="card-header">Rights</div>
-    <div class="card-body">
-        <dl>
-            <dt>Rights:</dt>
-            <dd>Public Domain</dd>
-            
-        </dl>
-    </div>
-</div>
-        </div>
-        
-    </div><div class="text-center">
-  <a class="btn btn-secondary" href="/archives-exhibits-demo/items/almost-a-lost-art-4.html" id="prev-page-button">&laquo; Previous</a>
-  <a class="btn btn-secondary" href="/archives-exhibits-demo/browse.html">Back to Browse</a>
-  <a class="btn btn-secondary" href="/archives-exhibits-demo/items/almost-a-lost-art-2.html" id="next-page-button">Next &raquo;</a>
-</div>
-<div id="item-nav">
-  <div class="d-none d-md-block">
-    <a class="previous btn btn-lg btn-secondary" href="/archives-exhibits-demo/items/almost-a-lost-art-4.html">&laquo;</a>
-    <a class="next btn btn-lg btn-secondary" href="/archives-exhibits-demo/items/almost-a-lost-art-2.html">&raquo;</a>
+    <div class="card mb-3">
+  <div class="card-body">
+    <h2 class="card-title h5">Time Span</h2>
+    <p class="card-text h5">1960 to 1986
+      <br><a href="/archives-exhibits-demo/timeline.html" class="btn btn-sm btn-outline-secondary mt-2">View Timeline</a>
+    </p>
   </div>
 </div>
-<script>
-  function leftArrowPressed() {
-    location.href = document.getElementById("prev-page-button").href;
-  };
 
-  function rightArrowPressed() {
-    location.href = document.getElementById("next-page-button").href;
-  };
-
-  function leftModalArrowPressed() {
-    // Get the modal element.
-    var modalshow = document.querySelector(".modal.show");
-    // If the modal exists, get the prev button element.
-    if (modalshow) {
-      const prevButton = modalshow.querySelector(".prev-child-button");
-      // If the prev button exists, click it.
-      if (prevButton) {
-        prevButton.click();
-      }
-    }
-  };
-
-  function rightModalArrowPressed() {
-    // Get the modal element.
-    var modalshow = document.querySelector(".modal.show");
-    // If the modal exists, get the prev button element.
-    if (modalshow) {
-      const nextButton = modalshow.querySelector(".next-child-button");
-      // If the prev button exists, click it.
-      if (nextButton) {
-        nextButton.click();
-      }
-    }
-  };
-
-  function isModalShown() {
-    // Get the modal element.
-    const modal = document.querySelector(".modal.show");
-
-    // Check if the modal has the "show" class.
-    return modal && modal.classList.contains("show");
-  };
-
-  function isSpotlightModalShown() {
-    // Get the modal element.
-    const spotlight = document.getElementById("spotlight");
-    // Check if the modal has the "show" class.
-    return spotlight && spotlight.classList.contains("show");
-  };
+    
+    <div class="card mb-3">
+    
+    <div class="card-body">
+        <h2 class="card-title h5">Top Subjects</h2>
+        <p class="card-text">
+            
+            <a class="btn btn-sm btn-primary m-1" href="/archives-exhibits-demo/browse.html#architecture">architecture</a>
+        </p>
+    </div>
+</div>
 
 
-  document.onkeydown = function (evt) {
-    if (isSpotlightModalShown()) {
+    <div class="card mb-3">
+    
+    <div class="card-body">
+        <h2 class="card-title h5">Locations</h2>
+        <p class="card-text">
+            
+            <a class="btn btn-sm btn-outline-secondary m-1" href="/archives-exhibits-demo/browse.html#throop%20hall">throop hall</a>
+            <a class="btn btn-sm btn-outline-secondary m-1" href="/archives-exhibits-demo/browse.html#beckman%20laboratory%20of%20chemical%20synthesis">beckman laboratory of chemical synthesis</a>
+        </p>
+    </div>
+</div>
 
+    
+    <div class="card mb-3" >
+  <div class="card-body">
+    <h2 class="card-title h5">Objects</h2>
+    <p class="card-text">
+      
+      4      
+      
+      <a class="text-dark" href="/archives-exhibits-demo/browse.html#iiif">IIIF Items <svg class="bi icon-sprite text-body" fill="currentColor" aria-hidden="true"><use xlink:href="/archives-exhibits-demo/assets/lib/cb-icons.svg#icon-iiif"/></svg></a><br>
+      <a class="btn btn-sm btn-outline-secondary mt-2" href="/archives-exhibits-demo/data.html">View table</a>
+    </p>
+  </div>
+</div>
 
-    } else if (isModalShown()) {
-      // The modal is shown.
-      evt = evt || window.event;
-      switch (evt.keyCode) {
-        case 37:
-          leftModalArrowPressed();
-            break;
-        case 39:
-          rightModalArrowPressed();
-            break;
-      }
-    }
-    else {
-      // The modal is not shown.
-      evt = evt || window.event;
-      switch (evt.keyCode) {
-        case 37:
-          leftArrowPressed();
-            break;
-        case 39:
-          rightArrowPressed();
-            break;
-      }
-    }
+  </div> -->
+  <!-- <div class="col-md-12">
 
-  };
-</script></div>
+    <div class="card mb-3">
+    <div class="card-body">
+        <h2 class="card-title h5">Collection as Data <small>(click to download)</small></h2>
+        <p class="card-text text-center">
+            <a class="btn btn-sm btn-secondary m-2" href="/archives-exhibits-demo/assets/data/metadata.csv" target="_blank">Metadata CSV</a>
+            <a class="btn btn-sm btn-secondary m-2" href="/archives-exhibits-demo/assets/data/metadata.json" target="_blank">Metadata JSON</a>
+            
+            
+            
+            
+            
+            <a class="btn btn-sm btn-secondary m-2" href="/archives-exhibits-demo/assets/data/facets.json" target="_blank">Facets JSON</a>
+            
+            <a class="btn btn-sm btn-secondary m-2" href="https://github.com/camp5456/archives-exhibits-demo.git" rel="noopener" target="_blank">Source Code</a>
+        </p>
+    </div>
+</div>
+
+  </div> -->
+
+</div>
+
+</div>
     </main>
       <footer class="bg-dark pt-4 mt-auto container-fluid">
 
@@ -451,7 +336,7 @@
                     </li>
                     <li class="nav-item">
                     
-                        <a class="nav-link text-light" href="/archives-exhibits-demo/theme-one.html">Theme One</a>
+                        <a class="nav-link text-light active" href="/archives-exhibits-demo/theme-one.html">Theme One</a>
                     </li>
                     <li class="nav-item">
                     
