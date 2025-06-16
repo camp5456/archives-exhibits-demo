@@ -1,6 +1,6 @@
 ---
-layout: theme-three
-title: Theme Three
+layout: theme-two
+title: Theme Two
 permalink: /theme-two.html
 show_banner: true
 ---

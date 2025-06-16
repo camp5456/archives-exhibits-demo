@@ -4,8 +4,15 @@
 
         <div class="col-md-7 px-4 mt-3">
 
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
             <h2 class="h4"><a href="{{ '/' | relative_url }}" class="text-white">{{ site.title }}</a></h2>
             <p class="text-white"><small>{{ site.description }}</small></p>
+
+            <!-- LibCal hours display -->
+            <div id="s_lc_tdh_3271_0"></div>
+            <script src="https://libcal.caltech.edu/js/hours_today.js"></script>
+            
             <nav>
                 <ul id="footer-nav" class="nav nav-pills ">
                     {%- assign navItems = site.data.config-nav | where_exp: 'item', 'item.dropdown_parent == nil' -%}
