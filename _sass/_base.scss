@@ -104,6 +104,72 @@ a {
     background: rgba(255,255,255,.10);
 }
 
+.footer-heading {
+  color: #ffffff;
+  font-size: 30px;
+  margin: 24px 0 24px 0;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.footer-custom {
+  color: #ffffff;
+
+  a,
+  a:visited,
+  a:hover,
+  a:active {
+    color: #ffffff;
+  }
+}
+
+.bg-navy {
+    background-color: #062e47;
+}
+
+.libcal-hours-widget {
+  table.hours-today {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+
+    tr.hours-today-row {
+      border-bottom: 1px dotted rgba(255, 255, 255, 0.6);
+    }
+
+    th.hours-col-loc,
+    td.hours-col-time {
+      color: #ffffff;
+      font-weight: normal;
+      padding: 0.3rem 0rem;
+    }
+
+    th.hours-col-loc {
+      text-align: left;
+    }
+
+    td.hours-col-time {
+      text-align: right;
+    }
+
+    a {
+      color: #ffffff;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .s-lc-timetxt,
+    .s-lc-byap,
+    .no_time {
+      color: #ffffff;
+    }
+  }
+}
+
+
 /* scroll to top */
 #scroll-to-top {
     display: none; 
@@ -148,4 +214,107 @@ a {
     width: 1em;
     height: 1em;
     vertical-align: -0.1em;
+}
+
+.hours-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+
+  div:first-child {
+    text-align: left;
+  }
+
+  div:last-child {
+    text-align: right;
+  }
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  div {
+    color: #ffffff;
+    font-size: 0.9rem;
+  }
+}
+
+.h-card {
+  font-size: 0.95rem;
+  color: #ffffff;
+  line-height: 1.5;
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .u-email,
+  .p-tel,
+  .p-name,
+  .h-adr .p-post-office-box,
+  .h-adr .p-street-address {
+    display: block;
+  }
+
+  .h-adr .p-locality,
+  .h-adr .p-region,
+  .h-adr .p-postal-code {
+    display: inline;
+  }
+
+  .p-tel {
+    margin-bottom: 1.5rem; /* space between phone and address */
+  }
+}
+
+.social a svg {
+height: 32px;
+margin-right:20px;
+}
+
+.logo {
+    fill: #fff;
+    margin-block: 24px;
+    height: 5em;
+}
+ .links li {
+    text-align: left;
+    line-height: 2;
+ }
+ 
+.footer-icon {
+  display: block;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+// Ensure pull-right aligns container right, including with .list-inline
+.pull-right {
+  float: right !important;
+  text-align: right;
+}
+
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+  margin-left: -5px;
+
+  li {
+    display: inline-block;
+    margin-right: 15px;
+  }
+}
+
+.footer-custom .container {
+  max-width: 1300px;
 }
