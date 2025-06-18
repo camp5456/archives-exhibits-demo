@@ -22,7 +22,7 @@
 <link rel="stylesheet" href="/archives-exhibits-demo/assets/css/cb.css" type="text/css">
 
 <meta name="robots" content="noindex" />
-<!-- Last build date: 2025-06-17 -->
+<!-- Last build date: 2025-06-18 -->
   </head>
   <body class="d-flex flex-column h-100">
     <div id="skip-to-content"><a href="#maincontent">Skip to main content</a></div>
@@ -263,6 +263,54 @@ Objects then are displayed using Universal Viewer if their display_template valu
 
 
     </main>
+      <div id="dynamic-footer-nav" class="container-fluid bg-light border-top mt-5">
+  <div class="row">
+    <div class="col-12">
+      <div class="container-xl mx-auto d-flex justify-content-between align-items-center py-4 px-5 text-secondary small fw-light" style="border-top: 1px solid #ddd;">
+        <div id="prev-nav" class="text-start"></div>
+        <div id="next-nav" class="text-end"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const navLinks = document.querySelectorAll("nav a");
+    const currentUrl = window.location.pathname.replace(/\/$/, "");
+
+    let currentIndex = -1;
+
+    navLinks.forEach((link, index) => {
+      const href = link.getAttribute("href").replace(/\/$/, "");
+      if (href === currentUrl) {
+        currentIndex = index;
+      }
+    });
+
+    if (currentIndex !== -1) {
+      const prev = navLinks[currentIndex - 1];
+      const next = navLinks[currentIndex + 1];
+
+      if (prev) {
+        document.getElementById("prev-nav").innerHTML = `
+          <span class="me-2">Previous Section:</span>
+          <a href="${prev.href}" class="text-decoration-underline text-secondary">
+            ${prev.textContent}
+          </a>`;
+      }
+
+      if (next) {
+        document.getElementById("next-nav").innerHTML = `
+          <span class="me-2">Next Section:</span>
+          <a href="${next.href}" class="text-decoration-underline text-secondary">
+            ${next.textContent}
+          </a>`;
+      }
+    }
+  });
+</script>
+
       <footer class="bg-navy pt-4 mt-auto footer-custom">
 
     <div class="container">
@@ -357,7 +405,7 @@ Objects then are displayed using Universal Viewer if their display_template valu
 <script src="/archives-exhibits-demo/assets/lib/lazysizes.min.js" async></script>
 
 
-      <script>
+     <!-- <script>
     // When the user scrolls down from the top of the document, show the button
     window.onscroll = function () {
         if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
@@ -379,6 +427,6 @@ Objects then are displayed using Universal Viewer if their display_template valu
     <svg class="bi icon-sprite" role="img" aria-label="Up Arrow">
         <use xlink:href="/archives-exhibits-demo/assets/lib/cb-icons.svg#icon-back-to-top"/>
     </svg>
-</button>
+</button> -->
   </body>
 </html>
