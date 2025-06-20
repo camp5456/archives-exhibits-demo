@@ -1,6 +1,9 @@
 display_name,stub,dropdown_parent
 Overview,/,
 Theme One,/theme-one.html
-Theme Two,/theme-two.html
+Theme Two,
+Part One,/part-one.html,Theme Two
+Part Two,/part-two.html,Theme Two
+Part Three,/part-three.html,Theme Two
 Theme Three,/theme-three.html
 Demo,/demo.html,

@@ -41,3 +41,20 @@
   text-transform: uppercase;
   font-weight: 600;
 }
+
+/* Override link colors for child items */
+
+a.dropdown-custom {
+  color:#000000;
+  border-bottom: dotted #eeeeee 1px;
+  display: block;
+  padding: 5px 0px 5px 15px;
+  position: relative; // optional, for fine control
+}
+
+a.dropdown-custom::before {
+  content: "▶"; // or try "➤", "➔", "→", "▸", etc.
+  margin-right: 8px;
+  font-size: 0.8em;
+  color: #cbe3df;
+}
