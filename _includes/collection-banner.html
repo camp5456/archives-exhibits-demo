@@ -29,7 +29,9 @@
             <h1 class="site-title">{{ site.title }}</h1>
             <hr style="width:100px;" class="mx-auto">
             <!-- {% if site.tagline %}<p class="mb-0">{{ site.tagline }}</p>{% endif %} -->
-            <p id="active-menu-label" class="fs-5 fst-italic text-white section-title"></p>
+            {% if page.title %}
+            <p class="fs-5 fst-italic text-white section-title">{{ page.title }}</p>
+            {% endif %}
         </div>
         {% unless site.data.theme.featured-image contains '/' %}
         <div class="position-absolute bottom-0 end-0 px-2 bg-dark bg-opacity-75">

@@ -1,5 +1,5 @@
 color_class,color
-primary,
+primary,#c54e1f
 secondary,
 success,
 info,
@@ -7,3 +7,5 @@ warning,
 danger,
 light,
 dark,
+navbar-color: navbar-light
+navbar-background: bg-white

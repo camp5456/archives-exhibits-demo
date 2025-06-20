@@ -8,7 +8,7 @@
 
 $white:    #fff !default;
 $black:    #000 !default;
-$primary:       #0d6efd !default;
+$primary:  #c54e1f!default;
 
 $min-contrast-ratio:   4.5 !default;
 $color-contrast-dark:      $black !default;
@@ -264,3 +264,6 @@ $_luminance-list: .0008 .001 .0011 .0013 .0015 .0017 .002 .0022 .0025 .0027 .003
         @include theme-bg(".bg-#{$color}", $value);
     }
 }
+
+@include theme-text(".nav-link", $primary);
+@include theme-text(".dropdown-custom", $primary);
