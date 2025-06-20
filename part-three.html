@@ -3,7 +3,7 @@
   <head prefix="og: http://ogp.me/ns#">
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>About | Exhibit Name</title>
+<title>Part Three | Exhibit Name</title>
 <link rel="shortcut icon" type="image/x-icon" href="/archives-exhibits-demo/favicon.ico">
 <!--
 
@@ -75,7 +75,7 @@
                     </a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link  dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Theme Two</a>
+                    <a class="nav-link  dropdown-toggle active" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Theme Two</a>
                     <div class="dropdown-menu">
                         
                         <a class="dropdown-custom "
@@ -90,7 +90,7 @@
                             Part Two
                         </a>
                         
-                        <a class="dropdown-custom "
+                        <a class="dropdown-custom active"
                             href="/archives-exhibits-demo/part-three.html"
                             data-label="Part Three">
                             Part Three
@@ -139,6 +139,48 @@
     </div> 
 </div>
       
+      <style>
+#home-banner {
+    background-image: url('/archives-exhibits-demo/objects/feature-image-demo.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 400px;
+    
+}
+#home-title-box {
+    padding-top: 8em;
+    padding-bottom: 8em;
+    display: flex;
+    justify-content: center;     /* centers horizontally */
+    align-items: center;         /* centers vertically */
+    height: 100%;    
+              /* ensures it fills the parent */
+}
+@media screen and (max-width: 576px) {
+    #home-title-box {
+        max-height: 500px;
+    }
+}
+</style>
+
+<div id="home-banner" class="container-fluid mb-0 p-0">
+    <div id="home-title-box" class="position-relative" >
+        <div class="p-5 text-center text-white bg-dark bg-opacity-75">
+            <h1 class="site-title">Exhibit Name</h1>
+            <hr style="width:100px;" class="mx-auto">
+            <!--  -->
+            
+            <p class="fs-5 fst-italic text-white section-title">Part Three</p>
+            
+        </div>
+        
+    </div>
+</div>
+
+
+<script src="/archives-exhibits-demo/assets/js/active-label.js"></script>
+      
       <!-- <nav class="navbar navbar-expand-lg navbar-light bg-white">
     <div class="container">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#page-nav" aria-controls="page-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -164,7 +206,7 @@
                     </a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link  dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Theme Two</a>
+                    <a class="nav-link  dropdown-toggle active" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Theme Two</a>
                     <div class="dropdown-menu">
                         
                         <a class="dropdown-custom "
@@ -179,7 +221,7 @@
                             Part Two
                         </a>
                         
-                        <a class="dropdown-custom "
+                        <a class="dropdown-custom active"
                             href="/archives-exhibits-demo/part-three.html"
                             data-label="Part Three">
                             Part Three
@@ -226,76 +268,95 @@
 </nav>
  -->
     <main id="maincontent" role="main" class="flex-shrink-0">
-      <div class="container my-4 about-contents">
+      <div class="container my-4">
+  <div class="row">
 
-<style>
-.jumbotron {
-    padding: 4rem 2rem;
-    margin-bottom: 2rem;
-    background-color: #e9ecef;
-    border-radius: 0.3rem;
-}  
-#j-objects-pc {
-    background-image: url(/archives-exhibits-demo/objects/PC004934.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-@media screen and (max-width: 576px) {
-    .jumbo-title-box {
-        max-height: 500px; 
-    }
-    .jumbo-tagline { font-size:.85em; }
-}
-</style>
+  <div class="col-md-12">
 
-<div class="jumbotron feature px-0 border" id="j-objects-pc">
-    <div class="jumbo-title-box">
-        
-        <div class="p-2 text-center text-white bg-dark bg-opacity-75">
-            <h2 class="display-4">Exhibit Name</h2>
-            <p class="jumbo-tagline"></p>
-        </div>
-        
-    </div>
+   <h1 id="page-menu-label" class="section-title">Part Three</h1>
+   
+   <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+
+<p><img src="/archives-exhibits-demo/objects/featured-image.jpg" alt="Description" style="max-width: 100%; height: auto;" /></p>
+
+    
+  </div>
+  <!-- <div class="col-md-4">  
+
+    <div class="card mb-3">
+  <div class="card-body">
+    <h2 class="card-title h5">Time Span</h2>
+    <p class="card-text h5">1960 to 1986
+      <br><a href="/archives-exhibits-demo/timeline.html" class="btn btn-sm btn-outline-secondary mt-2">View Timeline</a>
+    </p>
+  </div>
 </div>
 
-<h2 id="about-collectionbuilder-csv-and-iiif">About CollectionBuilder-CSV and IIIF</h2>
-
-<p>This is a CollectionBuilder-CSV template featuring single- and multi-page IIIF objects displayed in Universal Viewer.</p>
-
-<p>Paths to IIIF manifests can be added to metadata as the value for object_location field.
-Thumbs and smalls can use IIIF Image API values or other paths to thumb and small objects within or outside the repository.
-object_location can either include links to json manifest files that are hosted outside the repository (sometimes can cause CORS issues), or the manifest files can be downloaded and placed in the CB repo’s objects folder and their paths used for object_location values.
-There is a mix of both cases in this collection.</p>
-
-<p>In the case of this repository, a demo iiif layout was created (<code class="language-plaintext highlighter-rouge">_layouts/iiif.html</code>) which includes the Universal Viewer code (<code class="language-plaintext highlighter-rouge">_includes/item/iiif-manifest-universal-viewer.html</code>).
-Objects then are displayed using Universal Viewer if their display_template value is <code class="language-plaintext highlighter-rouge">iiif</code>.</p>
-
-<p>Alternately, in <code class="language-plaintext highlighter-rouge">_layouts/image.html</code> one could swap out <code class="language-plaintext highlighter-rouge">{% include item/image-gallery.html %}</code> for <code class="language-plaintext highlighter-rouge">{% include item/iiif-manifest-universal-viewer.html %}</code> and all objects with display_template value <code class="language-plaintext highlighter-rouge">image</code> would be displayed in Universal Viewer, provided that they have a IIIF manifest as their value for object_location.</p>
-
-</div>
-
-<div class="container-fluid mt-4 mb-n3 bg-light p-4 " id="technical">
-    <div class="container mt-4 border rounded p-4 bg-white">
-        <h3>Technical Credits - CollectionBuilder</h3>
-        <div class="row my-2 justify-content-center">
-            <div class="col-md-8 p-4">
-                <p>This digital collection is built with <a href="https://collectionbuilder.github.io/" target="_blank" rel="noopener">CollectionBuilder</a>, an open source framework for creating digital collection and exhibit websites that is developed by faculty librarians at the University of Idaho Library following the <a href="https://lib-static.github.io" target="_blank" rel="noopener">Lib-Static</a> methodology.</p>
-
-                <p>Using the <a href="https://github.com/CollectionBuilder/collectionbuilder-csv" target="_blank" rel="noopener">CollectionBuilder-CSV</a> template and the static website generator <a href="https://jekyllrb.com/" target="_blank" rel="noopener">Jekyll</a>, this project creates an engaging interface to explore driven by metadata.</p>
-            </div>
-            <div class="col-md-4 text-center">
-                <h4>More Information Available</h4>
-                <a class="btn btn-outline-primary my-2" target="_blank" rel="noopener" href="https://collectionbuilder.github.io/about.html#tool">Technical Specifications</a>
-                <br>
-                <a class="btn btn-outline-secondary my-2" target="_blank" rel="noopener" href="https://collectionbuilder.github.io/about.html#grant">IMLS Support</a>
-            </div>
-        </div>
+    
+    <div class="card mb-3">
+    
+    <div class="card-body">
+        <h2 class="card-title h5">Top Subjects</h2>
+        <p class="card-text">
+            
+            <a class="btn btn-sm btn-primary m-1" href="/archives-exhibits-demo/browse.html#architecture">architecture</a>
+        </p>
     </div>
 </div>
 
 
+    <div class="card mb-3">
+    
+    <div class="card-body">
+        <h2 class="card-title h5">Locations</h2>
+        <p class="card-text">
+            
+            <a class="btn btn-sm btn-outline-secondary m-1" href="/archives-exhibits-demo/browse.html#throop%20hall">throop hall</a>
+            <a class="btn btn-sm btn-outline-secondary m-1" href="/archives-exhibits-demo/browse.html#beckman%20laboratory%20of%20chemical%20synthesis">beckman laboratory of chemical synthesis</a>
+        </p>
+    </div>
+</div>
+
+    
+    <div class="card mb-3" >
+  <div class="card-body">
+    <h2 class="card-title h5">Objects</h2>
+    <p class="card-text">
+      
+      4      
+      
+      <a class="text-dark" href="/archives-exhibits-demo/browse.html#iiif">IIIF Items <svg class="bi icon-sprite text-body" fill="currentColor" aria-hidden="true"><use xlink:href="/archives-exhibits-demo/assets/lib/cb-icons.svg#icon-iiif"/></svg></a><br>
+      <a class="btn btn-sm btn-outline-secondary mt-2" href="/archives-exhibits-demo/data.html">View table</a>
+    </p>
+  </div>
+</div>
+
+  </div> -->
+  <!-- <div class="col-md-12">
+
+    <div class="card mb-3">
+    <div class="card-body">
+        <h2 class="card-title h5">Collection as Data <small>(click to download)</small></h2>
+        <p class="card-text text-center">
+            <a class="btn btn-sm btn-secondary m-2" href="/archives-exhibits-demo/assets/data/metadata.csv" target="_blank">Metadata CSV</a>
+            <a class="btn btn-sm btn-secondary m-2" href="/archives-exhibits-demo/assets/data/metadata.json" target="_blank">Metadata JSON</a>
+            
+            
+            
+            
+            
+            <a class="btn btn-sm btn-secondary m-2" href="/archives-exhibits-demo/assets/data/facets.json" target="_blank">Facets JSON</a>
+            
+            <a class="btn btn-sm btn-secondary m-2" href="https://github.com/camp5456/archives-exhibits-demo.git" rel="noopener" target="_blank">Source Code</a>
+        </p>
+    </div>
+</div>
+
+  </div> -->
+
+</div>
+
+</div>
     </main>
       <div id="dynamic-footer-nav" class="container-fluid bg-light border-top mt-5">
   <div class="row">
