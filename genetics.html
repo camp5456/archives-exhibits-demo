@@ -3,7 +3,7 @@
   <head prefix="og: http://ogp.me/ns#">
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Browse | Becoming Caltech</title>
+<title>genetics | Becoming Caltech</title>
 <link rel="shortcut icon" type="image/x-icon" href="/archives-exhibits-demo/favicon.ico">
 <!--
 
@@ -110,7 +110,7 @@
                 </li>
                 
                 <li class="nav-item dropdown">
-                    <a class="nav-link  dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Building Research</a>
+                    <a class="nav-link  dropdown-toggle active" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Building Research</a>
                     <div class="dropdown-menu">
                         
                         <a class="dropdown-custom "
@@ -137,7 +137,7 @@
                                Aeronautics
                         </a>
                         
-                        <a class="dropdown-custom "
+                        <a class="dropdown-custom active"
                             href="/archives-exhibits-demo/genetics.html"
                             data-label="   Genetics">
                                Genetics
@@ -245,6 +245,49 @@
     </div> 
 </div>
       
+      <style>
+#home-banner {
+    background-image: url('/archives-exhibits-demo/objects/feature-image-demo.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 400px;
+    
+}
+#home-title-box {
+    padding-top: 8em;
+    padding-bottom: 8em;
+    display: flex;
+    justify-content: center;     /* centers horizontally */
+    align-items: center;         /* centers vertically */
+    height: 100%;    
+              /* ensures it fills the parent */
+}
+@media screen and (max-width: 576px) {
+    #home-title-box {
+        max-height: 500px;
+    }
+}
+</style>
+
+<div id="home-banner" class="container-fluid mb-0 p-0">
+    <div id="home-title-box" class="position-relative" >
+        <div class="p-5 text-center text-white bg-dark bg-opacity-75">
+            <h1 class="site-title">Becoming Caltech</h1>
+            <hr style="width:100px;" class="mx-auto">
+             <h2 class="mb-0">Building a Research Community, 1910–1930</h2>
+            
+            
+            <!-- <p class="fs-5 fst-italic text-white section-title">genetics</p> -->
+            
+        </div>
+        
+    </div>
+</div>
+
+
+<script src="/archives-exhibits-demo/assets/js/active-label.js"></script>
+      
       <!-- <nav class="navbar navbar-expand-lg navbar-light bg-white">
     <div class="container">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#page-nav" aria-controls="page-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -305,7 +348,7 @@
                 </li>
                 
                 <li class="nav-item dropdown">
-                    <a class="nav-link  dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Building Research</a>
+                    <a class="nav-link  dropdown-toggle active" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Building Research</a>
                     <div class="dropdown-menu">
                         
                         <a class="dropdown-custom "
@@ -332,7 +375,7 @@
                                Aeronautics
                         </a>
                         
-                        <a class="dropdown-custom "
+                        <a class="dropdown-custom active"
                             href="/archives-exhibits-demo/genetics.html"
                             data-label="   Genetics">
                                Genetics
@@ -439,45 +482,17 @@
  -->
     <main id="maincontent" role="main" class="flex-shrink-0">
       <div class="container my-4">
-  <h2 id="browse-items">Browse Items</h2>
+  <div class="row">
 
+  <div class="col-md-12">
 
-<div class="row mb-3 justify-content-center">
-    <div class="col-md-8 text-center">
-        <form role="search" id="lunrSearch" onsubmit="submitFilter(); return false;">
-            <div class="input-group input-group-lg">
-                <input type="text" class="form-control" id="filterTextBox" placeholder="Filter ... " aria-label="Search"> 
-                <button class="btn btn-success" type="submit" title="Filter items" id="filterButton" >Search</button>
-                <button class="btn btn-outline-secondary filter" onclick="resetFilter(); return false;" data-filter="">Reset</button>
-            </div>
-        </form>
-        <div class="h2" id="numberOf"></div>
-    </div>
-    <div class="col-md-2">
-        <div class="dropdown">
-            <button class="btn btn-secondary mt-1 dropdown-toggle" type="button" id="browseSortButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Sort by <span id="sortFilter">Random</span>
-            </button>
-            <div class="dropdown-menu browse-sort-menu" aria-labelledby="browseSortButton">
-                <button class="dropdown-item browse-sort-item active" data-filter="random">Random</button>
-                <button class="dropdown-item browse-sort-item" data-filter="title">Title</button>
-                
-                
-                <button class="dropdown-item browse-sort-item" data-filter="date">Date</button>
-                
-                <button class="dropdown-item browse-sort-item" data-filter="identifier">Identifier</button>
-                
-            </div>
-        </div>
-    </div>
+   <h1 id="page-menu-label" class="section-title">genetics</h1>   
+   <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+
+    
+  </div>
+
 </div>
-
-<div id="loadingIcon" class="text-center">
-    <div class="spinner-border text-dark" role="status"><span class="visually-hidden">Loading...</span></div>
-</div>
-
-<div class="row" id="browseItems"></div>
-
 </div>
     </main>
       <div id="dynamic-footer-nav" class="container-fluid bg-light border-top mt-5">
@@ -620,290 +635,6 @@
 <script src="/archives-exhibits-demo/assets/lib/bootstrap.bundle.min.js"></script>
 <!-- load other js -->
 <script src="/archives-exhibits-demo/assets/lib/lazysizes.min.js" async></script>
-
-<script>
-
-/* add items */
-var items = [
-    
-    { "date":"1960","creator":"unknown","subject":"architecture","location":"Throop Hall","img": "/archives-exhibits-demo/objects/almost-a-lost-art-1/almost-a-lost-art-1-thumb.png","template": "iiif","format": "jpg","title":"original arches",
-        "id":"almost-a-lost-art-1" },
-    { "date":"1974","creator":"unknown","subject":"architecture","location":"Throop Hall","identifier":"almost-a-lost-art-2","img": "/archives-exhibits-demo/objects/almost-a-lost-art-2/almost-a-lost-art-2-thumb.png","template": "iiif","format": "jpg","title":"fallen arches",
-        "id":"almost-a-lost-art-2" },
-    { "date":"1986","creator":"unknown","subject":"architecture","location":"Throop Hall","identifier":"almost-a-lost-art-3","img": "/archives-exhibits-demo/objects/almost-a-lost-art-3/almost-a-lost-art-3-thumb.png","template": "iiif","format": "jpg","title":"restoring arches",
-        "id":"almost-a-lost-art-3" },
-    { "date":"1986","creator":"unknown","subject":"architecture","location":"Beckman Laboratory of Chemical Synthesis","identifier":"almost-a-lost-art-4","img": "/archives-exhibits-demo/objects/almost-a-lost-art-4/almost-a-lost-art-4-thumb.png","template": "iiif","format": "jpg","title":"new home for arches",
-        "id":"almost-a-lost-art-4" }];
-
-/* 
-    get a theme icon based on display_template or format 
-    return svg sprite
-*/
-function getIcon(objectTemplate,objectFormat,svgType) {
-    var iconTemplate, iconId, iconTitle;
-    if (objectTemplate && objectTemplate != "") {
-        iconTemplate = objectTemplate;
-    } else if (objectFormat && objectFormat != "") {
-        iconTemplate = objectFormat;
-    } else {
-        iconTemplate = ""
-    }
-    // choose icon
-    if (iconTemplate.includes("image")) {
-        iconId = "icon-image";
-        iconTitle = "image file icon";
-    } else if (iconTemplate.includes("pdf")) {
-        iconId = "icon-pdf";
-        iconTitle = "pdf file icon";
-    } else if (iconTemplate.includes("video")) {
-        iconId = "icon-video";
-        iconTitle = "video file icon";
-    } else if (iconTemplate.includes("audio")) {
-        iconId = "icon-audio";
-        iconTitle = "audio file icon";
-    } else if (iconTemplate.includes("panorama")) {
-        iconId = "icon-panorama";
-        iconTitle = "panorama file icon";
-    } else if (iconTemplate.includes("compound")) {
-        iconId = "icon-compound-object";
-        iconTitle = "compound object icon";
-    } else if (iconTemplate.includes("multiple")) {
-        iconId = "icon-multiple";
-        iconTitle = "multiple object icon";
-    } else {
-        iconId = "icon-default";
-        iconTitle = "file icon";
-    }
-    if (svgType == "thumb") {
-        // svg sprite as thumb
-        return '<svg class="bi text-body img-fluid" fill="currentColor" role="img"><title>' + iconTitle + '</title><use xlink:href="/archives-exhibits-demo/assets/lib/cb-icons.svg#' + iconId + '"/></svg>';
-    } else if (svgType == "hidden") {
-        // svg as sprite with aria-hidden
-        return '<svg class="bi icon-sprite" aria-hidden="true"><use xlink:href="/archives-exhibits-demo/assets/lib/cb-icons.svg#' + iconId + '"/></svg>';
-    } else {
-        // svg as sprite
-        return '<svg class="bi icon-sprite" aria-label="' + iconTitle + '"><use xlink:href="/archives-exhibits-demo/assets/lib/cb-icons.svg#' + iconId + '"/></svg>';
-    }
-}
-
-
-/* function to create cards for each item */ 
-function makeCard(obj) {
-    // placeholder image for lazyload
-    var placeholder = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E";
-    // find item link
-    var itemHref = `/archives-exhibits-demo/items/${ obj.parent ? obj.parent + ".html#" + obj.id : obj.id + ".html"}`; 
-    // find image
-    var imgSrc, thumbIcon;
-    // if there is a thumb in the csv display it
-    if(obj.img) {
-        imgSrc = obj.img;
-    // else add an icon based on display_template or format
-    } else {
-        thumbIcon = getIcon(obj.template,obj.format,"thumb");
-    }
-    var imgAlt = obj.alt ? obj.alt : obj.title;
-
-    // start card
-    var card = '<div class="item col-lg-4 col-md-6 mb-2"><div class="card">';
-    // top image for items with image
-    if(imgSrc) {
-        card += '<a href="' + itemHref + '"> <img class="card-img-top lazyload" src="' + placeholder + '" data-src="' + imgSrc + '" alt="' + imgAlt + '"></a>';
-    }
-    // title
-    card += '<div class="card-body text-center"> <h3 class="card-title h4"><a href="' + itemHref + '" class="text-dark">' + obj.title + '</a></h3>';
-    // icon thumb for item without image
-    if(thumbIcon){
-        card += '<p><a href="' + itemHref + '">' + thumbIcon + '</a></p>';
-    }
-    // other fields
-    card += '<p class="card-text">';
-    
-    if(obj["date"]){
-    card += '<strong>Date:</strong> ';
-    
-    card += obj["date"];
-    
-    card += '<br>';
-    }
-    
-    if(obj["creator"]){
-    card += '<strong>Creator:</strong> ';
-    
-    card += obj["creator"];
-    
-    card += '<br>';
-    }
-    
-    if(obj["subject"]){
-    
-    
-    var btns = obj["subject"].split(";");
-    for (var i = 0, len = btns.length; i < len; i++) {
-        if(btns[i] != "") {
-        card += '<a class="btn btn-sm btn-secondary m-1 text-wrap" href="/archives-exhibits-demo/browse.html#' + encodeURIComponent(btns[i].trim()) + '">' + btns[i].trim() + '</a>';
-        }
-    }
-    
-    card += '<br>';
-    }
-    
-    if(obj["location"]){
-    
-    
-    var btns = obj["location"].split(";");
-    for (var i = 0, len = btns.length; i < len; i++) {
-        if(btns[i] != "") {
-        card += '<a class="btn btn-sm btn-secondary m-1 text-wrap" href="/archives-exhibits-demo/browse.html#' + encodeURIComponent(btns[i].trim()) + '">' + btns[i].trim() + '</a>';
-        }
-    }
-    
-    card += '<br>';
-    }
-    
-    card += '</p>';
-    // media type
-    if(obj.template && obj.template != "") {
-        mediaIcon = getIcon(obj.template,obj.format,"hidden");
-        card += '<p class="card-text"><small><a class="btn btn-sm btn-outline-secondary" href="/archives-exhibits-demo/browse.html#' + encodeURIComponent(obj.template) + '">' + 
-        obj.template.toUpperCase() + ' ' + mediaIcon + '</a></small></p>';
-    }
-    // view button
-    card += '<hr><a href="' + itemHref + '" class="btn btn-sm btn-light" title="link to ' + obj.title + '">View Full Record</a>';
-    // close divs
-    card += '</div></div></div>';
-    // send back big string
-    return card;
-}
-
-/* filter items function */
-function filterItems(arr,q) {
-    // show loading icon
-    loadingIcon.classList.remove("d-none");
-    // dont filter if no q 
-    if (q=="") { 
-        var filteredItems = arr; 
-    } else {
-        q = q.trim().toUpperCase(); 
-        // js indexOf filter
-        var filteredItems = [];
-        for (var i = 0, len = arr.length; i < len; i++) {
-            var val = "";
-        for (var k in arr[i]) { val += arr[i][k] + " "; }
-            if(val.toUpperCase().indexOf(q) != -1){
-                filteredItems.push(arr[i]);
-            }
-        }
-    }
-    // add number 
-    document.querySelector("#numberOf").innerHTML = filteredItems.length + " of 4 items";
-    
-    // add stuff, make cards first in giant var, then add all at once to speed things up
-    var cards = "";
-    for (var i = 0, len = filteredItems.length; i < len; i++) {
-        cards += makeCard(filteredItems[i]);
-    }
-    browseItemsDiv.innerHTML = cards;
-
-    // finish
-    filterButton.focus();
-    loadingIcon.classList.add("d-none");
-};
-
-/* Fisher-Yates shuffle https://bost.ocks.org/mike/shuffle/ */
-function shuffle(array) {
-    var m = array.length, t, i;
-    while (m) {
-        i = Math.floor(Math.random() * m--);
-        t = array[m];
-        array[m] = array[i];
-        array[i] = t;
-    }
-    return array;
-}
-
-/* init browse page */
-
-/* randomize items once at page load */
-shuffle(items);
-
-/* set some elements */ 
-var loadingIcon = document.querySelector("#loadingIcon");
-var filterTextBox = document.querySelector('#filterTextBox');
-var filterButton = document.querySelector("#filterButton");
-var browseItemsDiv = document.querySelector("#browseItems");
-
-/* filter if hash in initial URL */
-var query = "";
-if(window.location.hash) {
-    query = decodeURIComponent(location.hash.substr(1));
-    filterTextBox.value = query;
-    filterItems(items,query);
-} else {
-    query = "";
-    filterItems(items,query);
-}
-
-/* filter form */
-function submitFilter() {
-    query = filterTextBox.value;
-    window.location.hash = encodeURIComponent(query);
-}
-/* reset filters */ 
-function resetFilter() {
-    query = "";
-    filterTextBox.value = query;
-    window.location.hash = encodeURIComponent(query);
-}
-
-/* filter if hash changes */ 
-window.addEventListener("hashchange", function() {
-    // read hash
-    query = decodeURIComponent(location.hash.substr(1));
-    filterTextBox.value = query;
-    // filter
-    filterItems(items,query);
-});
-
-/* item array sorting function */
-function sorting(json_object, key_to_sort_by) {
-    function sortByKey(a, b) {
-        var x = a[key_to_sort_by];
-        var y = b[key_to_sort_by];
-        if (typeof x === 'string' ) { x = x.toUpperCase(); }
-        if (typeof y === 'string' ) { y = y.toUpperCase(); }
-        return ((x==null) ? 1: (y==null) ? -1: (x < y) ? -1 : ((x > y) ? 1 : 0));
-    }
-    json_object.sort(sortByKey);
-};
-
-/* add sort function on click of sort options */
-var sortFilter = document.querySelector("#sortFilter");
-var sortOptions = document.querySelectorAll(".browse-sort-item");
-sortOptions.forEach((button) => {
-  button.addEventListener("click", (event) => {
-    // get the sort field
-    var field = button.dataset.filter;
-    var display_name = button.textContent;
-    // get current filter
-    var query = filterTextBox.value;
-    // switch active sort option
-    sortOptions.forEach((option) => { option.classList.remove("active"); } );
-    button.classList.add("active");
-    sortFilter.innerHTML = display_name;
-    // send to sort and filter
-    if (field != 'random') {
-        sorting(items, field);
-        filterItems(items, query);
-    }
-    else {
-        shuffle(items);
-        filterItems(items, query);
-    }
-  });
-}); 
-
-</script>
 
 
      <!-- <script>

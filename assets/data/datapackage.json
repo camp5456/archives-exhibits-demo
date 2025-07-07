@@ -1,8 +1,8 @@
 {
     "profile": "data-package",
-    "name": "exhibit-name-data",
-    "title": "Exhibit Name Data",
-    "description": "Metadata and data derived from Exhibit Name. The cast stone arches by Alexander Calder that adorned Caltech’s Throop Hall fell victim, as did the building itself, to the 1971 San Fernando earthquake.",
+    "name": "becoming-caltech-data",
+    "title": "Becoming Caltech Data",
+    "description": "Metadata and data derived from Becoming Caltech. The cast stone arches by Alexander Calder that adorned Caltech’s Throop Hall fell victim, as did the building itself, to the 1971 San Fernando earthquake.",
     "keywords":  ["dogs","cats","animals"],
     "homepage": "https://camp5456.github.io/archives-exhibits-demo/",
     "contributors": [
@@ -25,7 +25,7 @@
         {
             "name": "facets-json",
             "path": "facets.json",
-            "title": "Exhibit Name Metadata Facets",
+            "title": "Becoming Caltech Metadata Facets",
             "description":"Unique values and counts of metadata facet fields.",
             "format":"json",
             "profile": "data-resource"
@@ -37,16 +37,16 @@
         {
             "name": "metadata-csv",
             "path": "metadata.csv",
-            "title": "Exhibit Name full metadata in csv",
-            "description": "Complete metadata export for Exhibit Name objects.",
+            "title": "Becoming Caltech full metadata in csv",
+            "description": "Complete metadata export for Becoming Caltech objects.",
             "format":"csv",
             "profile":"data-resource"
         },
         {
             "name": "metadata-json",
             "path": "metadata.json",
-            "title": "Exhibit Name full metadata in json",
-            "description": "Complete metadata export for Exhibit Name objects.",
+            "title": "Becoming Caltech full metadata in json",
+            "description": "Complete metadata export for Becoming Caltech objects.",
             "format":"json",
             "profile":"data-resource"
         }

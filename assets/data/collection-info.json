@@ -1,5 +1,5 @@
 { 
-    "title": "Exhibit Name",
+    "title": "Becoming Caltech",
     "url": "https://camp5456.github.io/archives-exhibits-demo/",
     "image": "/archives-exhibits-demo/archives-exhibits-demo/objects/feature-image-demo.webp", 
     "description": "The cast stone arches by Alexander Calder that adorned Caltech’s Throop Hall fell victim, as did the building itself, to the 1971 San Fernando earthquake.",
@@ -15,6 +15,6 @@
         
     },
     "data": "https://camp5456.github.io/archives-exhibits-demo/assets/data/datapackage.json",
-    "last_build_date": "2025-06-20"
+    "last_build_date": "2025-07-07"
 }
 
