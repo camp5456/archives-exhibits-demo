@@ -50,6 +50,7 @@ a.dropdown-custom {
   display: block;
   padding: 5px 0px 5px 15px;
   position: relative; // optional, for fine control
+  width:250px;
 }
 
 a.dropdown-custom::before {

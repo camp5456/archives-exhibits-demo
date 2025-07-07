@@ -1,5 +1,5 @@
 ---
-# Theme or Section One of the Exhibit
+# Multimedia Experience section of the site
 layout: page
 ---
 {%- assign items = site.data[site.metadata] | where_exp: 'item','item.objectid' -%}
@@ -7,8 +7,7 @@ layout: page
 
   <div class="col-md-12">
 
-   <h1 id="page-menu-label" class="section-title"></h1>
-   
+   <h1 id="page-menu-label" class="section-title">{{ page.title }}</h1>   
    {{ content }}
     
   </div>

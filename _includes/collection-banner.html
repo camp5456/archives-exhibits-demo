@@ -28,9 +28,10 @@
         <div class="p-5 text-center text-white bg-dark bg-opacity-75">
             <h1 class="site-title">{{ site.title }}</h1>
             <hr style="width:100px;" class="mx-auto">
-            <!-- {% if site.tagline %}<p class="mb-0">{{ site.tagline }}</p>{% endif %} -->
+             {% if site.tagline %}<h2 class="mb-0">{{ site.tagline }}</h2>{% endif %}
             {% if page.title %}
-            <p class="fs-5 fst-italic text-white section-title">{{ page.title }}</p>
+            
+            <!-- <p class="fs-5 fst-italic text-white section-title">{{ page.title }}</p> -->
             {% endif %}
         </div>
         {% unless site.data.theme.featured-image contains '/' %}

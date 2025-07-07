@@ -1,9 +1,27 @@
 display_name,stub,dropdown_parent
 Overview,/,
-Theme One,/theme-one.html
-Theme Two,
-Part One,/part-one.html,Theme Two
-Part Two,/part-two.html,Theme Two
-Part Three,/part-three.html,Theme Two
-Theme Three,/theme-three.html
-Demo,/demo.html,
+Becoming,
+  Overview,/becoming.html,Becoming
+  The Greater Throop,/greater-throop.html,Becoming
+  A New Campus,/new-campus.html,Becoming
+  World War I on Campus,/world-war-one-campus,Becoming
+  World War I in Washington,/world-war-one-washington,Becoming
+  A New Name,/new-name.html,Becoming
+Building Research,
+   Overview,/building-research.html,Building Research
+   Chemistry,/chemistry.html,Building Research
+   Physics,/physics.html,Building Research
+   Aeronautics,/aeronautics.html,Building Research
+   Genetics,/genetics.html,Building Research
+   Seismology,/seismology.html,Building Research
+   Humanities,/humanities.html,Building Research
+   Performing Arts,/performing-arts.html,Building Research
+Community,
+  Overview,/community.html,Community
+  The Old Dorm,/old-dorm.html,Community
+  Athletics,/athletics.html,Community
+  Clubs,/clubs.html,Community
+  Clothes,/clothes.html,Community
+  Other Student Life,/other-student-life.html,Community
+  Athenaeum,/athenaeum.html,Community
+Multimedia,/multimedia.html,
