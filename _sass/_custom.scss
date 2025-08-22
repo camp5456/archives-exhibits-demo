@@ -54,8 +54,34 @@ a.dropdown-custom {
 }
 
 a.dropdown-custom::before {
-  content: "▶"; // or try "➤", "➔", "→", "▸", etc.
+  content: "▶"; 
   margin-right: 8px;
   font-size: 0.8em;
   color: #cbe3df;
+}
+
+/* transferring the styles from main menu to ul */
+
+ul.custom-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.custom-list li {
+  color: #000000;
+  border-bottom: dotted #eeeeee 1px;
+  padding: 5px 0px 5px 15px;
+  position: relative;
+  width: 250px;
+  display: block;
+}
+
+ul.custom-list li::before {
+  content: "▶";
+  margin-right: 8px;
+  font-size: 0.8em;
+  color: #cbe3df;
+  position: absolute;
+  left: 0;
 }

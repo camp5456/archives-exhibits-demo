@@ -13,8 +13,8 @@ body {
   @if $heading-font-family != "" { font-family: $heading-font-family; }
 }
 
-p.site-title{
-    font-size: 20px;
+h1.site-title{
+    font-size: 50px;
     text-align: center;
 }
 
