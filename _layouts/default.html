@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head prefix="og: http://ogp.me/ns#">
+    {% include head/head.html %}
+  </head>
+  <body class="d-flex flex-column h-100">
+    <div id="skip-to-content"><a href="#maincontent">Skip to main content</a></div>
+      {% include branding.html %}
+      {% if page.show_banner and site.data.theme.featured-image %}
+      {% include collection-banner.html %}
+      {% endif %}
+      <!-- {% include collection-nav.html %} -->
+    <main id="maincontent" role="main" class="flex-shrink-0">
+      {{ content }}
+    </main>
+      {% include footer-nav.html %}
+      {% include footer.html %}
+      {% include foot.html %}
+     <!-- {% include scroll-to-top.html %} -->
+  </body>
+</html>
