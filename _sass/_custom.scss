@@ -2,11 +2,54 @@
     Put your custom SCSS here! 
     This allows you to override any CollectionBuilder or Bootstrap CSS without modifying the base theme files directly.
 */
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #e6af48 25%, #ffffff 0);
+}
+
+/* Header Styles */
+
+.header  {
+    background-image: url('{{ site.data.theme.featured-image }}');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: {{ site.data.theme.home-banner-image-position | default: 'center' }}; */
+    min-height: 400px;
+}
+
+#home-title-box {
+   /*  padding-top: {{ site.data.theme.home-title-y-padding | default: '5em' }};*/
+   /*  padding-bottom: {{ site.data.theme.home-title-y-padding | default: '5em' }};*/
+    display: flex;
+    justify-content: center;     /* centers horizontally */
+    align-items: center;         /* centers vertically */
+    height: 100%;                /* ensures it fills the parent */
+}
+@media screen and (max-width: 576px) {
+    #home-title-box {
+        max-height: 500px;
+    }
+}
+
+/* logo styles */
+
 #logo {
-    max-width: 300px;
-    display: block;
-    margin: 1rem auto 1rem 1rem;
-  }
+  max-width: 275px;
+  min-height: 50px; 
+  height: auto;
+  display: block;
+  margin: auto;
+  shape-rendering: geometricPrecision;
+  text-rendering: geometricPrecision;
+  image-rendering: auto;
+  display: block;
+  fill: #ffffff;
+  padding: .75rem;
+}
 
   #logo path.caltech-logotype {
     fill: #FF6C0C;
@@ -84,4 +127,26 @@ ul.custom-list li::before {
   color: #cbe3df;
   position: absolute;
   left: 0;
+}
+
+/* Custom Exhibit Color Schemes */
+
+.grey:hover {
+  background-color: $grey;
+}
+
+.lions-main:hover {
+  background-color: $lions-main;
+}
+
+.mission-trail:hover {
+  background-color: $mission-trail;
+}
+
+.pencil-lead:hover {
+  background-color: $pencil-lead;
+}
+
+.campfire:hover {
+  background-color: $campfire;
 }

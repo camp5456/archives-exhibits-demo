@@ -9,7 +9,7 @@
 @import "colors";
 
 /* set colors from colors.scss */
-$link-color: $burnt;
+$link-color: $white;
 
 /* base variables pulled from theme.yml */
 $base-font-family: {{ site.data.theme.base-font-family | default: '""' }};
@@ -42,13 +42,14 @@ $theme-colors: map-merge(
 
 // Branding wrapper layout styles
 .branding-wrapper {
-  padding: 1rem 0;
+  padding: 1rem 1rem 1rem 0;
   text-align: center;
 }
 
 .branding-wrapper svg {
   max-width: 100%;
   height: auto;
+  padding-left: 3rem;
 }
 
 .bg-custom-color {

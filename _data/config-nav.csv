@@ -1,6 +1,6 @@
-display_name,stub,dropdown_parent
-Overview,/,
-Becoming,/becoming.html
-Building Research,/building-research.html
-Community,/community.html
-Multimedia,/multimedia.html,
+display_name,stub,dropdown_parent,color_class
+Overview,/,,grey
+Becoming,/becoming.html,,lions-main
+Building Research,/building-research.html,,mission-trail
+Community,/community.html,,pencil-lead
+Multimedia,/multimedia.html,,campfire
