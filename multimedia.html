@@ -56,7 +56,9 @@
             </a>
         </div>
         <div class="col-6">
-        test
+            <div class="site-title-container text-right text-white">
+                <h1 class="site-title-default">Becoming Caltech</h1>
+            </div>
         </div>
     </div>
     <div class="row bg-sepia">
@@ -80,8 +82,8 @@
         <div class="collapse navbar-collapse" id="page-nav">
             <ul class="navbar-nav ms-auto me-5">
                 
-                <li class="nav-item grey">
-                    <a class="nav-link"
+                <li class="nav-item burnt">
+                    <a class="nav-link black"
                         href="/archives-exhibits-demo/"
                         data-label="Overview">
                          Overview
@@ -89,7 +91,7 @@
                 </li>
                 
                 <li class="nav-item lions-main">
-                    <a class="nav-link"
+                    <a class="nav-link black"
                         href="/archives-exhibits-demo/becoming.html"
                         data-label="Becoming">
                          Becoming
@@ -97,7 +99,7 @@
                 </li>
                 
                 <li class="nav-item mission-trail">
-                    <a class="nav-link"
+                    <a class="nav-link black"
                         href="/archives-exhibits-demo/building-research.html"
                         data-label="Building Research">
                          Building Research
@@ -105,7 +107,7 @@
                 </li>
                 
                 <li class="nav-item pencil-lead">
-                    <a class="nav-link"
+                    <a class="nav-link black"
                         href="/archives-exhibits-demo/community.html"
                         data-label="Community">
                          Community
@@ -113,7 +115,7 @@
                 </li>
                 
                 <li class="nav-item campfire">
-                    <a class="nav-link active"
+                    <a class="nav-link active black"
                         href="/archives-exhibits-demo/multimedia.html"
                         data-label="Multimedia">
                          Multimedia
@@ -142,22 +144,6 @@
 
         </div> 
     </div>
-<!-- <div class="row bg-sepia">
-     <div class="col-12">
-            <div class="container-fluid mb-0 p-0">
-    <div id="home-title-box" class="position-relative" >
-        <div class="p-5 text-center text-white">
-            <h1 class="site-title">Becoming Caltech</h1>
-            <hr style="width:100px;" class="mx-auto">
-             <h2 class="mb-0 site-title">Building a Research Community, 1910–1930</h2>
-        </div>
-    </div>
-</div>
-
-
-<script src="/archives-exhibits-demo/assets/js/active-label.js"></script>
-        </div> 
-    </div> -->
 </div>
 
 <script src="/archives-exhibits-demo/assets/js/active-label.js"></script>
@@ -170,8 +156,73 @@
 
   <div class="col-md-12">
 
-   <h1 id="page-menu-label" class="section-title">Multimedia Experience</h1>   
-   <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+   <style>
+#my-mirador {
+  height: 700px;
+  max-width: 90%;
+  margin: 2rem auto;
+  position: relative;
+  border: 1px solid #ccc;
+}
+</style>
+
+<div class="body-container-multimedia">
+
+<h1 id="page-menu-label" class="section-title"></h1>
+
+<p>In 1904, astrophysicist George Ellery Hale moved to Pasadena to found and direct Mount Wilson Observatory. Three years later, he joined Throop Polytechnic Institute’s board of trustees and began to reinvent the institution. “It would be far better to do some one thing extremely well than to teach such a variety of subjects in a mediocre way,” wrote Hale, and that one thing was to be engineering. Hale recruited a new president, James Scherer, under whom the school shed courses to focus on mechanical and electrical engineering. In another narrowing, in 1910 Scherer stopped admitting women as students, a policy the Institute would reverse for graduate students in 1953 and for undergraduates in 1970.</p>
+
+<p>In 1910, Throop also moved to a new campus, where Caltech still stands today. Local architects Myron Hunt and Elmer Grey designed the first plans for the campus and its first building, Pasadena Hall. Later, Hale was impressed by the Spanish Colonial Revival style that New York architect Bertram Goodhue developed for the 1915 Panama-California Exposition in San Diego’s Balboa Park; he persuaded the Throop trustees to hire Goodhue, whose vision for the campus would guide its development for decades to come.</p>
+
+<p>World War I catalyzed Throop’s next transformation. An advocate of “patriotic preparedness,” Scherer added military training to the curriculum. Meanwhile, Hale organized the National Research Council in Washington, bringing scientists together to pursue research on subjects relevant to the war. In addition to Hale, its leaders included chemist Arthur Amos Noyes and physicist Robert Millikan, both of whom would permanently join a growing Throop after the war.</p>
+
+</div>
+
+<script src="https://unpkg.com/mirador@3.3.0/dist/mirador.min.js"></script>
+
+<div id="my-mirador"></div>
+<script type="text/javascript">
+  // Get base URL using Liquid, rendered as a string
+  const baseUrl = "/archives-exhibits-demo";
+
+  window.miradorInstance = Mirador.viewer({
+    id: "my-mirador",
+    manifests: {
+      [baseUrl + "/objects/greater-throop-collection/manifest.json"]: {
+        provider: "Caltech Library"
+      }
+    },
+    windows: [{
+      loadedManifest: baseUrl + "/objects/greater-throop-collection/manifest.json",
+      canvasIndex: 0,
+      thumbnailNavigationPosition: "far-bottom",
+      view: "single",
+      osdBounds: {
+        x: 0,
+        y: 0,
+        width: 5442,
+        height: 7299
+      }
+    }],
+    workspaceControlPanel: {
+      enabled: false
+    },
+    window: {
+      osdOptions: {
+        homePosition: null,
+        defaultZoomLevel: 0,
+        preserveViewport: false,
+        animationTime: 0.5,
+        fitBounds: true,
+        visibilityRatio: 1.0,
+        immediateRender: true,
+        minZoomLevel: 0,
+        maxZoomLevel: 10
+      }
+    }
+  });
+</script>
+
 
     
   </div>
