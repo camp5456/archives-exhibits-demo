@@ -8,17 +8,10 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #e6af48 25%, #ffffff 0);
+  background: linear-gradient(to right, #8c8782 28%, #cccccc 0);
 }
 
 /* Header Styles */
-
-.header  {
-    background-image: url('{{ site.data.theme.featured-image }}');
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 400px;
-}
 
 @media screen and (max-width: 576px) {
     #home-title-box {
@@ -26,20 +19,24 @@ html, body {
     }
 }
 
+.bg-sepia {
+  background-color: #31261d99 !important;
+}
+
+.bg-black {
+  background-color: #00000099 !important; 
+}
+
 /* logo styles */
 
 #logo {
-  max-width: 275px;
-  min-height: 50px; 
-  height: auto;
-  display: block;
-  margin: auto;
+  max-width: 350px;
+  min-height: 45px; 
+  margin: 3rem;
   shape-rendering: geometricPrecision;
   text-rendering: geometricPrecision;
   image-rendering: auto;
-  display: block;
   fill: #ffffff;
-  padding: .75rem;
 }
 
   #logo path.caltech-logotype {
@@ -124,6 +121,7 @@ ul.custom-list li::before {
 
 .grey:hover {
   background-color: $grey;
+  padding: -8px 0px !important;
 }
 
 .lions-main:hover {
@@ -139,5 +137,14 @@ ul.custom-list li::before {
 }
 
 .campfire:hover {
-  background-color: $campfire;
+  background-color: $campfire; 
+}
+
+.body-container {
+  background-color: $burnt;
+  color:#ffffff;
+  padding: 3rem 5rem;
+  line-height: 2rem;
+  margin: 5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }

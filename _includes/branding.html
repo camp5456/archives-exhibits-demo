@@ -3,13 +3,14 @@
     background-image: url('{{ site.data.theme.featured-image }}');
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-position: {{ site.data.theme.home-banner-image-position | default: 'center' }}; */
-    min-height: 331px;
+    background-position: {{ site.data.theme.home-banner-image-position | default: 'center' }};
+    min-height: 424px;
+    border-bottom: 1px #463e38 solid;
 }
 </style>
 
 <div class="header">
-    <div class="row bg-dark bg-opacity-75">
+    <div class="row bg-sepia bg-opacity-50">
         <div class="col-12 d-flex align-items-center">
             <a href="https://www.caltech.edu/" aria-label="Caltech Home">
                 <svg id="logo" version="1.1" viewBox="-3 -2 3048 349" xmlns="http://www.w3.org/2000/svg">
@@ -27,12 +28,12 @@
             </a>
         </div>
     </div>
-    <div class="row bg-dark bg-opacity-75">
+    <div class="row bg-sepia bg-opacity-50">
         <div class="col-12">
             {% include collection-nav.html %}
         </div> 
     </div>
-    <div class="row">
+    <div class="row bg-sepia bg-opacity-50">
      <div class="col-12">
             {% include banner-home.html %}
         </div> 

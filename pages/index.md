@@ -4,13 +4,17 @@ title: Overview
 permalink: /
 show_banner: true
 ---
+<div class="body-container">
+
+<h1 id="page-menu-label" class="section-title"></h1>
+
 <p>In 1891, Pasadena minister and politician Amos Throop founded Throop University. Soon renamed Throop Polytechnic Institute, the school offered a wide range of courses, from elementary school to “manual arts” such as carpentry and sewing.</p>
 
 <p>In the 1910s and 1920s, Throop dramatically reinvented itself, first focusing its curriculum on engineering, then expanding into a research institute. The school began building its current campus, recruited renowned faculty, constructed sophisticated laboratories, trained students to become leading researchers, and established new relationships with industry and government.</p>
 
 <p>On February 10, 1920, Throop’s trustees acknowledged this transformation by changing the institution’s name once again. Throop became the California Institute of Technology. </p>
 
-<br>
+</div>
 
 ## Explore the Exhibit
 
