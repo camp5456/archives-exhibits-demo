@@ -1,36 +1,11 @@
-<style>
-#home-banner {
-    background-image: url('{{ site.data.theme.featured-image }}');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: {{ site.data.theme.home-banner-image-position | default: 'center' }};
-    min-height: 125px;
-    max-height: 225px;
-    
-}
-#home-title-box {
-    display: flex;
-    justify-content: center;    
-    align-items: center;      
-    height: 100%;              
-}
-
-#home-title-box h1 {
-    color: white;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.75);
-}
-
-@media screen and (max-width: 576px) {
-    #home-title-box {
-        max-height: 500px;
-    }
-}
-</style>
-
-<div id="home-banner" class="container-fluid mb-0 p-0">
-    <div id="home-title-box" class="bg-dark bg-opacity-50">
-        <h1 class="site-title">{{ site.title }}</h1>
-    </div>                          
+<div class="container-fluid mb-0 p-0">
+    <div id="home-title-box" class="position-relative" >
+        <div class="p-5 text-center text-white">
+            <h1 class="site-title">{{ site.title }}</h1>
+            <hr style="width:100px;" class="mx-auto">
+             {% if site.tagline %}<h2 class="mb-0 site-title">{{ site.tagline }}</h2>{% endif %}
+        </div>
+    </div>
 </div>
 
 

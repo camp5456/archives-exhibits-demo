@@ -5,13 +5,12 @@
   </head>
   <body class="d-flex flex-column h-100">
     <div id="skip-to-content"><a href="#maincontent">Skip to main content</a></div>
-      {% include branding.html %}
-      {% if page.show_banner and site.data.theme.featured-image %}
-      {% include banner-default.html %}
-      {% endif %}
-      <!-- {% include collection-nav.html %} -->
+      {% include branding-default.html %}
+      
     <main id="maincontent" role="main" class="flex-shrink-0">
-      {{ content }}
+      <div class="container my-4">
+        {{ content }}
+      </div>
     </main>
       {% include footer-nav.html %}
       {% include footer.html %}
