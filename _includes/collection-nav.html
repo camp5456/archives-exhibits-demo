@@ -20,7 +20,7 @@
                 {% for nav in navItems %}
                 {% if nav.stub %}
                 <li class="nav-item {{ nav.color_class }}">
-                    <a class="nav-link{% if page.url == nav.stub %} active{% endif %}"
+                    <a class="nav-link{% if page.url == nav.stub %} active{% endif %} black"
                         href="{{ nav.stub | relative_url }}"
                         data-label="{{ nav.display_name }}">
                          {{ nav.display_name }}

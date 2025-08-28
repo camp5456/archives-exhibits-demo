@@ -27,6 +27,10 @@ html, body {
   background-color: #00000099 !important; 
 }
 
+.site-title-container {
+  margin-top: 2.5rem;
+}
+ 
 /* logo styles */
 
 #logo {
@@ -119,9 +123,14 @@ ul.custom-list li::before {
 
 /* Custom Exhibit Color Schemes */
 
-.grey:hover {
-  background-color: $grey;
-  padding: -8px 0px !important;
+.burnt:hover {
+  background-color: $burnt;
+  color:#000000 !important;
+}
+
+a.black:hover {
+  color:#000000 !important;
+
 }
 
 .lions-main:hover {
@@ -140,9 +149,45 @@ ul.custom-list li::before {
   background-color: $campfire; 
 }
 
-.body-container {
+.body-container-overview {
   background-color: $burnt;
-  color:#ffffff;
+  color:#000000;
+  padding: 3rem 5rem;
+  line-height: 2rem;
+  margin: 5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.body-container-becoming {
+  background-color: $lions-main;
+  color:#000000;
+  padding: 3rem 5rem;
+  line-height: 2rem;
+  margin: 5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.body-container-building-research {
+  background-color: $mission-trail;
+  color:#000000;
+  padding: 3rem 5rem;
+  line-height: 2rem;
+  margin: 5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.body-container-community {
+  background-color: $pencil-lead;
+  color:#000000;
+  padding: 3rem 5rem;
+  line-height: 2rem;
+  margin: 5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.body-container-multimedia {
+  background-color: $campfire;
+  color:#000000;
   padding: 3rem 5rem;
   line-height: 2rem;
   margin: 5rem;

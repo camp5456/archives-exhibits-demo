@@ -28,7 +28,9 @@
             </a>
         </div>
         <div class="col-6">
-        test
+            <div class="site-title-container text-right text-white">
+                <h1 class="site-title-default">{{ site.title }}</h1>
+            </div>
         </div>
     </div>
     <div class="row bg-sepia">
@@ -36,11 +38,6 @@
             {% include collection-nav.html %}
         </div> 
     </div>
-<!-- <div class="row bg-sepia">
-     <div class="col-12">
-            {% include banner-default.html %}
-        </div> 
-    </div> -->
 </div>
 
 <script src="{{ '/assets/js/active-label.js' | relative_url }}"></script>

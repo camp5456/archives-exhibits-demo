@@ -19,6 +19,17 @@ h1.site-title{
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+h1.site-title-default {
+  font-size: 50px;
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.site-title-default {
+  @if $heading-font-family != "" { font-family: $heading-font-family; }
+}
+
+
 p.section-title{
     font-size: 18px;
     text-align: center;
