@@ -17,18 +17,9 @@ html, body {
     background-image: url('{{ site.data.theme.featured-image }}');
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-position: {{ site.data.theme.home-banner-image-position | default: 'center' }}; */
     min-height: 400px;
 }
 
-#home-title-box {
-   /*  padding-top: {{ site.data.theme.home-title-y-padding | default: '5em' }};*/
-   /*  padding-bottom: {{ site.data.theme.home-title-y-padding | default: '5em' }};*/
-    display: flex;
-    justify-content: center;     /* centers horizontally */
-    align-items: center;         /* centers vertically */
-    height: 100%;                /* ensures it fills the parent */
-}
 @media screen and (max-width: 576px) {
     #home-title-box {
         max-height: 500px;

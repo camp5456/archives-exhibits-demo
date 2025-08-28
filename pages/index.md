@@ -1,5 +1,5 @@
 ---
-layout: home-infographic
+layout: home
 title: Overview
 permalink: /
 show_banner: true
