@@ -19,8 +19,38 @@ html, body {
     }
 }
 
+/* Site Titles, Sub Titles for home and default pages */
+
+.site-title, .section-title {
+  @if $heading-font-family != "" { font-family: $heading-font-family; }
+}
+
+h1.site-title {
+    font-size: 3.5rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h1.site-title-default {
+  font-size: 3rem;
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+h2.site-title{
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.site-title-default {
+  @if $heading-font-family != "" { font-family: $heading-font-family; }
+}
+
+.title-margin {
+  margin: 28px 0px 99px 0px;
+}
+
+
 .bg-sepia {
-  background-color: #31261d99 !important;
+  background-color: #31261dB3 !important;
 }
 
 .bg-black {
@@ -36,7 +66,7 @@ html, body {
 #logo {
   max-width: 350px;
   min-height: 45px; 
-  margin: 3rem;
+  margin: 2.5rem;
   shape-rendering: geometricPrecision;
   text-rendering: geometricPrecision;
   image-rendering: auto;
@@ -155,6 +185,7 @@ a.black:hover {
   padding: 3rem 5rem;
   line-height: 2rem;
   margin: 5rem;
+  margin-top: -100px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -163,7 +194,7 @@ a.black:hover {
   color:#000000;
   padding: 3rem 5rem;
   line-height: 2rem;
-  margin: 5rem;
+  margin: 3rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -172,7 +203,7 @@ a.black:hover {
   color:#000000;
   padding: 3rem 5rem;
   line-height: 2rem;
-  margin: 5rem;
+  margin: 3rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -181,7 +212,7 @@ a.black:hover {
   color:#000000;
   padding: 3rem 5rem;
   line-height: 2rem;
-  margin: 5rem;
+  margin: 3rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -190,6 +221,6 @@ a.black:hover {
   color:#000000;
   padding: 3rem 5rem;
   line-height: 2rem;
-  margin: 5rem;
+  margin: 3rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
