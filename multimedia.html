@@ -22,7 +22,7 @@
 <link rel="stylesheet" href="/archives-exhibits-demo/assets/css/cb.css" type="text/css">
 
 <meta name="robots" content="noindex" />
-<!-- Last build date: 2025-08-29 -->
+<!-- Last build date: 2025-09-02 -->
   </head>
   <body class="d-flex flex-column h-100">
     <div id="skip-to-content"><a href="#maincontent">Skip to main content</a></div>
@@ -35,11 +35,34 @@
     min-height: 181px;
     border-bottom: 1px #463e38 solid;
 }
+
+/* fixes margins for content-container on devices 767 and smaller */
+@media (max-width: 767px) {
+  
+  .header  {
+    min-height: 223px;
+    }
+}
+
+/* fixes margins for content-container on devices 540 and smaller */
+@media (max-width: 540px) {
+  .header  {
+    min-height: 278px;
+    }
+}
+
+/* adujusting padding on content-container at 445 and smaller */
+@media (max-width: 445px) {
+  .header  {
+    min-height: 278px;
+    }
+}
+
 </style>
 
 <div class="header">
     <div class="row bg-sepia">
-        <div class="col-6 d-flex align-items-center">
+        <div class="col-md-6 col-sm-12 d-flex align-items-center">
             <a href="https://www.caltech.edu/" aria-label="Caltech Home">
                 <svg id="logo" version="1.1" viewBox="-3 -2 3048 349" xmlns="http://www.w3.org/2000/svg">
                     <g transform="translate(1214 133)">
@@ -55,7 +78,7 @@
                 </svg>
             </a>
         </div>
-        <div class="col-6">
+        <div class="col-md-6 col-sm-12">
             <div class="site-title-container text-right text-white">
                 <h1 class="site-title-default">Becoming Caltech</h1>
             </div>
@@ -80,7 +103,7 @@
         </button>
         
         <div class="collapse navbar-collapse" id="page-nav">
-            <ul class="navbar-nav ms-auto me-5">
+            <ul class="navbar-nav ms-lg-auto me-lg-5 text-start text-lg-end">
                 
                 <li class="nav-item burnt">
                     <a class="nav-link black"
@@ -150,7 +173,7 @@
 
       
     <main id="maincontent" role="main" class="flex-shrink-0">
-      <div class="container my-4">
+      <div class="container-fluid my-4">
         <div class="container my-4">
   <div class="row">
 
@@ -166,7 +189,7 @@
 }
 </style>
 
-<div class="body-container-multimedia">
+<div class="body-container multimedia">
 
 <h1 id="page-menu-label" class="section-title"></h1>
 
