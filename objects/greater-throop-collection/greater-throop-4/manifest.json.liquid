@@ -1,0 +1,38 @@
+---
+layout: null
+permalink: /objects/greater-throop-collection/greater-throop-4/manifest.json
+---
+
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "{{ site.baseurl }}/objects/greater-throop-collection/greater-throop-4/manifest.json",
+  "type": "Manifest",
+  "label": { "en": ["James Augustin Brown Scherer, April 1918"] },
+  "description": { "en": ["Unknown photographer"] },
+  "behavior": ["individuals"],
+  "items": [{
+    "id": "{{ site.baseurl }}/objects/greater-throop-collection/greater-throop-4/canvas",
+    "type": "Canvas",
+    "label": { "en": ["James Augustin Brown Scherer, April 1918"] },
+    "height": 7299,
+    "width": 5442,
+    "items": [{
+      "id": "{{ site.baseurl }}/objects/greater-throop-collection/greater-throop-4/canvas/page",
+      "type": "AnnotationPage",
+      "items": [{
+        "id": "{{ site.baseurl }}/objects/greater-throop-collection/greater-throop-4/annotation",
+        "type": "Annotation",
+        "motivation": "painting",
+        "body": {
+          "id": "{{ site.baseurl }}/objects/greater-throop-collection/greater-throop-4/greater-throop-4.jpg",
+          "type": "Image",
+          "format": "image/jpeg",
+          "height": 7299,
+          "width": 5442,
+          "label": { "en": ["James Augustin Brown Scherer image"] }
+        },
+        "target": "{{ site.baseurl }}/objects/greater-throop-collection/greater-throop-4/canvas"
+      }]
+    }]
+  }]
+}

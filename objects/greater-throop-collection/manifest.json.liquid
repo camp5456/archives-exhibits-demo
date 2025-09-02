@@ -1,0 +1,39 @@
+---
+layout: null
+permalink: /objects/greater-throop-collection/manifest.json
+---
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "{{ site.baseurl }}/objects/combined-manifest.json",
+  "type": "Manifest",
+  "label": { "en": ["The Greater Throop Collection"] },
+  "description": { "en": ["A collection of historical photographs and artifacts from The Greater Throop."] },
+  "items": [
+    {% for item in site.data.iiif-cb-demo %}
+    {
+      "id": "{{ site.baseurl }}/objects/greater-throop-collection/{{ item.objectid }}/manifest.json",
+      "type": "Canvas",
+      "label": { "en": ["{{ item.title }}"] },
+      "height": {{ item.height | default: 7299 }},
+      "width": {{ item.width | default: 5442 }},
+      "items": [{
+        "id": "{{ site.baseurl }}/objects/greater-throop-collection/{{ item.objectid }}/canvas/page",
+        "type": "AnnotationPage",
+        "items": [{
+          "id": "{{ site.baseurl }}/objects/greater-throop-collection/{{ item.objectid }}/annotation",
+          "type": "Annotation",
+          "motivation": "painting",
+          "body": {
+            "id": "{{ site.baseurl }}/objects/greater-throop-collection/{{ item.objectid }}/{{ item.objectid }}.jpg",
+            "type": "Image",
+            "format": "image/jpeg",
+            "height": {{ item.height | default: 7299 }},
+            "width": {{ item.width | default: 5442 }}
+          },
+          "target": "{{ site.baseurl }}/objects/greater-throop-collection/{{ item.objectid }}/canvas"
+        }]
+      }]
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
