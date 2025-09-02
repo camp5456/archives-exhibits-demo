@@ -1,0 +1,33 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-3/manifest.json",
+  "type": "Manifest",
+  "label": { "en": ["George Ellery Hale at the Mount Wilson Observatory Snow Solar Telescope Spectrograph"] },
+  "description": { "en": ["Unknown photographer, c. 1905"] },
+  "behavior": ["individuals"],
+  "items": [{
+    "id": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-3/canvas",
+    "type": "Canvas",
+    "label": { "en": ["George Ellery Hale at the Mount Wilson Observatory Snow Solar Telescope Spectrograph"] },
+    "height": 7299,
+    "width": 5442,
+    "items": [{
+      "id": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-3/canvas/page",
+      "type": "AnnotationPage",
+      "items": [{
+        "id": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-3/annotation",
+        "type": "Annotation",
+        "motivation": "painting",
+        "body": {
+          "id": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-3/greater-throop-3.jpg",
+          "type": "Image",
+          "format": "image/jpeg",
+          "height": 7299,
+          "width": 5442,
+          "label": { "en": ["George Ellery Hale at the Mount Wilson Observatory Snow Solar Telescope image"] }
+        },
+        "target": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-3/canvas"
+      }]
+    }]
+  }]
+}

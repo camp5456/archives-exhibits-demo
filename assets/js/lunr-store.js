@@ -1,17 +1,21 @@
 var store = [{  
-"title": "original arches","date": "1960","creator": "unknown","description": "Original cast stone arches by Alexander Calder that adorned Caltech’s Throop Hall before earthquake.","subject": "architecture","location": "Throop Hall", 
-"id": "almost-a-lost-art-1.html"
+"title": "Wood Carving Class","date": "1890s","creator": "Unknown photographer","description": "Unknown photographer. Wood Carving Class, 1890s.","subject": "The Greater Throop","location": "Pasadena, California", 
+"id": "greater-throop-1.html"
 
 },{  
-"title": "fallen arches","date": "1974","creator": "unknown","description": "A languishing sculpture, circa 1974. The figure represents Imagination and is winged, 'exulting in yet unexplored possibilities,' in the words of the artist. For the moment, the outlook was dim.","subject": "architecture","location": "Throop Hall", 
-"id": "almost-a-lost-art-2.html"
+"title": "Unknown photographer, Drawing Class, 1890s","date": "1890s","creator": "Unknown photographer","description": "Unknown photographer. Drawing Class, 1890s.","subject": "The Greater Throop","location": "Pasadena, California", 
+"id": "greater-throop-2.html"
 
 },{  
-"title": "restoring arches","date": "1986","creator": "unknown","description": "Remounting the Calder arches, 1986.","subject": "architecture","location": "Throop Hall", 
-"id": "almost-a-lost-art-3.html"
+"title": "George Ellery Hale at the Mount Wilson Observatory Snow Solar Telescope Spectrograph","date": "c. 1905","creator": "Unknown photographer","description": "Unknown photographer. George Ellery Hale at the Mount Wilson Observatory Snow Solar Telescope Spectrograph, c. 1905.","subject": "The Greater Throop","location": "Pasadena, California", 
+"id": "greater-throop-3.html"
 
 },{  
-"title": "new home for arches","date": "1986","creator": "unknown","description": "The Calder arches in their new setting, Beckman Laboratory of Chemical Synthesis.","subject": "architecture","location": "Beckman Laboratory of Chemical Synthesis", 
-"id": "almost-a-lost-art-4.html"
+"title": "James Augustin Brown Scherer","date": "April 1918","creator": "Unknown photographer","description": "Unknown photographer. James Augustin Brown Scherer, April 1918.","subject": "The Greater Throop","location": "Pasadena, California", 
+"id": "greater-throop-4.html"
+
+},{  
+"title": "Throop Pennant","date": "c. 1910","creator": "Unknown maker","description": "Unknown maker. Throop Pennant, c. 1910 Felt.","subject": "The Greater Throop","location": "Pasadena, California", 
+"id": "greater-throop-7.html"
 
 }];

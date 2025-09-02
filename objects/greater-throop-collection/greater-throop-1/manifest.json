@@ -1,0 +1,33 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-1/manifest.json",
+  "type": "Manifest",
+  "label": { "en": ["Wood Carving Class, 1890s"] },
+  "description": { "en": ["Unknown photographer, 1890s"] },
+  "behavior": ["individuals"],
+  "items": [{
+    "id": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-1/canvas",
+    "type": "Canvas",
+    "label": { "en": ["Wood Carving Class, 1890s"] },
+      "height": 3000,
+      "width": 2237,
+      "items": [{
+      "id": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-1/canvas/page",
+      "type": "AnnotationPage",
+      "items": [{
+        "id": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-1/annotation",
+        "type": "Annotation",
+        "motivation": "painting",
+        "body": {
+          "id": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-2/greater-throop-1.jpg",
+          "type": "Image",
+          "format": "image/jpeg",
+          "height": 7299,
+          "width": 5442,
+          "label": { "en": ["Drawing Class image"] }
+        },
+        "target": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-1/canvas"
+      }]
+    }]
+  }]
+}

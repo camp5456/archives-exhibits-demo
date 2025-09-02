@@ -3,19 +3,20 @@
         {
             "field": "subject",
             "terms": { 
-                "architecture": 4
+                "the greater throop": 5
             }
         },
         {
             "field": "creator",
             "terms": { 
-                "unknown": 4
+                "unknown photographer": 4,
+                "unknown maker": 1
             }
         },
         {
             "field": "format",
             "terms": { 
-                "jpg": 4
+                "jpg": 5
             }
         }
         
