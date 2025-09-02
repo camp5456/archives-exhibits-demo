@@ -16,7 +16,7 @@ show_banner: true
 }
 </style>
 
-<div class="body-container-community">
+<div class="body-container community">
 
 <h1 id="page-menu-label" class="section-title"></h1>
 

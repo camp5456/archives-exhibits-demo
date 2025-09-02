@@ -11,7 +11,9 @@ html, body {
   background: linear-gradient(to right, #8c8782 28%, #cccccc 0);
 }
 
-/* Header Styles */
+/* - - - -  
+Banner Styles 
+- - - - - */
 
 @media screen and (max-width: 576px) {
     #home-title-box {
@@ -19,9 +21,25 @@ html, body {
     }
 }
 
-/* Site Titles, Sub Titles for home and default pages */
+/* adds a sepia overlay with some opacity to the banner image */
+.bg-sepia {
+  background-color: #31261dB3 !important;
+}
 
-.site-title, .section-title {
+/* another overlay color option in case team doesn't like sepia */
+.bg-black {
+  background-color: #00000099 !important; 
+}
+
+.site-title-container {
+  margin-top: 2.5rem;
+}
+
+/* - - - - 
+Site Title, Site Sub Titles
+- - - - - */
+
+.site-title, .section-title, .site-title-default {
   @if $heading-font-family != "" { font-family: $heading-font-family; }
 }
 
@@ -31,7 +49,7 @@ h1.site-title {
 }
 
 h1.site-title-default {
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
@@ -40,28 +58,40 @@ h2.site-title{
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.site-title-default {
-  @if $heading-font-family != "" { font-family: $heading-font-family; }
-}
-
 .title-margin {
   margin: 28px 0px 99px 0px;
 }
 
-
-.bg-sepia {
-  background-color: #31261dB3 !important;
-}
-
-.bg-black {
-  background-color: #00000099 !important; 
-}
-
-.site-title-container {
-  margin-top: 2.5rem;
+h2#explore-the-exhibit {
+  margin: 20px 0px 30px 0px;
+  text-align: center;
+  @if $heading-font-family != "" { font-family: $heading-font-family; }
 }
  
-/* logo styles */
+/* - - - - 
+Menu Styles
+- - - - - */
+
+button.navbar-toggler {
+  background-color: #ffffff99;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse .navbar-nav {
+    text-align: left !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+  }
+
+  .navbar-collapse .nav-link {
+    text-align: left !important;
+  }
+}
+
+
+/* - - - -
+logo styles 
+- - - - - */
 
 #logo {
   max-width: 350px;
@@ -80,12 +110,6 @@ h2.site-title{
   div.no-outline {
     border:none !important;
   }
-
-/* centering section title on homepage - if used */
-#explore-the-exhibit {
-  text-align: center;
-}
-
 
 /* Override Bootstrap primary button */
 .btn-primary {
@@ -179,48 +203,85 @@ a.black:hover {
   background-color: $campfire; 
 }
 
-.body-container-overview {
+.body-container {
+  color:#000000;
+  padding: 3.5rem 4rem;
+  line-height: 2rem;
+  margin: 4rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.overview {
   background-color: $burnt;
-  color:#000000;
-  padding: 3rem 5rem;
-  line-height: 2rem;
-  margin: 5rem;
   margin-top: -100px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-.body-container-becoming {
+.becoming {
   background-color: $lions-main;
-  color:#000000;
-  padding: 3rem 5rem;
-  line-height: 2rem;
-  margin: 3rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  margin: 50px 40px 0px 50px;
+  height: 100%;
 }
 
-.body-container-building-research {
+.building-research {
   background-color: $mission-trail;
-  color:#000000;
-  padding: 3rem 5rem;
-  line-height: 2rem;
-  margin: 3rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-.body-container-community {
+.community {
   background-color: $pencil-lead;
-  color:#000000;
-  padding: 3rem 5rem;
-  line-height: 2rem;
-  margin: 3rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-.body-container-multimedia {
+.multimedia {
   background-color: $campfire;
-  color:#000000;
-  padding: 3rem 5rem;
-  line-height: 2rem;
-  margin: 3rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* fixes margins for content-container on devices 767 and smaller */
+@media (max-width: 767px) {
+  
+  .becoming, .building-research, .community, .multimedia {
+    margin: 50px 10px 0px 10px !important;
+  }
+
+  .site-title-container {
+    margin: 0px 0px 50px 0px;
+  }
+
+}
+
+/* fixes margins for content-container on devices 540 and smaller */
+@media (max-width: 540px) {
+  .title-margin {
+    margin-top: -20px;
+  }
+
+  .becoming, .building-research, .community, .multimedia {
+    padding: 2rem;
+    margin: 0px 10px 0px 10px !important;
+  }
+
+  h1.site-title-default {
+    font-size: 2 rem !important;
+    margin-bottom: 50px !important;
+  }
+}
+
+/* adujusting padding on content-container at 445 and smaller */
+@media (max-width: 445px) {
+  .becoming, .building-research, .community, .multimedia {
+    padding: 2rem;
+    margin:  0px 10px 0px 10px !important;
+    height: 97%;
+  }
+
+  .title-margin {
+    margin-top: -20px;
+  }
+
+  .site-title-container {
+    margin: 0px;
+  }
+
+  h1.site-title-default {
+    font-size: 2.5rem !important;
+    margin-bottom: 50px !important;
+  }
+
 }

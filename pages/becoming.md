@@ -6,6 +6,7 @@ show_banner: true
 ---
 
 <style>
+/* 
 #my-mirador {
   height: 700px;
   max-width: 90%;
@@ -13,9 +14,10 @@ show_banner: true
   position: relative;
   border: 1px solid #ccc;
 }
+*/
 </style>
 
-<div class="body-container-becoming">
+<div class="body-container becoming">
 
 <h1 id="page-menu-label" class="section-title"></h1>
 
@@ -27,7 +29,7 @@ show_banner: true
 
 </div>
 
-
+<!--
 <script src="https://unpkg.com/mirador@3.3.0/dist/mirador.min.js"></script>
 <div id="my-mirador"></div>
 <script type="text/javascript">
@@ -70,4 +72,4 @@ show_banner: true
       }
     }
   });
-</script>
+</script> -->

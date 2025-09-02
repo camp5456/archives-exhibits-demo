@@ -7,11 +7,34 @@
     min-height: 181px;
     border-bottom: 1px #463e38 solid;
 }
+
+/* fixes margins for content-container on devices 767 and smaller */
+@media (max-width: 767px) {
+  
+  .header  {
+    min-height: 223px;
+    }
+}
+
+/* fixes margins for content-container on devices 540 and smaller */
+@media (max-width: 540px) {
+  .header  {
+    min-height: 278px;
+    }
+}
+
+/* adujusting padding on content-container at 445 and smaller */
+@media (max-width: 445px) {
+  .header  {
+    min-height: 278px;
+    }
+}
+
 </style>
 
 <div class="header">
     <div class="row bg-sepia">
-        <div class="col-6 d-flex align-items-center">
+        <div class="col-md-6 col-sm-12 d-flex align-items-center">
             <a href="https://www.caltech.edu/" aria-label="Caltech Home">
                 <svg id="logo" version="1.1" viewBox="-3 -2 3048 349" xmlns="http://www.w3.org/2000/svg">
                     <g transform="translate(1214 133)">
@@ -27,7 +50,7 @@
                 </svg>
             </a>
         </div>
-        <div class="col-6">
+        <div class="col-md-6 col-sm-12">
             <div class="site-title-container text-right text-white">
                 <h1 class="site-title-default">{{ site.title }}</h1>
             </div>

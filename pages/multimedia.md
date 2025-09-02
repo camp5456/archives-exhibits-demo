@@ -16,7 +16,7 @@ show_banner: true
 }
 </style>
 
-<div class="body-container-multimedia">
+<div class="body-container multimedia">
 
 <h1 id="page-menu-label" class="section-title"></h1>
 

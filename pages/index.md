@@ -4,7 +4,7 @@ title: Overview
 permalink: /
 show_banner: true
 ---
-<div class="body-container-overview">
+<div class="body-container overview">
 
 <h1 id="page-menu-label" class="section-title"></h1>
 
