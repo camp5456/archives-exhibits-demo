@@ -310,22 +310,3 @@ margin-right:20px;
 .footer-custom .container {
   max-width: 1300px;
 }
-
-#dynamic-footer-nav {
-  background-color: #f8f9fa; /* a soft gray */
-  border-top: 1px solid #ddd;
-}
-
-#dynamic-footer-nav a {
-  font-weight: 600;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
-#dynamic-footer-nav a:hover {
-  color: #0056b3;
-}
-
-#dynamic-footer-nav {
-  box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.05);
-}

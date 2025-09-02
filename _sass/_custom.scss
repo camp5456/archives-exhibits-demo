@@ -15,12 +15,6 @@ html, body {
 Banner Styles 
 - - - - - */
 
-@media screen and (max-width: 576px) {
-    #home-title-box {
-        max-height: 500px;
-    }
-}
-
 /* adds a sepia overlay with some opacity to the banner image */
 .bg-sepia {
   background-color: #31261dB3 !important;
@@ -43,25 +37,29 @@ Site Title, Site Sub Titles
   @if $heading-font-family != "" { font-family: $heading-font-family; }
 }
 
+/* styles for the site title on the home page banner */
 h1.site-title {
     font-size: 3.5rem;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-h1.site-title-default {
-  font-size: 2.5rem;
-  text-align: center;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 h2.site-title{
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+/* styles for the site title on all other pages using the default template */
+h1.site-title-default {
+  font-size: 2.5rem;
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* margin specific to the title on the homepage. doesn't apply to default template */
 .title-margin {
   margin: 28px 0px 99px 0px;
 }
 
+/* section heading used only on the homepage */
 h2#explore-the-exhibit {
   margin: 20px 0px 30px 0px;
   text-align: center;
@@ -258,8 +256,13 @@ a.black:hover {
   }
 
   h1.site-title-default {
-    font-size: 2 rem !important;
+    font-size: 2rem !important;
     margin-bottom: 50px !important;
+  }
+
+  h1.site-title {
+  font-size: 2.7rem !important;
+  margin-bottom: 50px !important;
   }
 }
 
@@ -284,4 +287,32 @@ a.black:hover {
     margin-bottom: 50px !important;
   }
 
+  h1.site-title {
+  font-size: 2.5rem !important;
+  margin-bottom: 50px !important;
+  }
+}
+
+/* - - - - - 
+Custom Nav Footer
+- - - - - - */
+
+#dynamic-footer-nav {
+  background-color: #f8f9fa; 
+  border-top: 1px solid #ddd;
+}
+
+#dynamic-footer-nav a {
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  color: #666666;
+}
+
+#dynamic-footer-nav a:hover {
+  color: #0056b3;
+}
+
+#dynamic-footer-nav {
+  box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.05);
 }

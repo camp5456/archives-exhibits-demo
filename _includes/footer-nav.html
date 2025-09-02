@@ -1,7 +1,7 @@
 <div id="dynamic-footer-nav" class="container-fluid bg-light border-top mt-5">
   <div class="row">
     <div class="col-12">
-      <div class="container-xl mx-auto d-flex justify-content-between align-items-center py-4 px-5 text-secondary small fw-light" style="border-top: 1px solid #ddd;">
+      <div class="container-xl mx-auto d-flex justify-content-between align-items-center py-4 px-5 small fw-light">
         <div id="prev-nav" class="text-start"></div>
         <div id="next-nav" class="text-end"></div>
       </div>
@@ -30,7 +30,7 @@
       if (prev) {
         document.getElementById("prev-nav").innerHTML = `
           <span class="me-2">Previous Section:</span>
-          <a href="${prev.href}" class="text-decoration-underline text-secondary">
+          <a href="${prev.href}" class="text-decoration-underline">
             ${prev.textContent}
           </a>`;
       }
@@ -38,7 +38,7 @@
       if (next) {
         document.getElementById("next-nav").innerHTML = `
           <span class="me-2">Next Section:</span>
-          <a href="${next.href}" class="text-decoration-underline text-secondary">
+          <a href="${next.href}" class="text-decoration-underline">
             ${next.textContent}
           </a>`;
       }
