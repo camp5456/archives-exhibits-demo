@@ -1,13 +1,15 @@
 {
   "@context": "http://iiif.io/api/presentation/3/context.json",
-  "id": "/archives-exhibits-demo/objects/combined-manifest.json",
+  "id": "/archives-exhibits-demo/objects/greater-throop-collection/manifest.json",
   "type": "Manifest",
-  "label": { "en": ["The Greater Throop Collection"] },
-  "description": { "en": ["A collection of historical photographs and artifacts from The Greater Throop."] },
+  "label": { "en": ["Becoming"] },
+  "description": { "en": ["A collection of historical photographs and artifacts from Becoming."] },
+  "behavior": ["individuals"],
+  "viewingDirection": "left-to-right",
   "items": [
     
     {
-      "id": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-1/manifest.json",
+      "id": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-1/canvas/greater-throop-1",
       "type": "Canvas",
       "label": { "en": ["Wood Carving Class"] },
       "height": 7299,
@@ -26,13 +28,13 @@
             "height": 7299,
             "width": 5442
           },
-          "target": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-1/canvas"
+          "target": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-1/canvas/greater-throop-1"
         }]
       }]
     },
     
     {
-      "id": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-2/manifest.json",
+      "id": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-2/canvas/greater-throop-2",
       "type": "Canvas",
       "label": { "en": ["Unknown photographer, Drawing Class, 1890s"] },
       "height": 7299,
@@ -51,13 +53,13 @@
             "height": 7299,
             "width": 5442
           },
-          "target": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-2/canvas"
+          "target": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-2/canvas/greater-throop-2"
         }]
       }]
     },
     
     {
-      "id": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-3/manifest.json",
+      "id": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-3/canvas/greater-throop-3",
       "type": "Canvas",
       "label": { "en": ["George Ellery Hale at the Mount Wilson Observatory Snow Solar Telescope Spectrograph"] },
       "height": 7299,
@@ -76,13 +78,13 @@
             "height": 7299,
             "width": 5442
           },
-          "target": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-3/canvas"
+          "target": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-3/canvas/greater-throop-3"
         }]
       }]
     },
     
     {
-      "id": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-4/manifest.json",
+      "id": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-4/canvas/greater-throop-4",
       "type": "Canvas",
       "label": { "en": ["James Augustin Brown Scherer"] },
       "height": 7299,
@@ -101,13 +103,13 @@
             "height": 7299,
             "width": 5442
           },
-          "target": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-4/canvas"
+          "target": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-4/canvas/greater-throop-4"
         }]
       }]
     },
     
     {
-      "id": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-7/manifest.json",
+      "id": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-7/canvas/greater-throop-7",
       "type": "Canvas",
       "label": { "en": ["Throop Pennant"] },
       "height": 7299,
@@ -126,7 +128,7 @@
             "height": 7299,
             "width": 5442
           },
-          "target": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-7/canvas"
+          "target": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-7/canvas/greater-throop-7"
         }]
       }]
     }
