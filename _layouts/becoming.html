@@ -6,7 +6,7 @@ layout: default
 #my-mirador {
   height: 900px;
   max-width: 95%;
-  margin-top: 50px;
+  margin-top: 43px;
   position: relative;
   border: 1px solid #ccc;
 }
@@ -53,8 +53,8 @@ layout: default
         windows: [{
           loadedManifest: baseUrl + "/objects/greater-throop-collection/manifest.json",
           canvasIndex: 0,
-          thumbnailNavigationPosition: "far-bottom",
-          view: "single",
+          thumbnailNavigationPosition: "none",
+          view: "gallery",
           osdBounds: {
             x: 0,
             y: 0,
@@ -68,7 +68,7 @@ layout: default
         window: {
           osdOptions: {
             homePosition: null,
-            defaultZoomLevel: 0,
+            defaultZoomLevel: 1,
             preserveViewport: false,
             animationTime: 0.5,
             fitBounds: true,

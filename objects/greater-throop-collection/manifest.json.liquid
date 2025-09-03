@@ -4,14 +4,16 @@ permalink: /objects/greater-throop-collection/manifest.json
 ---
 {
   "@context": "http://iiif.io/api/presentation/3/context.json",
-  "id": "{{ site.baseurl }}/objects/combined-manifest.json",
+  "id": "{{ site.baseurl }}/objects/greater-throop-collection/manifest.json",
   "type": "Manifest",
-  "label": { "en": ["The Greater Throop Collection"] },
-  "description": { "en": ["A collection of historical photographs and artifacts from The Greater Throop."] },
+  "label": { "en": ["Becoming"] },
+  "description": { "en": ["A collection of historical photographs and artifacts from Becoming."] },
+  "behavior": ["individuals"],
+  "viewingDirection": "left-to-right",
   "items": [
     {% for item in site.data.iiif-cb-demo %}
     {
-      "id": "{{ site.baseurl }}/objects/greater-throop-collection/{{ item.objectid }}/manifest.json",
+      "id": "{{ site.baseurl }}/objects/greater-throop-collection/{{ item.objectid }}/canvas/{{ item.objectid }}",
       "type": "Canvas",
       "label": { "en": ["{{ item.title }}"] },
       "height": {{ item.height | default: 7299 }},
@@ -30,7 +32,7 @@ permalink: /objects/greater-throop-collection/manifest.json
             "height": {{ item.height | default: 7299 }},
             "width": {{ item.width | default: 5442 }}
           },
-          "target": "{{ site.baseurl }}/objects/greater-throop-collection/{{ item.objectid }}/canvas"
+          "target": "{{ site.baseurl }}/objects/greater-throop-collection/{{ item.objectid }}/canvas/{{ item.objectid }}"
         }]
       }]
     }{% unless forloop.last %},{% endunless %}
