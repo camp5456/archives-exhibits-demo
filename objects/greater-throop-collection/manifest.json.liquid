@@ -6,7 +6,7 @@ permalink: /objects/greater-throop-collection/manifest.json
   "@context": "http://iiif.io/api/presentation/3/context.json",
   "id": "{{ site.baseurl }}/objects/greater-throop-collection/manifest.json",
   "type": "Manifest",
-  "label": { "en": ["Becoming"] },
+  "label": { "en": ["Exhibit Gallery"] },
   "description": { "en": ["A collection of historical photographs and artifacts from Becoming."] },
   "behavior": ["individuals"],
   "viewingDirection": "left-to-right",
@@ -18,8 +18,15 @@ permalink: /objects/greater-throop-collection/manifest.json
       "label": { "en": ["{{ item.title }}"] },
       "height": {{ item.height | default: 7299 }},
       "width": {{ item.width | default: 5442 }},
+      "thumbnail": [
+        {
+          "id": "{{ site.baseurl }}/objects/greater-throop-collection/{{ item.objectid }}/{{ item.objectid }}.jpg",
+          "type": "Image",
+          "format": "image/jpeg"
+        }
+      ],
       "items": [{
-        "id": "{{ site.baseurl }}/objects/greater-throop-collection/{{ item.objectid }}/canvas/page",
+        "id": "{{ site.baseurl }}/objects/greater-throop-collection/{{ item.objectid }}/canvas/{{ item.objectid }}/page",
         "type": "AnnotationPage",
         "items": [{
           "id": "{{ site.baseurl }}/objects/greater-throop-collection/{{ item.objectid }}/annotation",

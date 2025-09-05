@@ -203,7 +203,7 @@ a.black:hover {
 
 .body-container {
   color:#000000;
-  padding: 3.5rem 4rem;
+  padding: 3rem 4rem;
   line-height: 2rem;
   margin: 4rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -317,44 +317,227 @@ Custom Nav Footer
   box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.05);
 }
 
-/* Prevent distortion of thumbnails in Gallery view */
+/* - - - - - -
+Mirador Styles
+- - - - - - - */
 
-/* Thumbnail container "card" styling */
+/* div that acts as container for mirador player */
+#my-mirador {
+  height: 900px;
+  max-width: 95%;
+  margin-top: 43px;
+  position: relative;
+  border: 1px solid #ccc;
+}
 
-/* Adds card style to thumbnails in gallery view (stable selectors) */
-#my-mirador .mirador-viewer section[id^="window-"] [role="button"] {
-  width: 275px !important;
-  height: 420px !important;
+/* fixes margins for mirador container on devices 540 and smaller */
+@media (max-width: 540px) {
+  #my-mirador {
+  height: 900px;
+  max-width: 95%;
+  margin-top: 50px;
+  position: relative;
+  border: 1px solid #ccc;
+  }
+}
+
+/* adujusting padding on mirador container at 445 and smaller */
+@media (max-width: 445px) {
+  #my-mirador {
+  margin: 10px auto;
+
+  }
+}
+
+/* GALLERY (not nav): scope by section id ending in -gallery */
+#my-mirador .mirador-viewer section[id^="window-"][id$="-gallery"] [role="button"] {
+  width: 225px !important;
+  height: 200px !important;
   padding: 1rem;
   margin: 1rem;
   background-color: #f8f9fa;
   border: 1px solid #ccc;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
-  display: flex;
+  display: flex; 
   flex-direction: column;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+} 
+
+/* Center the media block inside each gallery tile */
+#my-mirador .mirador-viewer section[id^="window-"][id$="-gallery"] .mirador71.mirador70 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height:130% !important;
 }
 
-/* Scoped thumbnail image styling */
-#my-mirador .mirador-viewer section[id^="window-"] [role="button"] img[role="presentation"] {
+/* Image sizing inside gallery tiles (preserve aspect) */
+#my-mirador .mirador-viewer section[id^="window-"][id$="-gallery"] img.mirador63 {
+  width: auto !important;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+/* Prevent images from hijacking drag gestures */
+.osd-thumbs img {
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+/* Caption spacing inside gallery tiles */
+#my-mirador .mirador-viewer section[id^="window-"][id$="-gallery"] .mirador67.mirador69 {
+  margin-top: 6px;
+}
+
+
+/* Adds styling specific to thumbnail navigation when visible to respect aspect ratio */
+#my-mirador .mirador-window-thumbnail-navigation [role="gridcell"] { overflow: hidden; }
+#my-mirador .mirador-window-thumbnail-navigation [role="gridcell"] img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;       
+  height: auto;     
+  display: block;
+  object-fit: contain;
+}
+
+/* Constrain nav thumbnails to cell; center without squishing */
+#my-mirador .mirador-window-thumbnail-navigation [role="gridcell"] img {
   max-width: 100% !important;
-  max-height: 400px !important;
-  object-fit: contain !important;
-  margin-bottom: 0.5rem;
+  max-height: 100% !important;
+  width: auto !important;  
+  height: auto !important;  
+  display: block !important;
 }
 
-.mirador1 {
+/* STRONG clamp: override inline width/height on nav thumbnails */
+#my-mirador .mirador-window-thumbnail-navigation [role="gridcell"] > * img,
+#my-mirador .mirador-window-thumbnail-navigation [role="gridcell"] img,
+#my-mirador .mirador-window-thumbnail-navigation [role="gridcell"] button img {
+  max-width: 100% !important;
+  max-height: 100% !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain !important;
+  display: block !important;
+}
+.mirador-viewer {
   background: none !important;
 }
 
-.mirador16.mirador15 {
-  border: 0px !important;
+/* - - - - - - - - 
+Open Seadragon
+- - - - - - - - - */
+
+/* container - includes everything */
+.osd-shell {
+  height: auto;                 
+  background-color: #ffffff;
+  padding: 1rem;
+  margin-top: 65px;
+  border-top: 2px solid #847a63;
+  max-width: 95%;
 }
 
-.mirador10 {
-  display: block !important;
-  background-color: #ffffff !important;
+/* gallery title */
+.osd-header h1 {  
+  font-family: "Georgia", "serif";
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
+
+
+/* container for metadata and viewer */
+.osd-body-container {
+  border: 1px solid #eee;
+  background: #fff;
+}
+
+/* VIEWER */
+
+#osd-viewer {
+  height: 72vh;                  
+}
+
+/* METADATA */
+
+.osd-meta {
+  overflow: auto;
+  padding: 1.5rem 1rem 0 1.5rem;
+  background: #fff;
+  border-left: 1px #eee solid;
+}
+
+.osd-meta h2{
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* NAVIGATION */
+
+.osd-nav-container {
+  border: 1px solid #eee;
+  background: #eee;
+}
+
+.osd-thumbs {
+  padding: 13px 0;
+  touch-action: pan-x;            
+  scrollbar-gutter: stable;  
+  margin-bottom: 0px;   
+  background: #eee;  
+}
+
+.thumb {
+  height: 100px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+}
+
+#thumbs {
+  scrollbar-width: thick;           
+  scrollbar-color: #847a63 #f8f8f8;   
+}
+
+#thumbs::-webkit-scrollbar {
+  height: 16px;
+}
+
+.thumb img { 
+  max-width: 100%; 
+  max-height: 100%; 
+  display: block;
+  padding: 3px 0px 3px 0px;
+ }
+
+.thumb[aria-current="true"] { 
+  background: #847a63; 
+}
+
+/* Responsive viewer height tweaks */
+@media (max-width: 1199.98px) {   
+  #osd-viewer { 
+    height: 60vh; 
+  }
+}
+
+@media (max-width: 767.98px) {
+  #osd-viewer { 
+    height: 50vh; 
+  }
+  .thumb { 
+    width: 120px; 
+    height: 84px; 
+  }
+}
+
+
+#iiif-shell, .osd-shell, .container-fluid {
+  overflow-x: visible !important;
+}
+
