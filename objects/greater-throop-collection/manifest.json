@@ -2,7 +2,7 @@
   "@context": "http://iiif.io/api/presentation/3/context.json",
   "id": "/archives-exhibits-demo/objects/greater-throop-collection/manifest.json",
   "type": "Manifest",
-  "label": { "en": ["Becoming"] },
+  "label": { "en": ["Exhibit Gallery"] },
   "description": { "en": ["A collection of historical photographs and artifacts from Becoming."] },
   "behavior": ["individuals"],
   "viewingDirection": "left-to-right",
@@ -14,8 +14,15 @@
       "label": { "en": ["Wood Carving Class"] },
       "height": 7299,
       "width": 5442,
+      "thumbnail": [
+        {
+          "id": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-1/greater-throop-1.jpg",
+          "type": "Image",
+          "format": "image/jpeg"
+        }
+      ],
       "items": [{
-        "id": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-1/canvas/page",
+        "id": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-1/canvas/greater-throop-1/page",
         "type": "AnnotationPage",
         "items": [{
           "id": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-1/annotation",
@@ -39,8 +46,15 @@
       "label": { "en": ["Unknown photographer, Drawing Class, 1890s"] },
       "height": 7299,
       "width": 5442,
+      "thumbnail": [
+        {
+          "id": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-2/greater-throop-2.jpg",
+          "type": "Image",
+          "format": "image/jpeg"
+        }
+      ],
       "items": [{
-        "id": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-2/canvas/page",
+        "id": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-2/canvas/greater-throop-2/page",
         "type": "AnnotationPage",
         "items": [{
           "id": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-2/annotation",
@@ -64,8 +78,15 @@
       "label": { "en": ["George Ellery Hale at the Mount Wilson Observatory Snow Solar Telescope Spectrograph"] },
       "height": 7299,
       "width": 5442,
+      "thumbnail": [
+        {
+          "id": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-3/greater-throop-3.jpg",
+          "type": "Image",
+          "format": "image/jpeg"
+        }
+      ],
       "items": [{
-        "id": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-3/canvas/page",
+        "id": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-3/canvas/greater-throop-3/page",
         "type": "AnnotationPage",
         "items": [{
           "id": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-3/annotation",
@@ -89,8 +110,15 @@
       "label": { "en": ["James Augustin Brown Scherer"] },
       "height": 7299,
       "width": 5442,
+      "thumbnail": [
+        {
+          "id": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-4/greater-throop-4.jpg",
+          "type": "Image",
+          "format": "image/jpeg"
+        }
+      ],
       "items": [{
-        "id": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-4/canvas/page",
+        "id": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-4/canvas/greater-throop-4/page",
         "type": "AnnotationPage",
         "items": [{
           "id": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-4/annotation",
@@ -114,8 +142,15 @@
       "label": { "en": ["Throop Pennant"] },
       "height": 7299,
       "width": 5442,
+      "thumbnail": [
+        {
+          "id": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-7/greater-throop-7.jpg",
+          "type": "Image",
+          "format": "image/jpeg"
+        }
+      ],
       "items": [{
-        "id": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-7/canvas/page",
+        "id": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-7/canvas/greater-throop-7/page",
         "type": "AnnotationPage",
         "items": [{
           "id": "/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-7/annotation",
