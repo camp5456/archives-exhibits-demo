@@ -1,0 +1,19 @@
+{% comment %}
+Include all CSS/JS assets with automatic cache-busting.
+Usage: {% include assets.html %}
+{% endcomment %}
+
+{%- assign bust = site.time | date: '%s' -%}
+
+<!-- CSS -->
+<link rel="stylesheet" href="{{ '/assets/css/cb.scss' | relative_url }}?bust={{ bust }}">
+<link rel="stylesheet" href="{{ '/_sass/custom.scss' | relative_url }}?bust={{ bust }}">
+
+<!-- JS -->
+
+
+<!-- Image -->
+<img src="{{ '/objects/demo-card-01.jpg' | relative_url }}?bust={{ bust }}" alt="Site logo">
+<img src="{{ '/objects/demo-card-02.jpg' | relative_url }}?bust={{ bust }}" alt="Site logo">
+<img src="{{ '/objects/demo-card-03.jpg' | relative_url }}?bust={{ bust }}" alt="Site logo">
+<img src="{{ '/objects/demo-card-04.jpg' | relative_url }}?bust={{ bust }}" alt="Site logo">
