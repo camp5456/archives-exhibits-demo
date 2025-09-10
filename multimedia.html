@@ -22,7 +22,7 @@
 <link rel="stylesheet" href="/archives-exhibits-demo/assets/css/cb.css" type="text/css">
 
 <meta name="robots" content="noindex" />
-<!-- Last build date: 2025-09-08 -->
+<!-- Last build date: 2025-09-10 -->
   </head>
   <body class="d-flex flex-column h-100">
     <div id="skip-to-content"><a href="#maincontent">Skip to main content</a></div>
@@ -176,20 +176,8 @@
       <div class="container-fluid my-4">
         <div class="container my-4">
   <div class="row">
-
   <div class="col-md-12">
-
-   <style>
-#my-mirador {
-  height: 700px;
-  max-width: 90%;
-  margin: 2rem auto;
-  position: relative;
-  border: 1px solid #ccc;
-}
-</style>
-
-<div class="body-container multimedia">
+    <div class="body-container multimedia">
 
 <h1 id="page-menu-label" class="section-title"></h1>
 
@@ -201,127 +189,146 @@
 
 </div>
 
-<script src="https://unpkg.com/mirador@3.3.0/dist/mirador.min.js"></script>
 
-<div id="my-mirador"></div>
-<script type="text/javascript">
-  // Get base URL using Liquid, rendered as a string
-  const baseUrl = "/archives-exhibits-demo";
+  </div>
 
-  window.miradorInstance = Mirador.viewer({
-    id: "my-mirador",
-    manifests: {
-      [baseUrl + "/objects/greater-throop-collection/manifest.json"]: {
-        provider: "Caltech Library"
-      }
-    },
-    windows: [{
-      loadedManifest: baseUrl + "/objects/greater-throop-collection/manifest.json",
-      canvasIndex: 0,
-      thumbnailNavigationPosition: "far-bottom",
-      view: "single",
-      osdBounds: {
-        x: 0,
-        y: 0,
-        width: 5442,
-        height: 7299
-      }
-    }],
-    workspaceControlPanel: {
-      enabled: false
-    },
-    window: {
-      osdOptions: {
-        homePosition: null,
-        defaultZoomLevel: 0,
-        preserveViewport: false,
-        animationTime: 0.5,
-        fitBounds: true,
-        visibilityRatio: 1.0,
-        immediateRender: true,
-        minZoomLevel: 0,
-        maxZoomLevel: 10
-      }
-    }
-  });
+  <div class="col-md-11 offset-1">
+    
+    <div class="osd-shell" id="iiif-shell">
+      <div class="container-fluid">
+        <div class="row">
+          
+          <div class="col-12">
+            <div class="osd-header">
+              <div>
+                <h1 class="osd-title" id="work-title">Loading…</h1>
+                <p class="osd-sub" id="work-sub"></p>
+              </div>
+            </div>
+        
+          </div>
+
+          <!-- Thumbnails full-width above viewer on small screens -->
+          <div class="row osd-nav-container">
+            <div class="col-12">
+              <nav class="osd-thumbs d-flex gap-2" id="thumbs" aria-label="Thumbnails"></nav>
+            </div>
+          </div>
+
+          <!-- Viewer and metadata split on xl and stack below -->
+          <div class="row osd-body-container">
+            <div class="col-12 col-xl-8 order-3 order-xl-3">
+              <div id="osd-viewer"></div>
+            </div>
+            <div class="col-12 col-xl-4 order-4 order-xl-4">
+              <aside class="osd-meta">
+                <h2>Metadata</h2>
+                <div id="meta"></div>
+              </aside>
+            </div>
+          </div>
+      
+      
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Load OpenSeadragon library -->
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.1.0/openseadragon.min.js"></script>
+
+<!-- Make OSD button icons load from local assets to avoic ORBS error-->
+<script>
+  window.OSD_PREFIX = "/archives-exhibits-demo/assets/img/openseadragon/";
 </script>
 
-
+<!-- Expose CSV rows as JSON keyed by objectid -->
+<script>
+  window.CANVAS_META = {
     
-  </div>
-  <!-- <div class="col-md-4">  
-
-    <div class="card mb-3">
-  <div class="card-body">
-    <h2 class="card-title h5">Time Span</h2>
-    <p class="card-text h5">1890s to c.1910
-      <br><a href="/archives-exhibits-demo/timeline.html" class="btn btn-sm btn-outline-secondary mt-2">View Timeline</a>
-    </p>
-  </div>
-</div>
-
     
-    <div class="card mb-3">
+      "greater-throop-1": {
+        "title": "Wood Carving Class",
+        "creator": "Unknown photographer",
+        "date": "1890s",
+        "description": "Unknown photographer. Wood Carving Class, 1890s.",
+        "subject": "The Greater Throop",
+        "location": "Pasadena, California",
+        "source": "California Institute of Technology Photographs",
+        "identifier": "001_40.11-7",
+        "rights": "Public Domain",
+        "rightsstatement": null,
+        "image_alt_text": null,
+        "manifest": "iiif" ? "/objects/greater-throop-collection/greater-throop-1/manifest.json" : null
+      },
     
-    <div class="card-body">
-        <h2 class="card-title h5">Top Subjects</h2>
-        <p class="card-text">
-            
-            <a class="btn btn-sm btn-primary m-1" href="/archives-exhibits-demo/browse.html#the%20greater%20throop">the greater throop</a>
-        </p>
-    </div>
-</div>
-
-
-    <div class="card mb-3">
+      "greater-throop-2": {
+        "title": "Unknown photographer, Drawing Class, 1890s",
+        "creator": "Unknown photographer",
+        "date": "1890s",
+        "description": "Unknown photographer. Drawing Class, 1890s.",
+        "subject": "The Greater Throop",
+        "location": "Pasadena, California",
+        "source": "California Institute of Technology Photographs",
+        "identifier": "002_40.10-1",
+        "rights": "Public Domain",
+        "rightsstatement": null,
+        "image_alt_text": null,
+        "manifest": "iiif" ? "http://127.0.0.1:4000/archives-exhibits-demo/objects/greater-throop-collection/greater-throop-2/manifest.json" : null
+      },
     
-    <div class="card-body">
-        <h2 class="card-title h5">Locations</h2>
-        <p class="card-text">
-            
-            <a class="btn btn-sm btn-outline-secondary m-1" href="/archives-exhibits-demo/browse.html#pasadena,%20california">pasadena, california</a>
-        </p>
-    </div>
-</div>
-
+      "greater-throop-3": {
+        "title": "George Ellery Hale at the Mount Wilson Observatory Snow Solar Telescope Spectrograph",
+        "creator": "Unknown photographer",
+        "date": "c. 1905",
+        "description": "Unknown photographer. George Ellery Hale at the Mount Wilson Observatory Snow Solar Telescope Spectrograph, c. 1905.",
+        "subject": "The Greater Throop",
+        "location": "Pasadena, California",
+        "source": "California Institute of Technology Photographs",
+        "identifier": "003_1.16-3",
+        "rights": "Public Domain",
+        "rightsstatement": null,
+        "image_alt_text": null,
+        "manifest": "iiif" ? "/objects/greater-throop-collection/greater-throop-3/manifest.json" : null
+      },
     
-    <div class="card mb-3" >
-  <div class="card-body">
-    <h2 class="card-title h5">Objects</h2>
-    <p class="card-text">
-      
-      5      
-      
-      <a class="text-dark" href="/archives-exhibits-demo/browse.html#iiif">IIIF Items <svg class="bi icon-sprite text-body" fill="currentColor" aria-hidden="true"><use xlink:href="/archives-exhibits-demo/assets/lib/cb-icons.svg#icon-iiif"/></svg></a><br>
-      <a class="btn btn-sm btn-outline-secondary mt-2" href="/archives-exhibits-demo/data.html">View table</a>
-    </p>
-  </div>
-</div>
+      "greater-throop-4": {
+        "title": "James Augustin Brown Scherer",
+        "creator": "Unknown photographer",
+        "date": "April 1918",
+        "description": "Unknown photographer. James Augustin Brown Scherer, April 1918.",
+        "subject": "The Greater Throop",
+        "location": "Pasadena, California",
+        "source": "California Institute of Technology Photographs",
+        "identifier": "004_40.1-14",
+        "rights": "Public Domain",
+        "rightsstatement": null,
+        "image_alt_text": null,
+        "manifest": "iiif" ? "/objects/greater-throop-collection/greater-throop-4/manifest.json" : null
+      },
+    
+      "greater-throop-7": {
+        "title": "Throop Pennant",
+        "creator": "Unknown maker",
+        "date": "c. 1910",
+        "description": "Unknown maker. Throop Pennant, c. 1910 Felt.",
+        "subject": "The Greater Throop",
+        "location": "Pasadena, California",
+        "source": "California Institute of Technology Photographs",
+        "identifier": null,
+        "rights": "Public Domain",
+        "rightsstatement": null,
+        "image_alt_text": null,
+        "manifest": "iiif" ? "/objects/greater-throop-collection/greater-throop-7/manifest.json" : null
+      }
+    
+  };
+</script>
 
-  </div> -->
-  <!-- <div class="col-md-12">
-
-    <div class="card mb-3">
-    <div class="card-body">
-        <h2 class="card-title h5">Collection as Data <small>(click to download)</small></h2>
-        <p class="card-text text-center">
-            <a class="btn btn-sm btn-secondary m-2" href="/archives-exhibits-demo/assets/data/metadata.csv" target="_blank">Metadata CSV</a>
-            <a class="btn btn-sm btn-secondary m-2" href="/archives-exhibits-demo/assets/data/metadata.json" target="_blank">Metadata JSON</a>
-            
-            
-            
-            
-            
-            <a class="btn btn-sm btn-secondary m-2" href="/archives-exhibits-demo/assets/data/facets.json" target="_blank">Facets JSON</a>
-            
-            <a class="btn btn-sm btn-secondary m-2" href="https://github.com/camp5456/archives-exhibits-demo.git" rel="noopener" target="_blank">Source Code</a>
-        </p>
-    </div>
-</div>
-
-  </div> -->
-
-</div>
+<!-- Load custom script -->
+<script defer src="/archives-exhibits-demo/assets/js/osd-init.js"></script>
 
 </div>
       </div>
