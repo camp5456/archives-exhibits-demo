@@ -5,17 +5,6 @@ permalink: /multimedia.html
 show_banner: true
 ---
 
-
-<style>
-#my-mirador {
-  height: 700px;
-  max-width: 90%;
-  margin: 2rem auto;
-  position: relative;
-  border: 1px solid #ccc;
-}
-</style>
-
 <div class="body-container multimedia">
 
 <h1 id="page-menu-label" class="section-title"></h1>
@@ -28,47 +17,3 @@ show_banner: true
 
 </div>
 
-
-<script src="https://unpkg.com/mirador@3.3.0/dist/mirador.min.js"></script>
-<div id="my-mirador"></div>
-<script type="text/javascript">
-  // Get base URL using Liquid, rendered as a string
-  const baseUrl = "{{ site.baseurl | default: '' }}";
-
-  window.miradorInstance = Mirador.viewer({
-    id: "my-mirador",
-    manifests: {
-      [baseUrl + "/objects/greater-throop-collection/manifest.json"]: {
-        provider: "Caltech Library"
-      }
-    },
-    windows: [{
-      loadedManifest: baseUrl + "/objects/greater-throop-collection/manifest.json",
-      canvasIndex: 0,
-      thumbnailNavigationPosition: "far-bottom",
-      view: "single",
-      osdBounds: {
-        x: 0,
-        y: 0,
-        width: 5442,
-        height: 7299
-      }
-    }],
-    workspaceControlPanel: {
-      enabled: false
-    },
-    window: {
-      osdOptions: {
-        homePosition: null,
-        defaultZoomLevel: 0,
-        preserveViewport: false,
-        animationTime: 0.5,
-        fitBounds: true,
-        visibilityRatio: 1.0,
-        immediateRender: true,
-        minZoomLevel: 0,
-        maxZoomLevel: 10
-      }
-    }
-  });
-</script>

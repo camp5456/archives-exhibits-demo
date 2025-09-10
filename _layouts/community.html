@@ -11,4 +11,144 @@ layout: page
     
   </div>
 
+  <div class="col-md-12">
+    <script src="https://unpkg.com/mirador@3.3.0/dist/mirador.min.js"></script>
+    <div id="my-mirador" class="my-mirador-community"></div>
+    <script type="text/javascript">
+      // Get base URL using Liquid, rendered as a string
+      const baseUrl = "{{ site.baseurl | default: '' }}";
+
+      window.miradorInstance = Mirador.viewer({
+        id: "my-mirador",
+        themes: {
+          light: {
+            palette: {
+              type: 'light',
+              primary: {
+                main: '#6e7391',
+              },
+            },
+          },
+        },
+        manifests: {
+          [baseUrl + "/objects/greater-throop-collection/manifest.json"]: {
+            provider: "Caltech Library"
+          }
+        },
+        windows: [{
+          loadedManifest: baseUrl + "/objects/greater-throop-collection/manifest.json",
+          canvasIndex: 0,
+          thumbnailNavigationPosition: "far-right",
+          view: "single"
+        }],
+        thumbnailNavigation: {
+          defaultPosition: 'far-right',
+          height: 175
+        },
+        
+        galleryView: {
+          height: 125
+        },
+        workspaceControlPanel: {
+          enabled: false
+        },
+        window: {
+          osdOptions: {
+            homePosition: null,
+            defaultZoomLevel: 3,
+            preserveViewport: false,
+            animationTime: 0.5,
+            fitBounds: true,
+            visibilityRatio: 2.0,
+            immediateRender: true,
+            minZoomLevel: 3,
+            maxZoomLevel: 10
+          }
+        }
+      });
+    </script>
+    <script>
+      (function () {
+        if (!window.miradorInstance) return;
+
+        // Delegate clicks from any gallery in this viewer
+        const root = document.querySelector('#my-mirador');
+        root.addEventListener('click', (e) => {
+          // Find a gallery tile (role="button") and its section
+          const tile = e.target.closest('section[id$="-gallery"] [role="button"]');
+          if (!tile) return;
+
+          const section = e.target.closest('section[id^="window-"][id$="-gallery"]');
+          if (!section) return;
+
+          // window id is the section id without the "-gallery" suffix
+          const windowId = section.id.replace(/-gallery$/, '');
+
+          // After Mirador handles the selection, flip to single view
+          setTimeout(() => {
+            const { actions } = Mirador;
+            window.miradorInstance.store.dispatch(actions.setWindowView(windowId, 'single'));
+          }, 0);
+        });
+      })();
+    </script>
+
+    <script>
+      (function () {
+        const root = document.getElementById('my-mirador');
+        if (!root) return;
+
+        function clampCell(cell) {
+          const cw = cell.clientWidth, ch = cell.clientHeight;
+          const wrap = cell.firstElementChild;               // button/a/div (varies by build)
+          if (!wrap) return;
+
+          // Make wrapper obey the cell and center contents (prevents overflow-based overlap)
+          wrap.style.setProperty('display', 'flex', 'important');
+          wrap.style.setProperty('align-items', 'center', 'important');
+          wrap.style.setProperty('justify-content', 'center', 'important');
+          wrap.style.setProperty('width', '100%', 'important');
+          wrap.style.setProperty('height', '100%', 'important');
+          wrap.style.setProperty('overflow', 'hidden', 'important');
+          wrap.style.setProperty('box-sizing', 'border-box', 'important');
+
+          const inner = wrap.firstElementChild;              // sometimes there’s one more div
+          if (inner) {
+            inner.style.setProperty('display', 'flex', 'important');
+            inner.style.setProperty('align-items', 'center', 'important');
+            inner.style.setProperty('justify-content', 'center', 'important');
+            inner.style.setProperty('width', '100%', 'important');
+            inner.style.setProperty('height', '100%', 'important');
+            inner.style.setProperty('overflow', 'hidden', 'important');
+            inner.style.setProperty('box-sizing', 'border-box', 'important');
+          }
+
+          // Keep the image within the cell, with aspect preserved (no squish)
+          const img = cell.querySelector('img');
+          if (img) {
+            img.style.setProperty('max-width', '100%', 'important');
+            img.style.setProperty('max-height', '100%', 'important');
+            img.style.setProperty('width', 'auto', 'important');
+            img.style.setProperty('height', 'auto', 'important');
+            img.style.setProperty('object-fit', 'contain', 'important');
+            img.style.setProperty('display', 'block', 'important');
+          }
+        }
+
+        function clampAll() {
+          const nav = root.querySelector('.mirador-window-thumbnail-navigation') || root.querySelector('[role="grid"]');
+          if (!nav) return;
+          nav.querySelectorAll('[role="gridcell"]').forEach(clampCell);
+        }
+
+        // initial passes + watch for updates
+        const kick = () => { clampAll(); setTimeout(clampAll, 150); setTimeout(clampAll, 600); };
+        setTimeout(kick, 250);
+
+        const mo = new MutationObserver(() => clampAll());
+        mo.observe(root, { subtree: true, childList: true, attributes: true });
+      })();
+    </script>
+     
+  </div>
 </div>

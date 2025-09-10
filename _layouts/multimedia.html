@@ -1,30 +1,86 @@
 ---
-# Multimedia Experience section of the site
+# SECTION FOUR: Multimedia 
 layout: page
 ---
-{%- assign items = site.data[site.metadata] | where_exp: 'item','item.objectid' -%}
 <div class="row">
-
   <div class="col-md-12">
-
-   {{ content }}
-    
+    {{ content }}
   </div>
-  <!-- <div class="col-md-4">  
 
-    {% include index/time.html %}
+  <div class="col-md-11 offset-1">
     
-    {% include index/featured-terms.html field="subject" title="Top Subjects" btn-color="primary" %}
+    <div class="osd-shell" id="iiif-shell">
+      <div class="container-fluid">
+        <div class="row">
+          
+          <div class="col-12">
+            <div class="osd-header">
+              <div>
+                <h1 class="osd-title" id="work-title">Loading…</h1>
+                <p class="osd-sub" id="work-sub"></p>
+              </div>
+            </div>
+        
+          </div>
 
-    {% include index/featured-terms.html field="location" title="Locations" btn-color="outline-secondary" %}
-    
-    {% include index/objects.html %}
+          <!-- Thumbnails full-width above viewer on small screens -->
+          <div class="row osd-nav-container">
+            <div class="col-12">
+              <nav class="osd-thumbs d-flex gap-2" id="thumbs" aria-label="Thumbnails"></nav>
+            </div>
+          </div>
 
-  </div> -->
-  <!-- <div class="col-md-12">
-
-    {% include index/data-download.html %}
-
-  </div> -->
-
+          <!-- Viewer and metadata split on xl and stack below -->
+          <div class="row osd-body-container">
+            <div class="col-12 col-xl-8 order-3 order-xl-3">
+              <div id="osd-viewer"></div>
+            </div>
+            <div class="col-12 col-xl-4 order-4 order-xl-4">
+              <aside class="osd-meta">
+                <h2>Metadata</h2>
+                <div id="meta"></div>
+              </aside>
+            </div>
+          </div>
+      
+      
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+
+
+<!-- Load OpenSeadragon library -->
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.1.0/openseadragon.min.js"></script>
+
+<!-- Make OSD button icons load from local assets to avoic ORBS error-->
+<script>
+  window.OSD_PREFIX = "{{ '/assets/img/openseadragon/' | relative_url }}";
+</script>
+
+<!-- Expose CSV rows as JSON keyed by objectid -->
+<script>
+  window.CANVAS_META = {
+    {% assign rows = site.data['iiif-cb-demo'] %}
+    {% for row in rows %}
+      "{{ row.objectid | escape }}": {
+        "title": {{ row.title | jsonify }},
+        "creator": {{ row.creator | jsonify }},
+        "date": {{ row.date | jsonify }},
+        "description": {{ row.description | jsonify }},
+        "subject": {{ row.subject | jsonify }},
+        "location": {{ row.location | jsonify }},
+        "source": {{ row.source | jsonify }},
+        "identifier": {{ row.identifier | jsonify }},
+        "rights": {{ row.rights | jsonify }},
+        "rightsstatement": {{ row.rightsstatement | jsonify }},
+        "image_alt_text": {{ row.image_alt_text | jsonify }},
+        "manifest": {{ row.display_template == "iiif" | default: false | jsonify }} ? {{ row.object_location | jsonify }} : null
+      }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  };
+</script>
+
+<!-- Load custom script -->
+<script defer src="{{ '/assets/js/osd-init.js' | relative_url }}"></script>
