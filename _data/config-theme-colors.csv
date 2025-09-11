@@ -1,7 +1,7 @@
 color_class,color
 primary,#ffffff
 secondary,
-success,
+success,$burnt
 info,
 warning,
 danger,

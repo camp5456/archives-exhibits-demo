@@ -6,7 +6,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #8c8782 28%, #cccccc 0);
+background: linear-gradient(to right, #8c8782 28%, #cccccc 0);
 }
 
 /* - - - -  
@@ -361,6 +361,14 @@ Custom Nav Footer
 
 #dynamic-footer-nav {
   box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* - - - - - -
+SEARCH
+- - - - - - */
+
+#lunrResults a {
+  color: #000000 !important;
 }
 
 /* - - - - - -
