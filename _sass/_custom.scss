@@ -433,12 +433,6 @@ Mirador Styles
   object-fit: contain;
 }
 
-/* Prevent images from hijacking drag gestures */
-.osd-thumbs img {
-  -webkit-user-drag: none;
-  user-select: none;
-}
-
 /* Caption spacing inside gallery tiles */
 #my-mirador .mirador-viewer section[id^="window-"][id$="-gallery"] .mirador67.mirador69 {
   margin-top: 6px;
@@ -491,8 +485,14 @@ Open Seadragon
   background-color: #ffffff;
   padding: 1rem;
   margin-top: 65px;
-  border-top: 2px solid #e6af48;
+  border-top: 2px solid $lions-main;
   max-width: 95%;
+}
+
+.multimedia-osd-shell {
+  padding: 1rem;
+  border-top: 2px solid $campfire !important;
+  margin: 0px 4rem 0px 4rem !important;
 }
 
 /* gallery title */
@@ -502,6 +502,11 @@ Open Seadragon
   margin-bottom: 10px;
 }
 
+/* Prevent images from hijacking drag gestures */
+.osd-thumbs img {
+  -webkit-user-drag: none;
+  user-select: none;
+}
 
 /* container for metadata and viewer */
 .osd-body-container {
@@ -568,8 +573,13 @@ Open Seadragon
  }
 
 .thumb[aria-current="true"] { 
-  background: #e6af48; 
+  background: $lions-main; 
 }
+
+.multimedia-osd-shell .osd-nav-container .osd-thumbs .thumb[aria-current="true"] {
+  background-color: $campfire !important;
+}
+
 
 /* Responsive viewer height tweaks */
 @media (max-width: 1199.98px) {   
@@ -586,6 +596,12 @@ Open Seadragon
     width: 120px; 
     height: 84px; 
   }
+}
+
+@media (max-width: 767px) {
+    .multimedia-osd-shell {
+        margin: 50px 10px 0px 10px !important;
+    }
 }
 
 
