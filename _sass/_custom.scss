@@ -1,8 +1,6 @@
-/* 
-    Put your custom SCSS here! 
-    This allows you to override any CollectionBuilder or Bootstrap CSS without modifying the base theme files directly.
-*/
-
+/* - - - - - 
+BASE STYLES
+- - - - - - */
 
 html, body {
   height: 100%;
@@ -12,7 +10,7 @@ html, body {
 }
 
 /* - - - -  
-Banner Styles 
+BANNER
 - - - - - */
 
 /* adds a sepia overlay with some opacity to the banner image */
@@ -30,7 +28,7 @@ Banner Styles
 }
 
 /* - - - - 
-Site Title, Site Sub Titles
+Site Titles
 - - - - - */
 
 .site-title, .section-title, .site-title-default {
@@ -43,6 +41,7 @@ h1.site-title {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+/* style for subtitle of exhibit on home page banner */
 h2.site-title{
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -67,7 +66,7 @@ h2#explore-the-exhibit {
 }
  
 /* - - - - 
-Menu Styles
+NAVIGATION
 - - - - - */
 
 button.navbar-toggler {
@@ -88,7 +87,7 @@ button.navbar-toggler {
 
 
 /* - - - -
-logo styles 
+LOGO
 - - - - - */
 
 #logo {
@@ -130,7 +129,6 @@ logo styles
 }
 
 /* Override link colors for child items */
-
 a.dropdown-custom {
   color:#000000;
   border-bottom: dotted #eeeeee 1px;
@@ -148,7 +146,6 @@ a.dropdown-custom::before {
 }
 
 /* transferring the styles from main menu to ul */
-
 ul.custom-list {
   list-style: none;
   padding: 0;
@@ -174,7 +171,6 @@ ul.custom-list li::before {
 }
 
 /* Custom Exhibit Color Schemes */
-
 .burnt:hover {
   background-color: $burnt;
   color:#000000 !important;
@@ -214,13 +210,13 @@ a.black:hover {
 }
 
 .becoming {
-  background-color: $lions-main;
+  background-color: $mission-trail;
   margin: 50px 40px 0px 50px;
   height: 100%;
 }
 
 .building-research {
-  background-color: $mission-trail;
+  background-color: $lions-main;
 }
 
 .community {
@@ -241,6 +237,13 @@ a.black:hover {
   .site-title-container {
     margin: 0px 0px 50px 0px;
   }
+
+  .overview {
+  background-color: $burnt;
+  margin-top: -100px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
 
 }
 
@@ -291,6 +294,48 @@ a.black:hover {
   font-size: 2.5rem !important;
   margin-bottom: 50px !important;
   }
+}
+
+/* - - - - - - 
+CARDS
+- - - - - - - */
+
+.card-becoming div.card, .card-building-research div.card, .card-community div.card, .card-multimedia div.card {
+  border: 0px solid !important;
+}
+
+.card-becoming div.card-text, .card-building-research div.card-text, .card-community div.card-text, .card-multimedia div.card-text {
+  min-height: 217px !important;
+}
+
+.card-becoming h3.card-header, .card-building-research h3.card-header, .card-community h3.card-header, .card-multimedia h3.card-header  {
+  min-height: 94px !important;
+  padding-top: 34px; 
+  font-size: 1.5rem
+}
+
+.card-becoming h3.card-header {
+  color: #000000;
+  background-color: $mission-trail;
+
+}
+
+.card-building-research h3.card-header {
+  color: #000000;
+  background-color: $lions-main;
+
+}
+
+.card-community h3.card-header {
+  color: #000000;
+  background-color: $pencil-lead;
+
+}
+
+.card-multimedia h3.card-header {
+  color: #000000;
+  background-color: $campfire;
+
 }
 
 /* - - - - - 
@@ -445,7 +490,7 @@ Open Seadragon
   background-color: #ffffff;
   padding: 1rem;
   margin-top: 65px;
-  border-top: 2px solid #847a63;
+  border-top: 2px solid #e6af48;
   max-width: 95%;
 }
 
@@ -507,7 +552,7 @@ Open Seadragon
 
 #thumbs {
   scrollbar-width: thick;           
-  scrollbar-color: #847a63 #f8f8f8;   
+  scrollbar-color: #e6af48 #f8f8f8;   
 }
 
 #thumbs::-webkit-scrollbar {
@@ -522,7 +567,7 @@ Open Seadragon
  }
 
 .thumb[aria-current="true"] { 
-  background: #847a63; 
+  background: #e6af48; 
 }
 
 /* Responsive viewer height tweaks */
