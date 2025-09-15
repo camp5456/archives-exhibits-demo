@@ -1,6 +1,6 @@
 <style>
 .header  {
-    background-image: url('{{ site.data.theme.featured-image }}');
+    background-image: url('{{ site.data.theme.featured-image | relative_url }}');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: {{ site.data.theme.home-banner-image-position | default: 'center' }};
