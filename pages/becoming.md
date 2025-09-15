@@ -5,17 +5,6 @@ permalink: /becoming.html
 show_banner: true
 ---
 
-<style>
-/* 
-#my-mirador {
-  height: 700px;
-  max-width: 90%;
-  margin: 2rem auto;
-  position: relative;
-  border: 1px solid #ccc;
-}
-*/
-</style>
 
 <div class="body-container becoming">
 
