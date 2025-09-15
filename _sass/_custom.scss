@@ -401,13 +401,12 @@ Custom Nav Footer
 
 #dynamic-footer-nav a {
   font-weight: 600;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  color: #666666;
+  color: $link;
 }
 
 #dynamic-footer-nav a:hover {
-  color: #0056b3;
+  text-underline-offset: 4px;
+  text-decoration: underline;
 }
 
 #dynamic-footer-nav {
