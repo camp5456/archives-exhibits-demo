@@ -55,7 +55,7 @@ h2.site-title{
 
 /* styles for the site title on all other pages using the default template */
 h1.site-title-default {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   text-align: center;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
@@ -78,6 +78,13 @@ h2#explore-the-exhibit {
   .site-title-container {
     margin: 0px 0px 50px 0px;
   }
+
+  h1.site-title-default {
+  font-size: 2rem;
+  text-align: left;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding-left:2.5rem;
+}
 
 }
  
@@ -397,7 +404,7 @@ Custom Nav Footer
   background-color: #f8f9fa; 
   border-top: 1px solid #ddd;
   margin-bottom: 1rem;
-}
+} 
 
 #dynamic-footer-nav a {
   font-weight: 600;
