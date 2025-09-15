@@ -9,6 +9,7 @@ html, body {
   background: linear-gradient(to right, #8c8782 28%, #cccccc 0);
 }
 
+/* this loads and hides the banner image for better lighthouse score. real image loads through css */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -20,7 +21,7 @@ html, body {
 }
 
 /* - - - -  
-BANNER
+BANNERS & TITLES
 - - - - - */
 
 /* adds a sepia overlay with some opacity to the banner image */
@@ -36,10 +37,6 @@ BANNER
 .site-title-container {
   margin-top: 2.5rem;
 }
-
-/* - - - - 
-Site Titles
-- - - - - */
 
 .site-title, .section-title, .site-title-default {
   @if $heading-font-family != "" { font-family: $heading-font-family; }
@@ -68,26 +65,31 @@ h1.site-title-default {
   margin: 28px 0px 99px 0px;
 }
 
-/* section heading used only on the homepage */
+/* section header used only on the homepage */
 h2#explore-the-exhibit {
   margin: 20px 0px 30px 0px;
   text-align: center;
   @if $heading-font-family != "" { font-family: $heading-font-family; }
 }
+
+/* fixes margins for title containers on devices 767 and smaller */
+@media (max-width: 767px) {
+
+  .site-title-container {
+    margin: 0px 0px 50px 0px;
+  }
+
+}
  
 /* - - - - 
 NAVIGATION
 - - - - - */
-
+/* styling the hamburger menu on mobile */
 button.navbar-toggler {
   background-color: #ffffff99;
 }
 
-div.nav-fix {
-  margin: -20px 0px --20px 0px !important;
-
-}
-
+/* left align menu items on mobile */
 @media (max-width: 991.98px) {
   .navbar-collapse .navbar-nav {
     text-align: left !important;
@@ -122,26 +124,6 @@ LOGO
   div.no-outline {
     border:none !important;
   }
-
-/* Override Bootstrap primary button */
-.btn-primary {
-  background-color: #c75000; /* your brand color */
-  border-color: #c75000;
-}
-
-.btn-primary:hover,
-.btn-primary:focus {
-  background-color: #c75000; /* darker shade on hover */
-  border-color: #c75000;
-}
-
-/* Optional: style plain .btns if used without btn-primary */
-.btn {
-  font-family: 'Hind', sans-serif;
-  border-radius: 4px;
-  text-transform: uppercase;
-  font-weight: 600;
-}
 
 /* Override link colors for child items */
 a.dropdown-custom {
@@ -185,9 +167,9 @@ ul.custom-list li::before {
   left: 0;
 }
 
-/* Custom Exhibit Color Schemes */
+/* Custom Exhibit Color Schemes for main menu*/
 .burnt:hover {
-  background-color: $archives;
+  background-color: $burnt;
   color:#000000 !important;
 }
 
@@ -212,15 +194,44 @@ a.black:hover {
   background-color: $campfire; 
 }
 
+/* - - - - -
+BUTTONS
+- - - - - */
+
+/* using grey because there are a variety of colors happening on homepage cards where this is predominant. */
+.btn-primary {
+  background-color: #cccccc;
+  border-color:  #c5c5c5;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #ababab; 
+  border-color: #ababab;
+}
+
+/* Optional: style plain .btns if used without btn-primary */
+.btn {
+  font-family: 'Hind', sans-serif;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* - - - - - 
+CONTAINERS
+- - - - - */
+
 .body-container {
   color:#000000;
   padding: 3rem 4rem;
   line-height: 2rem;
   margin: 4rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
 }
 .overview {
-  background-color: $archives;
+  background-color: $burnt;
   margin-top: -100px;
 }
 
@@ -324,9 +335,8 @@ CARDS
 }
 
 .card-becoming h3.card-header, .card-building-research h3.card-header, .card-community h3.card-header, .card-multimedia h3.card-header  {
-  min-height: 94px !important;
-  padding-top: 34px; 
-  font-size: 1.5rem
+font-size: 1.2rem;
+padding: 1rem
 }
 
 .card-becoming h3.card-header {
@@ -351,6 +361,32 @@ CARDS
   color: #000000;
   background-color: $campfire;
 
+}
+
+/* fixes margins for cards on devices 1199 and smaller */
+@media (max-width: 1199px) {
+  
+  
+
+}
+
+/* fixes margins for cards on devices 767 and smaller */
+@media (max-width: 767px) {
+  
+  
+
+}
+
+/* fixes margins for cards on devices 540 and smaller */
+@media (max-width: 540px) {
+
+
+
+}
+
+/* adujusting padding on cards at 445 and smaller */
+@media (max-width: 445px) {
+  
 }
 
 /* - - - - - 
@@ -403,12 +439,35 @@ Mirador Styles
   max-width: 100% !important;
 }
 
+/* fixes margins for mirador container on devices 1199 and smaller */
+@media (max-width: 1199px) {
+  .osd-shell {
+    margin-top: 0px !important; 
+  }
+}
+
+
+
+
+/* fixes margins for mirador container on devices 990 and smaller */
+@media (max-width: 990px) {
+  #my-mirador {
+    max-width: 100%;
+    margin: 65px 35px 0px 45px;
+    position: relative;
+  }
+
+  .my-mirador-community {
+    max-width: 100% !important;
+  }
+}
+
 /* fixes margins for mirador container on devices 767 and smaller */
 @media (max-width: 767px) {
   #my-mirador {
   height: 900px;
-  max-width: 95%;
-  margin-top: 50px;
+  max-width: 100%;
+  margin: 65px 5px 0px 5px !important;  
   position: relative;
   }
 
@@ -422,8 +481,8 @@ Mirador Styles
 @media (max-width: 540px) {
   #my-mirador {
   height: 900px;
-  max-width: 95%;
-  margin-top: 50px;
+  max-width: 100%;
+  margin: 30px 5px 0px 5px !important;
   position: relative;
   }
 
@@ -437,8 +496,8 @@ Mirador Styles
 @media (max-width: 445px) {
   #my-mirador {
   height: 900px;
-  max-width: 95%;
-  margin-top: 50px;
+  max-width: 100%;
+  margin: 0px 5px 0px 5px !important;
   position: relative;
   }
 
@@ -605,7 +664,8 @@ Open Seadragon
 
 
 /* Responsive viewer height tweaks */
-@media (max-width: 1199.98px) {   
+@media (max-width: 1199 px) {   
+  
   #osd-viewer { 
     height: 60vh; 
   }

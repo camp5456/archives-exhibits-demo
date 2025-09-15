@@ -21,7 +21,7 @@ show_banner: true
 <br>
 
 <div class="container">
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 justify-content-center">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 justify-content-center">
     <div class="col card-becoming"> 
       {% include feature/card.html text="Under George Ellery Hale, Throop narrowed its focus to engineering, moved to its Pasadena campus, and began its transformation into the California Institute of Technology." header="Becoming" objectid="/objects/demo-card-02.webp" alt="Alt text 2" link="/becoming.html" %}
     </div>
