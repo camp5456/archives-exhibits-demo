@@ -373,7 +373,7 @@
       if (prev) {
         document.getElementById("prev-nav").innerHTML = `
           <span class="me-2">Previous Section:</span>
-          <a href="${prev.href}" class="text-decoration-underline">
+          <a href="${prev.href}">
             ${prev.textContent}
           </a>`;
       }
@@ -381,7 +381,7 @@
       if (next) {
         document.getElementById("next-nav").innerHTML = `
           <span class="me-2">Next Section:</span>
-          <a href="${next.href}" class="text-decoration-underline">
+          <a href="${next.href}">
             ${next.textContent}
           </a>`;
       }
